@@ -1,0 +1,194 @@
+/* ================= RESET =============*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto flex", sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+/*=========================================
+                HEADER
+=========================================== */
+header{
+    position: fixed;
+    width: 100%;
+}
+header .nava{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-head{
+    width: 80%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    /*bborder-radius: 0px 0px 5px 5px ;
+    ackground-color: rgba(231, 221, 211, 0.835);
+    box-shadow: inset 0px -1px 0px #c5C5c5;*/
+    position: relative;
+    z-index: 10;
+   
+}
+.navbar-head .img-logo{
+    justify-self:flex-start;
+    margin-left: 15px;
+    padding:5px;
+    z-index: 12;
+}
+.bouton-menu{
+    display: none;
+    position: relative;
+    z-index: 12;
+}
+.bouton-menu .menu-toggle{
+    margin-right: 30px;
+    position: absolute;
+    top: 27%; right: 0;
+}
+.bouton-menu .menu-toggle hr{
+    border: 2px solid rgb(135,58,0);
+    width: 20px;
+    margin-top: 6px;
+}
+.navbar-head .menu_composant{
+    align-self: center;
+    
+}
+.navbar-head .menu_composant ul{
+    display:flex;
+    justify-content: space-between;
+    margin-right:30px;
+}
+.navbar-head .menu_composant ul li{
+   margin: 0px 15px;
+   font-size: 1.2em;
+   font-weight: lighter;
+}
+.navbar-head .menu_composant ul li a {
+    text-decoration: none;
+    position: relative;
+}
+.navbar-head .menu_composant ul li .active{
+    color: rgb(135,58,0);
+}
+.navbar-head .menu_composant ul li .active::before {
+    color: rgb(135,58,0);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(135,58,0);
+}
+.navbar-head .menu_composant ul li a:hover{
+    color: rgb(135,58,0);
+}
+.navbar-head .menu_composant ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(135,58,0);
+    transition: width 0.2s ease-out;
+}
+
+.navbar-head .menu_composant ul li a:hover::before {
+    width: 100%;
+
+}
+/* affichage du menu hamburger en petit ecran*/
+@media screen and (max-width : 991px) {
+    .navbar-head{
+        display: flex;
+        justify-content: space-between;
+        border-radius: 0px 0px 5px 5px ;
+        margin: 0px;
+        padding: 0px;
+        width: 90%;
+       
+    }
+    .menu_composant{
+       position: absolute;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100vw;
+       height: 100vh;
+       top: 0px;
+       border-radius: 30px;
+       backdrop-filter: blur(10px);
+       margin-top: -150%;
+       transition: margin ease-in-out 0.8s;
+       
+    }
+    .menu_composant ul{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 17px;
+
+    }
+    .mobile-menu{
+        margin-top: 80px;
+        z-index: 2;
+        transition: margin ease-in-out 0.8s;
+    }
+    .navbar-head .menu_composant ul li{
+        margin: 17px 0px;
+        text-align: center;
+     }
+    .bouton-menu{
+        display: block;
+        transition: all ease-in-out 1s;
+    }
+    .button-close .hr1,.button-close .hr3{
+        border-width: 1px!important;
+        transition: all ease-in-out 1s;
+    }
+    .button-close .hr1{
+        rotate: -135deg;
+        position: absolute;
+        top: 60%;
+       
+    }
+    .button-close .hr2{
+        opacity: 0;
+       
+    }
+    .button-close .hr3{
+        rotate: 135deg;
+        position: absolute;
+        top: 60%;
+    }
+    
+}
+
+/*=========================================
+                ACCUEIL
+=========================================== */
+
+.home_presentation{
+    background-image: url("../img/bg9.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 80px 0px;
+    
+}
+.home_presentation .presentation_msg{
+    color: white;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
