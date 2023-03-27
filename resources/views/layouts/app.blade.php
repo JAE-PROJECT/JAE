@@ -20,39 +20,15 @@
     </head>
     <body>
     <!-- menu de navigation -->
-    <header>
-      <div class="nava ">
-        <nav class="navbar-head">
-          <!-- partie du logo -->
-          <div class="img-logo">
-            <a class="" href="/"><img src="{{asset('img/logo_header.png')}}" alt="Logo"></a>
-          </div>
-          <!-- partie du menu hamburger -->
-          <div class="bouton-menu">
-            <button class="menu-toggle" onclick="toggleMenu()">
-              <hr class="hr1">
-              <hr class="hr2">
-              <hr class="hr3">
-            </button>
-          </div>
-          <div class="menu_composant">
-            <ul class="">
-              <li><a href="/" class="active">Accueil</a></li>
-              <li><a href="{{route('apropos')}}" class="">A Propos</a></li>
-              <li><a href="{{route('programme')}}">Nos Programmes</a></li>
-              <li><a href="{{route('forum')}}">Forum</a></li>
-              <li><a href="{{route('blog')}}">Blog</a></li>
-              <li><a href="{{route('rejoindre')}}">Nous Rejoindre</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+   
 
 
-    
+@include('partials.header') 
 @yield('content')
 
+
+
+<script src="{{asset('js/app.js')}}"></script>
 <!-- Ajout de la librairie jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -61,15 +37,7 @@
 
 <!-- Script pour gérer l'affichage du menu déroulant sur les petits écrans -->
 <script>
-  const MenuHamburger = document.querySelector(".bouton-menu")
-  const menu_composant = document.querySelector(".menu_composant")
-  MenuHamburger.addEventListener('click',()=>{
-    menu_composant.classList.toggle('mobile-menu')
-  })
-  const menuToggle = document.querySelector(".menu-toggle")
-  MenuHamburger.addEventListener('click',()=>{
-    menuToggle.classList.toggle('button-close')
-  })
+  
 </script> 
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </body>

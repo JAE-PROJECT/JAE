@@ -182,6 +182,7 @@ header .nava{
     background-image: url("../img/bg9.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: fixed;
     width: 100%;
     padding: 80px 0px;
     
@@ -190,5 +191,17 @@ header .nava{
     color: white;
     text-align: center;
     width: 50%;
-    margin: auto;
+    margin: 100px auto;
+}
+.home_presentation .presentation_msg h1{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.home_presentation .presentation_msg h1 span{
+    color: brown;
+}
+.home_presentation .presentation_msg p{
+    text-align: center;
 }
