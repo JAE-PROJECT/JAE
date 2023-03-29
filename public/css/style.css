@@ -1,96 +1,212 @@
+
 /* ================= RESET =============*/
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Roboto flex", sans-serif;
+/***
+    The new CSS reset - version 1.8.4 (last updated 14.2.2023)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+ *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
 }
 
-h1, h2, h3 {
-    font-weight: 600;
-    font-family: "Roboto Slab", sans-serif;
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+  cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input, textarea {
+  -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+
+/* preformatted text - use only for this feature */
+:where(pre) {
+  all: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+  color: unset;
+}
+
+/* remove default dot (•) sign */
+::marker {
+  content: initial;
+}
+
+/* fix the feature of 'hidden' attribute.
+ display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+ - fix for the content editable attribute will work properly.
+ - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable="false"])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+  all: revert;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.button {
+  background-color: #8B4513 !important;
+  border: none !important;
+}
+
+.button:hover {
+  background-color: rgb(199, 141, 70) !important;
+  box-shadow: 0 6px 35px -13px #000;
+  transition: all 0.7s;
 }
 
 /*=========================================
                 HEADER
 =========================================== */
-header{
-    position: fixed;
-    width: 100%;
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
-header .nava{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+header .nava {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.navbar-head{
-    width: 80%;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    /*bborder-radius: 0px 0px 5px 5px ;
-    ackground-color: rgba(231, 221, 211, 0.835);
-    box-shadow: inset 0px -1px 0px #c5C5c5;*/
-    position: relative;
-    z-index: 10;
-   
+
+.navbar-head {
+  width: 80%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
 }
-.navbar-head .img-logo{
-    justify-self:flex-start;
-    margin-left: 15px;
-    padding:5px;
-    z-index: 12;
+
+.navbar-head .img-logo {
+  justify-self: flex-start;
+  margin-left: 15px;
+  padding: 5px;
+  z-index: 12;
 }
-.bouton-menu{
-    display: none;
-    position: relative;
-    z-index: 12;
+
+.bouton-menu {
+  display: none;
+  position: relative;
+  z-index: 12;
 }
-.bouton-menu .menu-toggle{
-    margin-right: 30px;
-    position: absolute;
-    top: 27%; right: 0;
+
+.bouton-menu .menu-toggle {
+  margin-right: 30px;
+  position: absolute;
+  top: 27%;
+  right: 0;
 }
-.bouton-menu .menu-toggle hr{
-    border: 2px solid rgb(135,58,0);
-    width: 20px;
-    margin-top: 6px;
+
+.bouton-menu .menu-toggle hr {
+  border: 2px solid #8B4513;
+  width: 20px;
+  margin-top: 6px;
 }
-.navbar-head .menu_composant{
-    align-self: center;
-    
+
+.navbar-head .menu_composant {
+  align-self: center;
 }
-.navbar-head .menu_composant ul{
-    display:flex;
-    justify-content: space-between;
-    margin-right:30px;
+
+.navbar-head .menu_composant ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
 }
-.navbar-head .menu_composant ul li{
-   margin: 0px 15px;
-   font-size: 1.2em;
-   font-weight: lighter;
+
+.navbar-head .menu_composant ul li {
+  margin: 0px 15px;
+  font-size: 1.2em;
+  font-weight: lighter;
 }
+
 .navbar-head .menu_composant ul li a {
-    text-decoration: none;
-    position: relative;
+  text-decoration: none;
+  position: relative;
 }
-.navbar-head .menu_composant ul li .active{
-    color: rgb(135,58,0);
+
+.navbar-head .menu_composant ul li a .active {
+  color: #8B4513;
 }
-.navbar-head .menu_composant ul li .active::before {
-    color: rgb(135,58,0);
+
+/*.navbar-head .menu_composant ul li .active::before {
+    color:rgb(238,168,84);
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: rgb(135,58,0);
+    background-color: rgb(238,168,84);
+}*/
+.navbar-head .menu_composant ul li a:hover {
+  color: #8B4513;
 }
-.navbar-head .menu_composant ul li a:hover{
-    color: rgb(135,58,0);
-}
+
+/* SOULIGNEMENT DES ELEMENTS DU MENU 
 .navbar-head .menu_composant ul li a::before {
     content: '';
     position: absolute;
@@ -98,110 +214,186 @@ header .nava{
     left: 0;
     width: 0;
     height: 2px;
-    background-color: rgb(135,58,0);
-    transition: width 0.2s ease-out;
-}
-
+    background-color: rgb(238,168,84);
+    transition : width 0.2s ease-out;
+}*/
 .navbar-head .menu_composant ul li a:hover::before {
-    width: 100%;
-
+  width: 100%;
 }
+
 /* affichage du menu hamburger en petit ecran*/
-@media screen and (max-width : 991px) {
-    .navbar-head{
-        display: flex;
-        justify-content: space-between;
-        border-radius: 0px 0px 5px 5px ;
-        margin: 0px;
-        padding: 0px;
-        width: 90%;
-       
-    }
-    .menu_composant{
-       position: absolute;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       width: 100vw;
-       height: 100vh;
-       top: 0px;
-       border-radius: 30px;
-       backdrop-filter: blur(10px);
-       margin-top: -150%;
-       transition: margin ease-in-out 0.8s;
-       
-    }
-    .menu_composant ul{
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 17px;
-
-    }
-    .mobile-menu{
-        margin-top: 80px;
-        z-index: 2;
-        transition: margin ease-in-out 0.8s;
-    }
-    .navbar-head .menu_composant ul li{
-        margin: 17px 0px;
-        text-align: center;
-     }
-    .bouton-menu{
-        display: block;
-        transition: all ease-in-out 1s;
-    }
-    .button-close .hr1,.button-close .hr3{
-        border-width: 1px!important;
-        transition: all ease-in-out 1s;
-    }
-    .button-close .hr1{
-        rotate: -135deg;
-        position: absolute;
-        top: 60%;
-       
-    }
-    .button-close .hr2{
-        opacity: 0;
-       
-    }
-    .button-close .hr3{
-        rotate: 135deg;
-        position: absolute;
-        top: 60%;
-    }
-    
+@media screen and (max-width: 991px) {
+  .navbar-head {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0px 0px 5px 5px;
+    margin: 0px;
+    padding: 0px;
+    width: 90%;
+  }
+  .menu_composant {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    margin-top: -150%;
+    transition: margin ease-in-out 0.8s;
+  }
+  .menu_composant ul {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 17px;
+  }
+  .mobile-menu {
+    margin-top: 80px;
+    z-index: 2;
+    transition: margin ease-in-out 0.8s;
+  }
+  .navbar-head .menu_composant ul li {
+    margin: 17px 0px;
+    text-align: center;
+  }
+  .bouton-menu {
+    display: block;
+    transition: all ease-in-out 1s;
+  }
+  .button-close .hr1, .button-close .hr3 {
+    border-width: 1px !important;
+    transition: all ease-in-out 1s;
+  }
+  .button-close .hr1 {
+    rotate: -135deg;
+    position: absolute;
+    top: 60%;
+  }
+  .button-close .hr2 {
+    opacity: 0;
+  }
+  .button-close .hr3 {
+    rotate: 135deg;
+    position: absolute;
+    top: 60%;
+  }
 }
-
 /*=========================================
                 ACCUEIL
 =========================================== */
+@keyframes defilement {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1000px 0;
+  }
+}
+@keyframes UpDown {
+  0% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(-7px);
+  }
+}
+.filigrane {
+  position: absolute;
+  color: #fff;
+  font-size: 50px;
+  transform: translateX(-50%), translateY(50%);
+  z-index: -2;
+}
 
-.home_presentation{
-    background-image: url("../img/bg9.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: fixed;
-    width: 100%;
-    padding: 80px 0px;
-    
+.filigrane4 {
+  top: 15%;
+  left: 50%;
 }
-.home_presentation .presentation_msg{
-    color: white;
-    text-align: center;
-    width: 50%;
-    margin: 100px auto;
+
+.filigrane1 {
+  top: 20%;
+  left: 80%;
 }
-.home_presentation .presentation_msg h1{
-    text-align: center;
-    font-size: xx-large;
-    font-weight: bolder;
-    margin-bottom: 10px;
+
+.filigrane2 {
+  top: 80%;
+  left: 50%;
 }
-.home_presentation .presentation_msg h1 span{
-    color: brown;
+
+.filigrane3 {
+  top: 80%;
+  left: 60%;
 }
-.home_presentation .presentation_msg p{
-    text-align: center;
+
+.home_presentation {
+  background-image: url("../img/bg-communaute.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  animation-name: defilement;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  padding: 80px 0px 10px 0px;
+  line-height: 26px;
+  z-index: 1;
+  position: relative;
 }
+.home_presentation::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(120deg, rgba(185, 127, 56, 0.697) 20%, #8B4513);
+  z-index: -1;
+}
+.home_presentation .presentation_msg {
+  color: #F5F5F5;
+  width:100%;
+  align-self: center;
+}
+.home_presentation .presentation_title {
+  font-weight: bolder;
+  margin: 0px 0px 5px 0px;
+  text-align: center;
+  color: #8B4513;
+}
+.home_presentation .presentation_title .titre {
+  font-size: 40px;
+}
+.home_presentation .presentation_subtitle {
+  margin: -12px 0px 20px 0px;
+  text-align: center;
+  font-style: italic;
+}
+.home_presentation .presentation_subtitle::first-letter {
+  text-transform: uppercase;
+}
+.home_presentation .presentation_description {
+  margin-bottom: 15px;
+  font-size: 17px;
+  text-align: center;
+}
+.home_presentation .btn_presentation {
+  width: 80%;
+  display: block;
+  padding: 15px 5px;
+  color: antiquewhite;
+  margin: 30px auto;
+}
+.home_presentation .presentatin_img img {
+  width: 80%;
+  margin: 0px auto;
+  animation: UpDown 1.3s ease 0s infinite alternate;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
