@@ -1,121 +1,18 @@
-
+@import '../sass/pbootstrap.css';
 /* ================= RESET =============*/
-/***
-    The new CSS reset - version 1.8.4 (last updated 14.2.2023)
-    GitHub page: https://github.com/elad2412/the-new-css-reset
-***/
-
-/*
-    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
-    - The "symbol *" part is to solve Firefox SVG sprite bug
- */
- *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
-  all: unset;
-  display: revert;
-}
-
-/* Preferred box-sizing value */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Reapply the pointer cursor for anchor tags */
-a, button {
-  cursor: revert;
-}
-
-/* Remove list styles (bullets/numbers) */
-ol, ul, menu {
-  list-style: none;
-}
-
-/* For images to not be able to exceed their container */
-img {
-  max-inline-size: 100%;
-  max-block-size: 100%;
-}
-
-/* removes spacing between cells in tables */
-table {
-  border-collapse: collapse;
-}
-
-/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
-input, textarea {
-  -webkit-user-select: auto;
-}
-
-/* revert the 'white-space' property for textarea elements on Safari */
-textarea {
-  white-space: revert;
-}
-
-/* minimum style to allow to style meter element */
-meter {
-  -webkit-appearance: revert;
-  appearance: revert;
-}
-
-/* preformatted text - use only for this feature */
-:where(pre) {
-  all: revert;
-}
-
-/* reset default text opacity of input placeholder */
-::placeholder {
-  color: unset;
-}
-
-/* remove default dot (•) sign */
-::marker {
-  content: initial;
-}
-
-/* fix the feature of 'hidden' attribute.
- display:revert; revert to element instead of attribute */
-:where([hidden]) {
-  display: none;
-}
-
-/* revert for bug in Chromium browsers
- - fix for the content editable attribute will work properly.
- - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
-:where([contenteditable]:not([contenteditable="false"])) {
-  -moz-user-modify: read-write;
-  -webkit-user-modify: read-write;
-  overflow-wrap: break-word;
-  -webkit-line-break: after-white-space;
-  -webkit-user-select: auto;
-}
-
-/* apply back the draggable feature - exist only in Chromium and Safari */
-:where([draggable="true"]) {
-  -webkit-user-drag: element;
-}
-
-/* Revert Modal native behavior */
-:where(dialog:modal) {
-  all: revert;
-}
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Playfair Display", sans-serif;
+  font-family: sans-serif;
 }
 
-.button {
-  background-color: #8B4513 !important;
-  border: none !important;
+body {
+  overflow-x: hidden;
+  background-color: #171616;
 }
 
-.button:hover {
-  background-color: rgb(199, 141, 70) !important;
-  box-shadow: 0 6px 35px -13px #000;
-  transition: all 0.7s;
-}
+
 
 /*=========================================
                 HEADER
@@ -151,7 +48,7 @@ header .nava {
 .bouton-menu {
   display: none;
   position: relative;
-  z-index: 12;
+  z-index: 31;
 }
 
 .bouton-menu .menu-toggle {
@@ -163,6 +60,7 @@ header .nava {
 
 .bouton-menu .menu-toggle hr {
   border: 2px solid #8B4513;
+  opacity: 1;
   width: 20px;
   margin-top: 6px;
 }
@@ -223,26 +121,33 @@ header .nava {
 
 /* affichage du menu hamburger en petit ecran*/
 @media screen and (max-width: 991px) {
+  /* .nava{
+      position: relative;
+  } */
   .navbar-head {
     display: flex;
     justify-content: space-between;
     border-radius: 0px 0px 5px 5px;
-    margin: 0px;
     padding: 0px;
-    width: 90%;
+    width: 100%;
   }
   .menu_composant {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     top: 0px;
-    border-radius: 30px;
-    backdrop-filter: blur(10px);
-    margin-top: -150%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* border-radius: 30px; */
+    -webkit-backdrop-filter: blur(9px);
+    margin-top: -300%;
     transition: margin ease-in-out 0.8s;
+    background-color: rgba(0, 0, 0, 0.4196078431);
+    z-index: 30;
   }
   .menu_composant ul {
     align-self: center;
@@ -252,8 +157,7 @@ header .nava {
     font-size: 17px;
   }
   .mobile-menu {
-    margin-top: 80px;
-    z-index: 2;
+    margin-top: 0px;
     transition: margin ease-in-out 0.8s;
   }
   .navbar-head .menu_composant ul li {
@@ -263,6 +167,9 @@ header .nava {
   .bouton-menu {
     display: block;
     transition: all ease-in-out 1s;
+  }
+  .bouton-menu .hr1, .bouton-menu .hr2, .bouton-menu .hr3 {
+    transition: all ease-in-out 0.5s;
   }
   .button-close .hr1, .button-close .hr3 {
     border-width: 1px !important;
@@ -274,7 +181,7 @@ header .nava {
     top: 60%;
   }
   .button-close .hr2 {
-    opacity: 0;
+    opacity: 0 !important;
   }
   .button-close .hr3 {
     rotate: 135deg;
@@ -329,6 +236,7 @@ header .nava {
   left: 60%;
 }
 
+/* --------------------- SECTION SOUS LE HEADER(PRESENTATION) ------------------*/
 .home_presentation {
   background-image: url("../img/bg-communaute.jpeg");
   background-size: cover;
@@ -343,6 +251,7 @@ header .nava {
   line-height: 26px;
   z-index: 1;
   position: relative;
+  overflow: hidden;
 }
 .home_presentation::before {
   content: "";
@@ -357,7 +266,7 @@ header .nava {
 }
 .home_presentation .presentation_msg {
   color: #F5F5F5;
-  width:100%;
+  width: 100%;
   align-self: center;
 }
 .home_presentation .presentation_title {
@@ -373,6 +282,7 @@ header .nava {
   margin: -12px 0px 20px 0px;
   text-align: center;
   font-style: italic;
+  text-transform: lowercase;
 }
 .home_presentation .presentation_subtitle::first-letter {
   text-transform: uppercase;
@@ -394,6 +304,23 @@ header .nava {
   margin: 0px auto;
   animation: UpDown 1.3s ease 0s infinite alternate;
   overflow: hidden;
+}
+
+/* --------------------- OBJECTIFS ------------------*/
+.objectif {
+  overflow: hidden;
+}
+.objectif .objectif_title {
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 80px;
+  color: #8B4513;
+}
+.objectif .objectif_1 .objectif_description_1 h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */

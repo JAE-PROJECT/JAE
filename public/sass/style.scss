@@ -1,3 +1,5 @@
+
+@import '../sass/pbootstrap.css';
 /* ================= RESET =============*/
 $couleur_bois:  #8B4513;
 $couleur_or :  rgb(199, 141, 70);
@@ -7,11 +9,14 @@ $couleur_noir: #000;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Playfair Display", sans-serif;
+    font-family: sans-serif;
     
     
 }
-
+body{
+    overflow-x: hidden;
+    background-color: #171616;
+}
 
 .button{
     background-color: $couleur_bois !important;
@@ -56,15 +61,17 @@ header .nava{
 .bouton-menu{
     display: none;
     position: relative;
-    z-index: 12;
+    z-index: 31;
 }
 .bouton-menu .menu-toggle{
+    
     margin-right: 30px;
     position: absolute;
     top: 27%; right: 0;
 }
 .bouton-menu .menu-toggle hr{
     border: 2px solid $couleur_bois;
+    opacity: 1;
     width: 20px;
     margin-top: 6px;
 }
@@ -120,13 +127,16 @@ header .nava{
 }
 /* affichage du menu hamburger en petit ecran*/
 @media screen and (max-width : 991px) {
+    /* .nava{
+        position: relative;
+    } */
     .navbar-head{
         display: flex;
         justify-content: space-between;
         border-radius: 0px 0px 5px 5px ;
-        margin: 0px;
+        
         padding: 0px;
-        width: 90%;
+        width: 100%;
        
     }
     .menu_composant{
@@ -134,13 +144,16 @@ header .nava{
        display: flex;
        justify-content: center;
        align-items: center;
-       width: 100vw;
+       width: 100%;
        height: 100vh;
-       top: 0px;
-       border-radius: 30px;
-       backdrop-filter: blur(10px);
-       margin-top: -150%;
+       top: 0px; bottom: 0;
+       left: 0; right: 0;
+       /* border-radius: 30px; */
+       -webkit-backdrop-filter: blur(9px);
+       margin-top: -300%;
        transition: margin ease-in-out 0.8s;
+       background-color: #0000006b;
+       z-index: 30;
        
     }
     .menu_composant ul{
@@ -152,17 +165,21 @@ header .nava{
 
     }
     .mobile-menu{
-        margin-top: 80px;
-        z-index: 2;
+        margin-top: 0px;
         transition: margin ease-in-out 0.8s;
+       
     }
     .navbar-head .menu_composant ul li{
         margin: 17px 0px;
         text-align: center;
      }
+    
     .bouton-menu{
         display: block;
         transition: all ease-in-out 1s;
+    }
+    .bouton-menu .hr1, .bouton-menu .hr2,.bouton-menu .hr3{
+        transition: all ease-in-out 0.5s;
     }
     .button-close .hr1,.button-close .hr3{
         border-width: 1px!important;
@@ -175,7 +192,7 @@ header .nava{
        
     }
     .button-close .hr2{
-        opacity: 0;
+        opacity: 0 !important;
        
     }
     .button-close .hr3{
@@ -231,6 +248,7 @@ header .nava{
     top: 80%;
     left: 60%;
 }
+/* --------------------- SECTION SOUS LE HEADER(PRESENTATION) ------------------*/
 .home_presentation {
     background-image: url("../img/bg-communaute.jpeg");
     background-size: cover;
@@ -248,6 +266,7 @@ header .nava{
     line-height: 26px;
     z-index: 1;
     position: relative;
+    overflow: hidden;
 
     &::before{
         content: "";
@@ -256,14 +275,14 @@ header .nava{
       height: 100%;
       position: absolute;
       top: 0;
-      left: 0;
+      left: 0; 
       background: linear-gradient(120deg, rgba(185, 127, 56, 0.697) 20%, $couleur_bois);
       z-index: -1;
     }
 
     .presentation_msg{
         color: #F5F5F5;
-        width: 50%;
+        width: 100%;
         align-self: center; 
     }
 
@@ -308,5 +327,26 @@ header .nava{
         animation: UpDown 1.3s ease 0s infinite alternate;
         overflow:hidden;
     
+    }
+}
+/* --------------------- OBJECTIFS ------------------*/
+.objectif{
+    overflow: hidden;
+    .objectif_title{
+        font-weight: bold;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 80px;
+        color: $couleur_bois;
+    }
+
+
+    .objectif_1{
+
+         .objectif_description_1 h3{
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 28px ;
+         }   
     }
 }
