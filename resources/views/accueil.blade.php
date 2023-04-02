@@ -23,26 +23,30 @@
     </section>
     <section class="objectif bg-color">
         <div class="container" data-aos="fade-up" >
-            <div class="objectif_title"  >
+            <div class="objectif_title">
                 <h2 class="fs-3 text-center fw-bold">Objectifs De La JAE</h2>
             </div>
             <div class ="objectif_1 row  flex-column-reverse  flex-lg-row  jutify-content-between pt-3 ">
                 <div class="objectif_description_1 col-lg-7  d-flex flex-column  align-self-center pt-5  content  " data-aos="fade-right" data-aos-delay="100">
-                    <h4 class="d-block mx-auto fw-light">Dolor sit</h4>
-                    <p class="mt-3 txt-our">
+                    <h4 class="d-block objectif_description_1_title">Dolor sit</h4>
+                    <p class="mt-1 txt-our objectif_description_1_paragraphe">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Quidem laboriosam vero ab fuga dolorum perferendis voluptatem recusandae, 
                     reprehenderit beatae consectetur molestiae asperiores, similique
                     quasi dolores qui assumenda aperiam. Sit, aspernatur.
                     </p>
+                    <div class="objectif_description_1_button mt-3">
+                        <a href="" class="btn">En Savoir Plus</a>
+                    </div>
+                   
                 </div>
                 <div class="objectif_image_1 col-lg-5 pt-lg-5 mx-auto d-block content" data-aos="fade-left" data-aos-delay="100">
-                    <img src="{{asset('img/hero-img.png')}}" alt="oups" class ="w-100 ">
+                    <img src="{{asset('img/lion.jpeg')}}" alt="oups" class ="w-100 ">
                 </div>
             </div>
             <div class ="objectif_2 row flex-column  flex-lg-row  jutify-content-between ">
-                <div class="objectif_image_2 col-lg-5 pt-lg-5  mx-auto d-block content  " data-aos="fade-right">
-                    <img src="{{asset('img/why-us.png')}}" alt="oups" class ="w-100">
+                <div class="objectif_image_2 col-lg-5 pt-lg-5  mx-auto d-block" data-aos="fade-right">
+                    <img src="{{asset('img/lion.jpeg')}}" alt="oups" class ="w-100">
                 </div>
                 <div class="objectif_description_2 col-lg-7 d-flex flex-column align-self-center  content" data-aos="fade-left" >
                     <h4 class="d-block mx-auto fw-light">Lorem, ipsum</h4>

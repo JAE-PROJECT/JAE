@@ -21,7 +21,7 @@
           <li><a href="{{route('programme')}}">Nos Programmes</a></li>
           <li><a href="{{route('forum')}}">Forum</a></li>
           <li><a href="{{route('blog')}}">Blog</a></li>
-          <li><a href="{{route('rejoindre')}}">Nous Rejoindre</a></li>
+          <li><a type="button" class="btn-rejoindre p-3 ml-4 rounded-pill" href="{{route('rejoindre')}}"><i class="fas fa-users"></i>Nous Rejoindre</a></li>
         </ul>
       </div>
     </nav>
