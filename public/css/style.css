@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '../sass/pbootstrap.css';
 /* ================= RESET =============*/
 * {
@@ -284,7 +285,7 @@ header .nava {
 }
 
 /* --------------------- SECTION SOUS LE HEADER(PRESENTATION) ------------------*/
-.home_presentation {
+#home_presentation {
   background-image: url("../img/bg-communaute.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -300,7 +301,7 @@ header .nava {
   position: relative;
   overflow: hidden;
 }
-.home_presentation::before {
+#home_presentation::before {
   content: "";
   display: block;
   width: 100%;
@@ -311,42 +312,42 @@ header .nava {
   background: linear-gradient(120deg, rgba(185, 127, 56, 0.697) 20%, #8B4513);
   z-index: -1;
 }
-.home_presentation .presentation_msg {
+#home_presentation .presentation_msg {
   color: #F5F5F5;
   width: 100%;
   align-self: center;
 }
-.home_presentation .presentation_title {
+#home_presentation .presentation_title {
   font-weight: bolder;
   margin: 0px 0px 5px 0px;
   text-align: center;
   color: #8B4513;
 }
-.home_presentation .presentation_title .titre {
+#home_presentation .presentation_title .titre {
   font-size: 40px;
 }
-.home_presentation .presentation_subtitle {
+#home_presentation .presentation_subtitle {
   margin: -12px 0px 20px 0px;
   text-align: center;
   font-style: italic;
   text-transform: lowercase;
 }
-.home_presentation .presentation_subtitle::first-letter {
+#home_presentation .presentation_subtitle::first-letter {
   text-transform: uppercase;
 }
-.home_presentation .presentation_description {
+#home_presentation .presentation_description {
   margin-bottom: 15px;
   font-size: 17px;
   text-align: center;
 }
-.home_presentation .btn_presentation {
+#home_presentation .btn_presentation {
   width: 65%;
   display: block;
   padding: 15px 5px;
   color: antiquewhite;
   margin: 30px auto;
 }
-.home_presentation .presentatin_img img {
+#home_presentation .presentatin_img img {
   width: 80%;
   margin: 0px auto;
   animation: UpDown 1.3s ease 0s infinite alternate;
@@ -354,47 +355,37 @@ header .nava {
 }
 
 /* --------------------- OBJECTIFS ------------------*/
-.objectif {
+#objectif {
   overflow: hidden;
 }
-.objectif .objectif_title {
+#objectif .objectif_title {
   font-weight: bold;
   font-size: 35px;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   color: #8B4513;
 }
-.objectif .objectif_title h2 {
+#objectif .objectif_title h2 {
   display: block;
   position: relative;
   width: 25%;
   margin: auto;
 }
-.objectif .objectif_title h2::after {
-  content: "";
-  position: absolute;
-  width: 70%;
-  margin: 50px 0px 0px 0px;
-  left: 10%;
-  /* right: 50%; */
-  height: 2px;
-  background-color: #8B4513;
-  transition: width 0.2s ease-out;
-}
-.objectif .objectif_1 .objectif_description_1_title {
+#objectif .objectif_1 .objectif_description_1_title {
   color: rgba(64, 63, 63, 0.9058823529);
   margin-bottom: 5px;
   font-size: 35px;
   font-weight: lighter;
 }
-.objectif .objectif_1 .objectif_description_1_paragraphe {
+#objectif .objectif_1 .objectif_description_1_paragraphe {
   text-align: justify;
+  line-height: 27px;
 }
-.objectif .objectif_1 .objectif_description_1_button {
+#objectif .objectif_1 .objectif_description_1_button {
   width: 60%;
   display: flex;
 }
-.objectif .objectif_1 .objectif_description_1_button a {
+#objectif .objectif_1 .objectif_description_1_button a {
   text-align: center;
   width: 60%;
   padding: 10px;
@@ -403,8 +394,37 @@ header .nava {
   color: #F5F5F5;
   transition: all 0.5s ease;
 }
-.objectif .objectif_1 .objectif_description_1_button a:hover {
+#objectif .objectif_1 .objectif_description_1_button a:hover {
   background-color: #8B4513;
+}
+#objectif .objectif_1 .objectif_video_1 video {
+  width: 640px; /* ou toute autre largeur souhaitée */
+  height: 360px; /* ou toute autre hauteur souhaitée */
+}
+#objectif .objectif_1 .objectif_video_1 video:not([controls]) {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* --------------------- STATISTIQUE ------------------*/
+#statistique {
+  background-color: #0a1117;
+}
+#statistique .statistique_flex {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+#statistique .stat_membre {
+  border: 1px solid black;
+  text-align: center;
+  height: 100%;
 }
 
 /*--------------------------------------------------------------

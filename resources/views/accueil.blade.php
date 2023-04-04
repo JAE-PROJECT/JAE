@@ -2,7 +2,7 @@
 
 @section('content')
 <main>
-    <section class="home_presentation">
+    <section id="home_presentation">
         <div class="container">
             <div class="row">
                 <p class="filigrane filigrane4">JAE</span> </p>
@@ -21,13 +21,13 @@
             </div>
         </div>
     </section>
-    <section class="objectif bg-color">
+    <section id="objectif" class="bg-color">
         <div class="container" data-aos="fade-up" >
             <div class="objectif_title">
                 <h2 class="fs-3 text-center fw-bold">Objectifs De La JAE</h2>
             </div>
-            <div class ="objectif_1 row  flex-column-reverse  flex-lg-row  jutify-content-between pt-3 ">
-                <div class="objectif_description_1 col-lg-7  d-flex flex-column  align-self-center pt-5  content  " data-aos="fade-right" data-aos-delay="100">
+           <div class ="objectif_1 row  flex-column-reverse  flex-lg-row  jutify-content-between">
+                <div class="objectif_description_1 col-lg-6  d-flex flex-column  align-self-center" data-aos="fade-right" data-aos-delay="100">
                     <h4 class="d-block objectif_description_1_title">Dolor sit</h4>
                     <p class="mt-1 txt-our objectif_description_1_paragraphe">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -36,15 +36,18 @@
                     quasi dolores qui assumenda aperiam. Sit, aspernatur.
                     </p>
                     <div class="objectif_description_1_button mt-3">
-                        <a href="" class="btn">En Savoir Plus</a>
+                        <a href="{{route('apropos')}}" class="btn">En Savoir Plus</a>
                     </div>
                    
                 </div>
-                <div class="objectif_image_1 col-lg-5 pt-lg-5 mx-auto d-block content" data-aos="fade-left" data-aos-delay="100">
-                    <img src="{{asset('img/lion.jpeg')}}" alt="oups" class ="w-100 ">
+                <div class="objectif_video_1 col-lg-6 mx-auto d-block" data-aos="fade-left" data-aos-delay="100">
+                    <video class="video_objectif" width="640" height="360" controls preload="auto" poster="{{asset('img/bg9.jpg')}}">
+                        <source src="{{asset('videos/Objectifs_video.mp4')}}" type="video/mp4">
+                        Votre navigateur ne prend pas en charge les vidéos.
+                    </video>
                 </div>
             </div>
-            <div class ="objectif_2 row flex-column  flex-lg-row  jutify-content-between ">
+            <!-- <div class ="objectif_2 row flex-column  flex-lg-row  jutify-content-between ">
                 <div class="objectif_image_2 col-lg-5 pt-lg-5  mx-auto d-block" data-aos="fade-right">
                     <img src="{{asset('img/lion.jpeg')}}" alt="oups" class ="w-100">
                 </div>
@@ -58,10 +61,29 @@
                         repudiandae nobis quia voluptates animi!
                     </p>
                 </div>
+            </div> 
+             -->
+        </div>
+    </section>
+    <section id="statistique">
+        <div class="container">
+            <div class="statistique_flex">
+                <div class="stat_membre">
+                    <p>Membres</p>
+
+                </div>
+                <div class="stat_team">
+                    <p>Team</p>
+                </div>
+                <div class="stat_zone">
+                    <p>Zone</p>
+                </div>
+                <div class="stat_zone">
+
+                </div>
             </div>
         </div>
     </section>
-    
    
 </main>
    

@@ -289,7 +289,7 @@ header .nava{
     left: 60%;
 }
 /* --------------------- SECTION SOUS LE HEADER(PRESENTATION) ------------------*/
-.home_presentation {
+#home_presentation {
     background-image: url("../img/bg-communaute.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -370,13 +370,13 @@ header .nava{
     }
 }
 /* --------------------- OBJECTIFS ------------------*/
-.objectif{
+#objectif{
     overflow: hidden;
     .objectif_title{
         font-weight: bold;
         font-size: 35px;
         text-align: center;
-        margin-bottom: 80px;
+        margin-bottom: 30px;
         color: $couleur_bois;
        
     }
@@ -385,17 +385,6 @@ header .nava{
       position: relative;
       width: 25%;
       margin: auto;
-    }
-    .objectif_title h2::after{
-      content: "";
-      position: absolute;
-      width: 70%;
-      margin: 50px 0px 0px 0px;
-      left: 10%;
-      /* right: 50%; */
-      height: 2px;
-      background-color: #8B4513;
-      transition: width 0.2s ease-out;
     }
 
     .objectif_1{
@@ -409,6 +398,7 @@ header .nava{
 
          .objectif_description_1_paragraphe{
             text-align: justify;
+            line-height: 27px;
          }
 
          .objectif_description_1_button{
@@ -427,13 +417,40 @@ header .nava{
          .objectif_description_1_button a:hover{
           background-color: $couleur_bois;
          }
+         .objectif_video_1{
+          video {
+            width: 640px; /* ou toute autre largeur souhaitée */
+            height: 360px; /* ou toute autre hauteur souhaitée */
+          }
+          video:not([controls]) {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+          }
+         }
     }
 }
 
+/* --------------------- STATISTIQUE ------------------*/
+#statistique{
+  background-color: #0a1117;
 
-
-
-
+  .statistique_flex{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+  .stat_membre{
+    border: 1px solid black;
+    text-align: center;
+    height: 100%;
+  }
+}
 
 
 
