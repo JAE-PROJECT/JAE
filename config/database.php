@@ -63,6 +63,20 @@ return [
             ]) : [],
         ],
 
+        'mysql_external' => [
+            'driver' => 'mysql',
+            'host' => 'localhost',
+            'port' => '3306',
+            'database' => 'nom_de_la_base_de_donnees',
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
+
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),

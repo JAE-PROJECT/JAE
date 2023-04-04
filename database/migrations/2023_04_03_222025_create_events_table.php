@@ -17,7 +17,6 @@ return new class extends Migration
             $table->text('event_description');
             $table->date('event_date');
             $table->time('event_heure');
-            $table->string('event_titre');
             $table->string('image_path',255);
             $table->timestamps();
         });
