@@ -41,7 +41,7 @@
                    
                 </div>
                 <div class="objectif_video_1 col-lg-6 mx-auto d-block" data-aos="fade-left" data-aos-delay="100">
-                    <video class="video_objectif" width="640" height="360" controls preload="auto" poster="{{asset('img/bg9.jpg')}}">
+                    <video class="video_objectif" width="640" height="360" controls preload="auto">
                         <source src="{{asset('videos/Objectifs_video.mp4')}}" type="video/mp4">
                         Votre navigateur ne prend pas en charge les vidéos.
                     </video>
@@ -67,24 +67,115 @@
     </section>
     <section id="statistique">
         <div class="container">
-            <div class="statistique_flex">
-                <div class="stat_membre">
+            <div class="statistique_flex row">
+                <div class="stat_membre col-3" data-aos='fade-in' data-delay="0">
+                   
+                    <i class="bi bi-person-fill"></i>
+                    <p class="nbre_occurence">{{$nb_users}}</p>
                     <p>Membres</p>
 
                 </div>
-                <div class="stat_team">
-                    <p>Team</p>
-                </div>
-                <div class="stat_zone">
+                <div class="stat_zone col-3" data-aos='fade-in' data-delay="200">
+                   
+                    <i class="bi bi-geo-fill"></i> <!-- icône zone -->
+                    <p class="nbre_occurence">{{$nb_zone}}</p>
                     <p>Zone</p>
                 </div>
-                <div class="stat_zone">
-
+                <div class="stat_team col-3" data-aos='fade-in' data-delay="100">
+                   
+                    <i class="mdi mdi-account-group"></i> <!-- icône groupe -->
+                    <p class="nbre_occurence">{{$nb_team}}</p>
+                    <p>Team</p>
+                </div>
+                <div class="stat_event col-3" data-aos='fade-in' data-delay="900">
+                   
+                    <i class="bi bi-whatsapp"></i>
+                    <p class="nbre_occurence">{{$nb_event}}</p>
+                    <p>Ev&eacute;nements</p>
+    
                 </div>
             </div>
         </div>
     </section>
-   
+   <section id="team" class="bg-color">
+      <div class="container" data-aos="fade-up">
+        <div class="mb-5 team_title">
+          <h2 class="text-center mb-1 fw-bold team_title_titre">Team</h2>
+          <p class="w-75  mx-auto text-center team_title_descrip"> Meet with our skilled and industrious team.</p>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="presentation ">
+              <img src="{{asset('img/bg9.jpg')}}" alt="oups" class="w-100">
+            </div>
+            <div class="info-presentation">
+              <div class="info-presentation-text position-relative">
+                <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
+                  <div class="">
+                    <h4>Marcus Doe</h4>
+                    <p>CEO</p>
+                  </div>
+                  <a href="portfolio1" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle"></i></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="presentation">
+              <img src="{{asset('img/lion.jpeg')}}" alt="oups" class="w-100">
+            </div>
+            <div class="info-presentation">
+              <div class="info-presentation-text position-relative">
+                <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
+                  <div class="">
+                    <h4>Marcus Doe</h4>
+                    <p>CEO</p>
+                  </div>
+                  <a href="portfolio2" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle "></i></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="presentation">
+              <img src="{{asset('img/bg9.jpg')}}" alt="oups" class="w-100">
+            </div>
+            <div class="info-presentation">
+              <div class="info-presentation-text position-relative">
+                <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
+                  <div class="">
+                    <h4>Marcus Doe</h4>
+                    <p>CEO</p>
+                  </div>
+                  <a href="portfolio3" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle"></i></a> 
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="presentation">
+              <div>
+                <img src="{{asset('img/lion.jpeg')}}" alt="oups" class="w-100">
+              </div>
+            </div>
+            <div class="info-presentation">
+              <div class="info-presentation-text position-relative">
+                <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
+                  <div class="">
+                    <h4>Marcus Doe</h4>
+                    <p>CEO</p>
+                  </div>
+                  <a href="portfolio4" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle"></i></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    </section>
 </main>
    
 @endsection('content')

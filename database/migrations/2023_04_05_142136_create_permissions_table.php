@@ -11,14 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('events', function (Blueprint $table) {
+        Schema::create('permissions', function (Blueprint $table) {
             $table->id();
-            $table->string('event_titre');
-            $table->text('event_description');
-            $table->date('event_date');
-            $table->time('event_heure');
-            $table->string('event_titre');
-            $table->string('image_path',255);
+            $table->string('name');
+            $table->string('guard_name');
             $table->timestamps();
         });
     }
@@ -28,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('events');
+        Schema::dropIfExists('permissions');
     }
 };
