@@ -282,9 +282,96 @@
         </div>
       </div>
     </section>
-    <section id="temoignagne">
+    <section id="temoignage" class="temoignage">
       <div class="container">
-        
+        <div class="mb-5 temoignage_title">
+          <h2 class="text-center mb-1 fw-bold temoignage_title_titre" data-aos="fade-up">Temoignage</h2>
+          <p class="w-75  mx-auto text-center temoignage_title_descrip" data-aos="fade-up"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="row liste_temoignages">
+          <div class="temoignage_x_personne my-xl-0 my-4 mx-3 col-xl col-md-5 col-12" data-aos="zoom-in">
+            <div class="personne_temoignant">
+                <div class="image_personne">
+                  <img src="{{asset('img/temoignage/temoignant_1.png')}}" alt="oups" >
+                </div>
+              <div class="info_personne">
+                <span class="info_personne_nom">Jack Dolor</span>
+                <span class="info_personne_etoile">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </span>
+              </div>
+            </div>
+            <div class="temoignagne_text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus, veniam autem optio atque provident. Ad, reiciendis in atque tenetur odio, ipsam corporis sapiente non, itaque obcaecati tempora? Earum, modi.
+              </p>
+            </div>
+            <span class="guillement">
+              <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+              </svg>
+            </span>
+          </div>
+          <div class="temoignage_x_personne my-xl-0 my-4 mx-3 col-xl col-md-5 col-12" data-aos="zoom-in">
+            <div class="personne_temoignant">
+                <div class="image_personne">
+                  <img src="{{asset('img/temoignage/temoignant_1.png')}}" alt="oups" >
+                </div>
+              <div class="info_personne">
+                <span class="info_personne_nom">Francis Gba</span>
+                <span class="info_personne_etoile">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </span>
+              </div>
+            </div>
+            <div class="temoignagne_text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus, veniam autem optio atque provident. Ad, reiciendis in atque tenetur odio, ipsam corporis sapiente non, itaque obcaecati tempora? Earum, modi.
+              </p>
+            </div>
+            <span class="guillement">
+              <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+              </svg>
+            </span>
+          </div>
+          <div class="temoignage_x_personne my-xl-0 my-4 mx-3 col-xl col-md-5 col-12" data-aos="zoom-in">
+            <div class="personne_temoignant">
+                <div class="image_personne">
+                  <img src="{{asset('img/temoignage/temoignant_1.png')}}" alt="oups" >
+                </div>
+              <div class="info_personne">
+                <span class="info_personne_nom">John Doe</span>
+                <span class="info_personne_etoile">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </span>
+              </div>
+            </div>
+            <div class="temoignagne_text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus, veniam autem optio atque provident. Ad, reiciendis in atque tenetur odio, ipsam corporis sapiente non, itaque obcaecati tempora? Earum, modi.
+              </p>
+            </div>
+            <span class="guillement">
+              <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+
       </div>
     </section>
 </main>

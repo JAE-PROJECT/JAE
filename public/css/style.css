@@ -682,6 +682,60 @@ header .nava {
     text-shadow: 0px 5px 5px rgba(139, 69, 19, 0);
   }
 }
+/* --------------------- Temoignagne ------------------*/
+.temoignage .temoignage_title .temoignage_title_titre {
+  font-size: 27px;
+  color: #8B4513;
+}
+.temoignage .temoignage_x_personne {
+  padding: 15px;
+  background-color: rgba(169, 88, 30, 0.0431372549);
+  border-radius: 10px;
+  position: relative;
+  color: #5b5b5b;
+}
+.temoignage .personne_temoignant {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.temoignage .personne_temoignant .image_personne {
+  margin-right: 10px;
+}
+.temoignage .personne_temoignant .image_personne img {
+  border-radius: 70px;
+  width: 50px;
+  height: 50px;
+}
+.temoignage .personne_temoignant .info_personne {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.temoignage .personne_temoignant .info_personne span {
+  display: block;
+}
+.temoignage .personne_temoignant .info_personne .info_personne_nom {
+  font-weight: bolder;
+}
+.temoignage .personne_temoignant .info_personne .info_personne_etoile {
+  color: #8B4513;
+}
+.temoignage .temoignagne_text {
+  text-align: justify;
+  line-height: 27px;
+}
+.temoignage .guillement {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.temoignage .guillement svg {
+  width: 80px;
+  height: 70px;
+  color: rgba(139, 69, 19, 0.6901960784);
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

@@ -1,5 +1,7 @@
 /* CE FICHIER EST UN FICHIER CSS qui emmet des attribut pour toutes la page
 a des classe precise, quand ces classes sont appelées, les styles sont appliquées */
+
+
 /* ______________SECTION______________ */
 section{
    padding-top: 50px;
@@ -8,6 +10,7 @@ section{
 section.bg-color{
     background-color: #a9581e0b;
 }
+
 /* _________________BOUTON______________ */
 .button {
     background-color: #8B4513 !important;
@@ -19,3 +22,4 @@ section.bg-color{
     box-shadow: 0 6px 35px -13px #000;
     transition: all 0.7s;
   }
+

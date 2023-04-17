@@ -746,6 +746,68 @@ header .nava{
     }
   }
 
+/* --------------------- Temoignagne ------------------*/
+.temoignage{
+  .temoignage_title{
+
+    .temoignage_title_titre{
+       font-size: $taille_titre;
+       color: $couleur_bois;
+    }
+}
+  .temoignage_x_personne{
+    padding: 15px;
+    background-color:#a9581e0b;
+    border-radius: 10px;
+    position: relative;
+    color: #5b5b5b;
+  }
+  .personne_temoignant{
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+    
+  }
+  .personne_temoignant .image_personne{
+    margin-right: 10px;
+    img{
+      border-radius: 70px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .personne_temoignant .info_personne{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    span{
+      display: block;
+    }
+   .info_personne_nom{
+      font-weight: bolder;
+    } 
+    .info_personne_etoile{
+      color: $couleur_bois;
+      
+    }
+  }
+  .temoignagne_text{
+    text-align: justify;
+    line-height: 27px ;
+  }
+  .guillement{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    svg{
+      width: 80px;
+      height: 70px;
+      color: #8b4513b0;
+    }
+  }
+}
+
+
 
 
 
