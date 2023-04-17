@@ -7,3 +7,10 @@ const MenuHamburger = document.querySelector(".bouton-menu")
   MenuHamburger.addEventListener('click',()=>{
     menuToggle.classList.toggle('button-close')
   })
+
+  // effet de scroll de la nav bar
+  document.addEventListener("scroll", function() {
+    var navbar = document.querySelector(".nava");
+    navbar.classList.toggle("scrolled", window.scrollY > 60);
+  });
+  

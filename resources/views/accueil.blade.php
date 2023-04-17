@@ -41,7 +41,7 @@
                    
                 </div>
                 <div class="objectif_video_1 col-lg-6 mx-auto d-block" data-aos="fade-left" data-aos-delay="100">
-                    <video class="video_objectif" width="640" height="360" controls preload="auto">
+                    <video class="video_objectif" width="640" height="360" controls preload="auto" >
                         <source src="{{asset('videos/Objectifs_video.mp4')}}" type="video/mp4">
                         Votre navigateur ne prend pas en charge les vidéos.
                     </video>
@@ -49,7 +49,7 @@
             </div>
             <!-- <div class ="objectif_2 row flex-column  flex-lg-row  jutify-content-between ">
                 <div class="objectif_image_2 col-lg-5 pt-lg-5  mx-auto d-block" data-aos="fade-right">
-                    <img src="{{asset('img/lion.jpeg')}}" alt="oups" class ="w-100">
+                    <img src="{{asset('img/lion_1.jpg')}}" alt="oups" class ="w-100">
                 </div>
                 <div class="objectif_description_2 col-lg-7 d-flex flex-column align-self-center  content" data-aos="fade-left" >
                     <h4 class="d-block mx-auto fw-light">Lorem, ipsum</h4>
@@ -63,6 +63,85 @@
                 </div>
             </div> 
              -->
+        </div>
+    </section>
+    <section id="team" class="">
+      <div class="container" data-aos="fade-up">
+        <div class="mb-5 team_title">
+          <h2 class="text-center mb-1 fw-bold team_title_titre">Team</h2>
+          <p class="w-75  mx-auto text-center team_title_descrip"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="presentation ">
+              <img src="{{asset('img/bg9.jpg')}}" alt="oups" class="w-100">
+            </div>
+            <div class="info-presentation">
+              <div class="info-presentation-text position-relative">
+                <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
+                  <div class="">
+                    <h4>Marcus Doe</h4>
+                    <p>CEO</p>
+                  </div>
+                  <a href="portfolio1" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle text-primary"></i></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="presentation">
+              <img src="{{asset('img/bg9.jpg')}}" alt="oups" class="w-100">
+            </div>
+            <div class="info-presentation">
+              <div class="info-presentation-text position-relative">
+                <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
+                  <div class="">
+                    <h4>Marcus Doe</h4>
+                    <p>CEO</p>
+                  </div>
+                  <a href="portfolio2" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle text-primary"></i></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="presentation">
+              <img src="{{asset('img/bg9.jpg')}}" alt="oups" class="w-100">
+            </div>
+            <div class="info-presentation">
+              <div class="info-presentation-text position-relative">
+                <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
+                  <div class="">
+                    <h4>Marcus Doe</h4>
+                    <p>CEO</p>
+                  </div>
+                  <a href="portfolio3" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle text-primary"></i></a> 
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="presentation">
+              <div>
+                <img src="{{asset('img/bg9.jpg')}}" alt="oups" class="w-100">
+              </div>
+            </div>
+            <div class="info-presentation">
+              <div class="info-presentation-text position-relative">
+                <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
+                  <div class="">
+                    <h4>Marcus Doe</h4>
+                    <p>CEO</p>
+                  </div>
+                  <a href="portfolio4" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle text-primary"></i></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
     </section>
     <section id="statistique">
@@ -89,7 +168,7 @@
                 </div>
                 <div class="stat_event col-3" data-aos='fade-in' data-delay="900">
                    
-                    <i class="bi bi-whatsapp"></i>
+                    <i class="bi bi-calendar-event"></i>
                     <p class="nbre_occurence">{{$nb_event}}</p>
                     <p>Ev&eacute;nements</p>
     
@@ -97,84 +176,116 @@
             </div>
         </div>
     </section>
-   <section id="team" class="bg-color">
-      <div class="container" data-aos="fade-up">
-        <div class="mb-5 team_title">
-          <h2 class="text-center mb-1 fw-bold team_title_titre">Team</h2>
-          <p class="w-75  mx-auto text-center team_title_descrip"> Meet with our skilled and industrious team.</p>
+    <section id="articles" class="bg-color">
+      <div class="container">
+        <div class="mb-5 article_title">
+          <h2 class="text-center mb-1 fw-bold article_title_titre" data-aos="fade-up">Articles</h2>
+          <p class="w-75  mx-auto text-center article_title_descrip" data-aos="fade-up"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         </div>
-        <div class="row">
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="presentation ">
-              <img src="{{asset('img/bg9.jpg')}}" alt="oups" class="w-100">
-            </div>
-            <div class="info-presentation">
-              <div class="info-presentation-text position-relative">
-                <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
-                  <div class="">
-                    <h4>Marcus Doe</h4>
-                    <p>CEO</p>
-                  </div>
-                  <a href="portfolio1" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle"></i></a> 
-                </div>
+        <div class="row liste_articles mx-auto">
+            <article class="card px-0 my-xl-0 my-4 mx-3 col-xl col-md-5 col-12" data-aos="zoom-in">
+              <div class="card__thumb">
+                <a href="#">
+                  <img src="{{asset('img/CS_1.jpg')}}" alt="oups">
+                </a>
               </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="presentation">
-              <img src="{{asset('img/lion.jpeg')}}" alt="oups" class="w-100">
-            </div>
-            <div class="info-presentation">
-              <div class="info-presentation-text position-relative">
-                <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
-                  <div class="">
-                    <h4>Marcus Doe</h4>
-                    <p>CEO</p>
-                  </div>
-                  <a href="portfolio2" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle "></i></a> 
-                </div>
+              <div class="card__date">
+                <span class="card__date__day">12</span>
+                <span class="card__date__month">Mai</span>
               </div>
-            </div>
-          </div>
+              <div class="card__body">
+                <div class="card__category"><a href="#">Afrique</a></div>
+                <h2 class="card__title"><a href="#">Lorem ipsum dolor Lorem ipsum</a></h2>
+                <div class="card__subtitle">A Head in the Polls</div> 
+                <p class="card__description">
+                  With a warning label this big, you know they gotta be fun! This is the worst part. The calm before the battle. No! The cat shelter's on to me.
 
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="presentation">
-              <img src="{{asset('img/bg9.jpg')}}" alt="oups" class="w-100">
-            </div>
-            <div class="info-presentation">
-              <div class="info-presentation-text position-relative">
-                <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
-                  <div class="">
-                    <h4>Marcus Doe</h4>
-                    <p>CEO</p>
-                  </div>
-                  <a href="portfolio3" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle"></i></a> 
-                  
-                </div>
+                </p>
               </div>
-            </div>
-          </div>
+              <div class="card__footer">
+                <span class="icon icon--time"></span>6 min
+                <span class="icon icon--comment"></span><a href="#">39 comments</a>
+              </div>
+            </article>
+            <article class="card px-0 my-xl-0 my-4 mx-3 col-xl col-md-5 col-12 " data-aos="zoom-in">
+              <div class="card__thumb">
+                <a href="#">
+                  <img src="{{asset('img/lion.jpg')}}" alt="oups">
+                </a>
+              </div>
+              <div class="card__date">
+                <span class="card__date__day">17</span>
+                <span class="card__date__month">Avril</span>
+              </div>
+              <div class="card__body">
+                <div class="card__category"><a href="#">Business</a></div>
+                <h2 class="card__title"><a href="#">Lorem ipsum dolor Lorem ipsum</a></h2>
+                <div class="card__subtitle">A Head in the Polls</div>
+                <p class="card__description">
+                  With a warning label this big, you know they gotta be fun! This is the worst part. The calm before the battle. No! The cat shelter's on to me.
 
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
-            <div class="presentation">
-              <div>
-                <img src="{{asset('img/lion.jpeg')}}" alt="oups" class="w-100">
+                </p>
               </div>
-            </div>
-            <div class="info-presentation">
-              <div class="info-presentation-text position-relative">
-                <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
-                  <div class="">
-                    <h4>Marcus Doe</h4>
-                    <p>CEO</p>
-                  </div>
-                  <a href="portfolio4" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle"></i></a> 
-                </div>
+              <div class="card__footer">
+                <span class="icon icon--time"></span>15 min
+                <span class="icon icon--comment"></span><a href="#">13 comments</a>
               </div>
-            </div>
-          </div>
-          
+            </article>
+            <article class="card px-0 my-xl-0 my-4 mx-3 col-xl col-md-5 col-12  " data-aos="zoom-in">
+              <div class="card__thumb">
+                <a href="#">
+                  <img src="{{asset('img/CS_1.jpg')}}" alt="oups">
+                </a>
+              </div>
+              <div class="card__date">
+                <span class="card__date__day">29</span>
+                <span class="card__date__month">Juin</span>
+              </div>
+              <div class="card__body">
+                <div class="card__category"><a href="#">Design</a></div>
+                <h2 class="card__title"><a href="#">Lorem ipsum dolor Lorem ipsum</a></h2>
+                <div class="card__subtitle">A Head in the Polls</div>
+                <p class="card__description">
+                  With a warning label this big, you know they gotta be fun! This is the worst part. The calm before the battle. No! The cat shelter's on to me.
+
+                </p>
+              </div>
+              <div class="card__footer">
+                <span class="icon icon--time"></span>18 min
+                <span class="icon icon--comment"></span><a href="#">30 comments</a>
+              </div>
+            </article>
+            <article class="card px-0 my-xl-0 my-4 mx-3 col-xl col-md-5 col-12 " data-aos="zoom-in">
+              <div class="card__thumb">
+                <a href="#">
+                  <img src="{{asset('img/lion.jpg')}}" alt="oups">
+                </a>
+              </div>
+              <div class="card__date">
+                <span class="card__date__day">11</span>
+                <span class="card__date__month">Mars</span>
+              </div>
+              <div class="card__body">
+                <div class="card__category"><a href="#">News</a></div>
+                <h2 class="card__title"><a href="#">Lorem ipsum dolor Lorem ipsum</a></h2>
+                <div class="card__subtitle">A Head in the Polls</div>
+                <p class="card__description">
+                  With a warning label this big, you know they gotta be fun! This is the worst part. The calm before the battle. No! The cat shelter's on to me.
+
+                </p>
+              </div>
+              <div class="card__footer">
+                <span class="icon icon--time"></span>2 hrs
+                <span class="icon icon--comment"></span><a href="#">150 comments</a>
+              </div>
+            </article>
         </div>
+      </div>
+    </section>
+    <section id="temoignagne">
+      <div class="container">
+        
+      </div>
     </section>
 </main>
    

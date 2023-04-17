@@ -3,6 +3,7 @@ a des classe precise, quand ces classes sont appel√©es, les styles sont appliqu√
 /* ______________SECTION______________ */
 section{
    padding-top: 50px;
+   padding-bottom: 30px;
 }
 section.bg-color{
     background-color: #a9581e0b;
