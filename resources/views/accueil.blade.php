@@ -23,21 +23,25 @@
     </section>
     <section id="objectif" class="bg-color">
         <div class="container" data-aos="fade-up" >
-            <div class="objectif_title">
-                <h2 class="fs-3 text-center fw-bold">Objectifs De La JAE</h2>
-            </div>
-           <div class ="objectif_1 row  flex-column-reverse  flex-lg-row  jutify-content-between">
-                <div class="objectif_description_1 col-lg-6  d-flex flex-column  align-self-center" data-aos="fade-right" data-aos-delay="100">
-                    <h4 class="d-block objectif_description_1_title">Dolor sit</h4>
+           
+           <div class ="objectif_1 row  flex-column flex-lg-row  jutify-content-between align-items-md-center">
+                <div class="objectif_description_1 col-lg-6  d-flex flex-column align-self-center my-4 my-lg-0" data-aos="fade-right" data-aos-delay="100">
+                    <!-- <div class="objectif_title">
+                      <h2 class="fs-3 fw-bold">Objectifs De La JAE</h2>
+                    </div> -->
+                    <h4 class="d-block objectif_description_1_title text-center mb-4 mb-lg-3 text-lg-start">Objectifs De La JAE</h4>
                     <p class="mt-1 txt-our objectif_description_1_paragraphe">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Quidem laboriosam vero ab fuga dolorum perferendis voluptatem recusandae, 
                     reprehenderit beatae consectetur molestiae asperiores, similique
                     quasi dolores qui assumenda aperiam. Sit, aspernatur.
                     </p>
-                    <div class="objectif_description_1_button mt-3">
-                        <a href="{{route('apropos')}}" class="btn">En Savoir Plus</a>
+                    <div>
+                      <a href="{{route('apropos')}}" class=" objectif_description_1_button w-50">
+                        <span class="btn">En Savoir Plus</span>
+                      </a>
                     </div>
+                    
                    
                 </div>
                 <div class="objectif_video_1 col-lg-6 mx-auto d-block" data-aos="fade-left" data-aos-delay="100">
@@ -83,7 +87,7 @@
                     <h4>Marcus Doe</h4>
                     <p>CEO</p>
                   </div>
-                  <a href="portfolio1" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle text-primary"></i></a> 
+                  <a href="portfolio1" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle team_icon"></i></a> 
                 </div>
               </div>
             </div>
@@ -99,7 +103,7 @@
                     <h4>Marcus Doe</h4>
                     <p>CEO</p>
                   </div>
-                  <a href="portfolio2" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle text-primary"></i></a> 
+                  <a href="portfolio2" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle team_icon"></i></a> 
                 </div>
               </div>
             </div>
@@ -110,16 +114,15 @@
               <img src="{{asset('img/bg9.jpg')}}" alt="oups" class="w-100">
             </div>
             <div class="info-presentation">
-              <div class="info-presentation-text position-relative">
-                <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
+              <span class="info-presentation-text position-relative"></span>
+              <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
                   <div class="">
                     <h4>Marcus Doe</h4>
                     <p>CEO</p>
                   </div>
-                  <a href="portfolio3" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle text-primary"></i></a> 
+                  <a href="portfolio3" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle team_icon"></i></a> 
                   
                 </div>
-              </div>
             </div>
           </div>
 
@@ -136,7 +139,7 @@
                     <h4>Marcus Doe</h4>
                     <p>CEO</p>
                   </div>
-                  <a href="portfolio4" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle text-primary"></i></a> 
+                  <a href="portfolio4" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle team_icon"></i></a> 
                 </div>
               </div>
             </div>
@@ -147,8 +150,8 @@
     <section id="statistique">
         <div class="container">
             <div class="statistique_flex row">
-                <div class="stat_membre col-3" data-aos='fade-in' data-delay="0">
-                   
+                <div class="stat_membre  col-3" data-aos='fade-in' data-delay="0">
+                    
                     <i class="bi bi-person-fill"></i>
                     <p class="nbre_occurence">{{$nb_users}}</p>
                     <p>Membres</p>
@@ -343,7 +346,7 @@
               </svg>
             </span>
           </div>
-          <div class="temoignage_x_personne my-xl-0 my-4 mx-3 col-xl col-md-5 col-12" data-aos="zoom-in">
+          <div class="temoignage_x_personne my-xl-0 my-4 mx-3 col-xl col-md-11 col-12" data-aos="zoom-in">
             <div class="personne_temoignant">
                 <div class="image_personne">
                   <img src="{{asset('img/temoignage/temoignant_1.png')}}" alt="oups" >
@@ -374,6 +377,7 @@
 
       </div>
     </section>
+    
 </main>
    
 @endsection('content')
