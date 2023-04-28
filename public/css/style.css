@@ -1081,6 +1081,364 @@ header .nava {
 }
 
 /*--------------------------------------------------------------
+# Nos PROGRAMMES
+--------------------------------------------------------------*/
+#page_program .programmes {
+  display: flex !important;
+  flex-direction: row;
+}
+#page_program .programme {
+  overflow: hidden;
+  margin: 0px 20px 10px 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 0px 0px 50px 0px;
+  position: relative;
+  /*  &:hover  .image_program img{
+     transform: scale(1.2);
+   } */
+}
+#page_program .programme .image_program img {
+  margin: 0px 0px 15px 0px;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+  transition: all 0.5s;
+}
+#page_program .programme .image_program img:hover {
+  transform: scale(1.2);
+}
+#page_program .programme .image_program .image_program_orateur {
+  padding: 10px 10px;
+  text-align: center;
+  color: #8B4513;
+  margin: 0px 0px 15px 0px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+#page_program .programme .text_program {
+  z-index: car;
+  background-color: #fff;
+}
+#page_program .programme .text_program .titre_program {
+  font-size: 26px;
+  text-transform: uppercase;
+  margin: 0px 0px 10px 0px;
+  position: relative;
+  color: #000;
+  font-weight: 400;
+}
+#page_program .programme .programme:hover .text_program .description_program::after {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: 0px 0px -10px -18px;
+  width: 20px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+  width: calc(100% + 50px) !important;
+  transition: all 1s ease-in-out;
+}
+#page_program .programme .text_program .description_program {
+  line-height: 25px;
+  position: relative;
+  text-transform: lowercase;
+  text-align: justify;
+  color: #666C74;
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 0px 10px 0px 0px;
+}
+#page_program .programme .text_program .description_program::first-letter {
+  text-transform: uppercase;
+}
+#page_program .programme .bouton_inscrire button {
+  background-color: #8B4513;
+  color: #fff;
+  /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
+  border-radius: 5px;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  margin-top: 15px;
+  padding: 6px 30px;
+}
+#page_program .programme .other_infos_program {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  width: 100%;
+}
+#page_program .programme .other_infos_program span {
+  display: block;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #A3A9AB;
+  margin-left: 10px;
+}
+#page_program .programme .other_infos_program i {
+  font-family: "Courier New", Courier, monospace;
+  padding: 0px 4px 0px 5px;
+}
+#page_program .programme .statut_program {
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  padding: 6px 6px 6px 6px;
+  border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 20px !important;
+  text-align: end;
+  text-transform: capitalize;
+  background-color: rgb(214, 145, 66);
+  color: #272626;
+  font-weight: lighter;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+#page_program .programme .statut_program i {
+  font-weight: bolder;
+  font-size: 15px;
+  /* position: absolute;
+  left: 0px;
+  top: 18%; */
+}
+
+/*--------------------------------------------------------------
+# NOUS REJOINDRE
+--------------------------------------------------------------*/
+/* ----------------------Bannière nous rejoindre -------------*/
+#banniere_nous_rejoindre {
+  background: url("../img/bg9.jpg");
+  /* background-color: #0e0f15; */
+  background-position: center;
+  background-size: cover;
+  padding: 90px 0px;
+  margin: inherit;
+  transition: all 0.5s ease;
+  position: relative;
+  z-index: 3;
+}
+#banniere_nous_rejoindre::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(120deg, rgba(48, 34, 19, 0.697) 20%, #0f0e0d);
+  z-index: -1;
+}
+#banniere_nous_rejoindre .titre_page {
+  text-align: center;
+}
+#banniere_nous_rejoindre .titre_page h2 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(195, 195, 195);
+}
+#banniere_nous_rejoindre .titre_page p {
+  color: #c3c3c3;
+}
+
+/* ----------------------FORMULAIRE -------------*/
+.rejoindre .info {
+  border-top: 3px solid #8B4513;
+  border-bottom: 3px solid #8B4513;
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.rejoindre .info i {
+  font-size: 20px;
+  color: #8B4513;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #f4e4d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.rejoindre .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #8B4513;
+}
+
+.rejoindre .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5019607843);
+}
+
+.rejoindre .info .email p {
+  padding-top: 5px;
+}
+
+.rejoindre .info .social-links {
+  padding-left: 60px;
+}
+
+.rejoindre .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.rejoindre .info .social-links a:hover {
+  background: #8B4513;
+  color: #fff;
+}
+
+.rejoindre .info .email:hover i,
+.rejoindre .info .address:hover i,
+.rejoindre .info .phone:hover i {
+  background: #8B4513;
+  color: #fff;
+}
+
+.rejoindre .php-email-form {
+  width: 100%;
+  border-top: 3px solid #8B4513;
+  border-bottom: 3px solid #8B4513;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.rejoindre .text_bas_form {
+  color: #9c9c9c;
+}
+
+.rejoindre .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.rejoindre .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.rejoindre .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.rejoindre .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.rejoindre .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.rejoindre .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.rejoindre .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.rejoindre .php-email-form .form-group {
+  margin-bottom: 20px;
+}
+
+.rejoindre .php-email-form label {
+  padding-bottom: 8px;
+}
+
+.rejoindre .php-email-form input,
+.rejoindre .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.rejoindre .php-email-form input:focus,
+.rejoindre .php-email-form textarea:focus {
+  border-color: #8B4513;
+}
+
+.rejoindre .php-email-form input {
+  height: 44px;
+}
+
+.rejoindre .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.rejoindre .php-email-form button[type=submit] {
+  background: #8B4513;
+  border: 0;
+  padding: 12px 34px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.rejoindre .php-email-form button[type=submit]:hover {
+  background: #7b3c0f;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
@@ -1093,11 +1451,11 @@ header .nava {
   background: rgba(255, 255, 255, 0.9568627451);
 }
 
-#footer .footer-top .footer-contact {
+#footer .footer-top .footer-rejoindre {
   margin-bottom: 30px;
 }
 
-#footer .footer-top .footer-contact h3 {
+#footer .footer-top .footer-rejoindre h3 {
   font-size: 28px;
   margin: 0 0 10px 0;
   padding: 2px 0 2px 0;
@@ -1107,7 +1465,7 @@ header .nava {
   color: #000;
 }
 
-#footer .footer-top .footer-contact p {
+#footer .footer-top .footer-rejoindre p {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;

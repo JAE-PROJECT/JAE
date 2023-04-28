@@ -119,7 +119,7 @@
                     </div>
                     <div class="col-lg-8">
                         <div class="content ps-lg-5">
-                        <h3>Voluptatem dignissimos provident quasi</h3>
+                        <h3>Vision De La JAE</h3>
                         <p>
                             Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                             velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
@@ -140,7 +140,7 @@
         <div class="container" data-aos="fade-up">
 
             <div class="titre_section">
-            <h2 class="mb-2">Equipe</h2>
+            <h2 class="mb-2">Chef De Zone</h2>
             <p class="text-center">Uscipit alias euia fugiat sit</p>
             </div>
 
@@ -151,7 +151,7 @@
                 <div class="pic"><img src="{{asset('img/team/lead_1.jpg')}}" class="img-fluid" alt="" style="width:100%; "> </div>
                 <div class="member-info">
                     <h4>Henry Danbgedji</h4>
-                    <span>Chief Executive Officer</span>
+                    <span>Cameroon</span>
                     <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                     <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
@@ -168,7 +168,7 @@
                 <div class="pic"><img src="{{asset('img/team/lead_2.jpg')}}" class="img-fluid" alt=""></div>
                 <div class="member-info">
                     <h4>John Doe</h4>
-                    <span>Product Manager</span>
+                    <span>France</span>
                     <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
                     <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
@@ -185,7 +185,7 @@
                 <div class="pic"><img src="{{asset('img/team/lead_3.jpg')}}" class="img-fluid" alt=""></div>
                 <div class="member-info">
                     <h4>William Ouatara</h4>
-                    <span>CTO</span>
+                    <span>C&ocirc;te D'ivoire</span>
                     <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
                     <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
@@ -202,7 +202,7 @@
                 <div class="pic"><img src="{{asset('img/team/lead_4.jpg')}}" class="img-fluid" alt=""></div>
                 <div class="member-info">
                     <h4>Konan Aristide</h4>
-                    <span>Accountant</span>
+                    <span>Etats-Unis</span>
                     <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
                     <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
