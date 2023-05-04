@@ -6,6 +6,7 @@ $couleur_or :  rgb(214, 145, 66);
 $couleur_noir: #000;
 $taille_titre : 27px;
 $line_height : 35px;
+$cd: #a01313;
 *{
     margin: 0px;
     padding: 0px;
@@ -123,6 +124,8 @@ header .nava{
     background-color: rgb(238,168,84);
     transition : width 0.2s ease-out;
 }*/
+
+/* bouton nous rejoindre */
 .navbar-head .btn-rejoindre{
   background: $couleur_bois;
   color: #fff;
@@ -141,12 +144,6 @@ header .nava{
   i{
     margin-right: 5px;
   }
-}
-
-
-.navbar-head .menu_composant ul li a:hover::before {
-    width: 100%;
-
 }
 .nava.scrolled {
   background-color: $couleur_bois;
@@ -172,6 +169,49 @@ header .nava{
   border-radius: 5px;
   font-size: 16px;
   transition: all 0.4s ease;   
+}
+/* bouton nous dashboard */
+.navbar-head .btn-dashboard{
+  /* border: 2px solid #454545 ; */
+  color: #000;
+  background-color: #c3c3c3ac;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.4s ease;
+
+  &:hover{
+    background-color: #c3c3c3d4;
+    color: #000 !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all .4s ease;
+  }
+  i{
+    margin-right: 5px;
+  }
+}
+/* bouton nous dashboard */
+.navbar-head .btn-logout{
+  /* border: 2px solid #454545 ; */
+  color: #000;
+  background-color: #c3c3c3ac;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.4s ease;
+
+  &:hover{
+    background-color: #c3c3c3d4;
+    color: #000 !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all .4s ease;
+  }
+  i{
+    margin-right: 5px;
+  }
+  
 }
 /* affichage du menu hamburger en petit ecran*/
 @media screen and (max-width : 1091px) {
@@ -1186,6 +1226,58 @@ header .nava{
 # Nos PROGRAMMES
 --------------------------------------------------------------*/
 #page_program{
+  /* -----------------------Explication de programmes */
+#explication-program{
+  /* ------------------------- vision_1 -------------- */
+.program_explain .content h3 {
+  font-weight: 500;
+  font-size: 36px;
+  color: $couleur_bois;
+}
+
+.program_explain .content p {
+  margin: 30px 0;
+  color: #29231b8b;
+}
+
+.program_explain .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.program_explain .content ul li {
+  padding: 0 0 15px 26px;
+  position: relative;
+  font-size: 15px;
+}
+
+.program_explain .content ul i {
+  position: absolute;
+  font-size: 20px;
+  left: 0;
+  top: -3px;
+  color: $couleur_bois;
+}
+}
+
+
+  /* ---------------------PROGRAMMES-------------------- */
+  .filter{
+    display: flex;
+    .dropdown{
+      margin: 0px 40px 0px 0px;
+
+      button{
+        color: $couleur_bois;
+        border-color: $couleur_bois;
+        &:hover{
+          background-color: $couleur_bois;
+          transition: all .5s ease-in-out;
+          color: #e6e4e4;
+        }
+      }
+    }
+  }
   .programmes{
 
     display: flex !important;
@@ -1193,29 +1285,47 @@ header .nava{
   }
   .programme{
     overflow: hidden;
-    margin: 0px 20px 10px 10px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 0px 0px 50px 0px ;
+
     position: relative;
-    &:hover .image_program{
+    &:hover{
+      transition: all 1s ease-in-out;
+    }
+     .image_program {
+      position: relative;
+      .image_program-orateur{
+        opacity: 0;
+        display: flex;
+        position: absolute;
+        top: 0; bottom: 0;
+        left: 0;  right: 0;
+        background-color: #000000af;
+        color: #c6c1c1;
+      }
+      .image_program-orateur h3{
+        text-align: center;
+        align-self: center;
+        margin: auto;
+        padding: 10px;
+      }
       
+    }
+    &:hover .image_program-orateur{
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
     }
     .image_program img{
       margin: 0px 0px 15px 0px;
       border-radius: 10px;
-    border-bottom-right-radius: 0px !important; 
-    border-bottom-left-radius: 0px !important;
+      border-bottom-right-radius: 0px !important; 
+      border-bottom-left-radius: 0px !important;
       box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-      transform: scale(1);
-      transition: all 0.5s;
-      &:hover{
-        transform: scale(1.2);
-      }
+      
+      
     }
-   /*  &:hover  .image_program img{
-      transform: scale(1.2);
-    } */
+    
     .image_program .image_program_orateur{
       padding: 10px 10px;
       text-align: center;
@@ -1237,20 +1347,7 @@ header .nava{
       font-weight:400;
     
     }
-    .programme:hover .text_program .description_program::after {
-      content: "";
-      position: absolute;
-      display: block;
-      margin: 0px 0px -10px -18px;
-      width: 20px;
-      height: 1px;
-      background: #cbd6e9;
-      bottom: 0;
-      left: 0;
-      width: calc(100% + 50px)!important;
-      transition: all 1s ease-in-out;
-      
-      }
+    
      
     .text_program .description_program{
       line-height: 25px;
@@ -1277,6 +1374,10 @@ header .nava{
         border-bottom-left-radius: 0px !important; 
         margin-top: 15px ;
         padding: 6px 30px;
+      
+      }
+      button:hover{
+        background-color: #6e370f;
       }
     }
     .other_infos_program{
@@ -1742,6 +1843,8 @@ header .nava{
       padding-top: 4px;
     }
   }
-
+  .aryyyy{
+    
+  }
   /*# sourceMappingURL=style.css.map */
   

@@ -1,4 +1,4 @@
-@extends('layouts/app')
+@extends('layouts/base')
 
 @section('content')
 <main>
@@ -153,26 +153,26 @@
                 <div class="stat_membre  col-3" data-aos='fade-in' data-delay="0">
                     
                     <i class="bi bi-person-fill"></i>
-                    <p class="nbre_occurence">{{$nb_users}}</p>
+                    <span data-purecounter-start="0" data-purecounter-end="{{$nb_users}}" data-purecounter-duration="2" class="purecounter nbre_occurence d-block"></span>
                     <p>Membres</p>
 
                 </div>
                 <div class="stat_zone col-3" data-aos='fade-in' data-delay="200">
                    
                     <i class="bi bi-geo-fill"></i> <!-- icône zone -->
-                    <p class="nbre_occurence">{{$nb_zone}}</p>
+                    <span data-purecounter-start="0" data-purecounter-end="{{$nb_zone}}" data-purecounter-duration="2" class="purecounter nbre_occurence d-block"></span>
                     <p>Zone</p>
                 </div>
                 <div class="stat_team col-3" data-aos='fade-in' data-delay="100">
                    
                     <i class="mdi mdi-account-group"></i> <!-- icône groupe -->
-                    <p class="nbre_occurence">{{$nb_team}}</p>
+                    <span data-purecounter-start="0" data-purecounter-end="{{$nb_team}}" data-purecounter-duration="2" class="purecounter nbre_occurence d-block"></span>
                     <p>Team</p>
                 </div>
                 <div class="stat_event col-3" data-aos='fade-in' data-delay="900">
                    
                     <i class="bi bi-calendar-event"></i>
-                    <p class="nbre_occurence">{{$nb_event}}</p>
+                    <span data-purecounter-start="0" data-purecounter-end="{{$nb_event}}" data-purecounter-duration="2" class="purecounter nbre_occurence d-block"></span>
                     <p>Ev&eacute;nements</p>
     
                 </div>

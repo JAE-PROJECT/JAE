@@ -5,9 +5,9 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ForumController;
 use App\Http\Controllers\AccueilController;
 use App\Http\Controllers\AproposController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RejoindreController;
 use App\Http\Controllers\NosprogrammeController;
- 
 
 /*
 |--------------------------------------------------------------------------
@@ -19,20 +19,39 @@ use App\Http\Controllers\NosprogrammeController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+/* Route::get('/', function () {
+    return view('welcome');
+});
+ */
 // Les routes de la page d'accueil
 Route::get('/', [AccueilController::class, 'index'])->name('accueil');
 
 // Les routes de la page A Propos
-Route::get('/A-Propos', [AproposController::class, 'show'])->name('apropos');
+Route::get('/a-Propos', [AproposController::class, 'show'])->name('apropos');
 
 // Les routes de la page Blog
-Route::get('/Blog', [BlogController::class, 'show'])->name('blog');
+Route::get('/blog', [BlogController::class, 'show'])->name('blog');
 
 // Les routes de la page Forum
-Route::get('/Forum', [ForumController::class, 'show'])->name('forum');
+Route::get('/forum', [ForumController::class, 'show'])->name('forum');
 
 // Les routes de la page Nos Programmes
-Route::get('/Programme', [NosprogrammeController::class, 'show'])->name('programme');
+Route::get('/programme', [NosprogrammeController::class, 'show'])->name('programme');
 
 // Les routes de la page Nous Rejoindre
-Route::get('/Rejoindre', [RejoindreController::class, 'show'])->name('rejoindre');
+Route::get('/rejoindre', [RejoindreController::class, 'show'])->name('rejoindre');
+Route::post('/rejoindre', [RejoindreController::class, 'store'])->name('rejoindre_form');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';
+
