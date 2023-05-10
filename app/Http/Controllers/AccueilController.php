@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class AccueilController extends Controller
- { 
+ {
      /* public function __construct(){
     $this->middleware('auth');
 } */
@@ -21,6 +21,8 @@ class AccueilController extends Controller
             $nb_team = Team::all()->count();
             $nb_zone = Zone::all()->count();
             $nb_event = Event::all()->count();
+            /* $users = DB::table('users')->select('id')->where('email', 'emmanueljeanmiessan@gmail.com')->get();
+            dd($users); */
         return view('accueil', [
            'title' => $titre,
            'nb_users' => $nb_users,
@@ -29,6 +31,6 @@ class AccueilController extends Controller
            'nb_event' => $nb_event,
         ]);
 
-        
+
     }
 }

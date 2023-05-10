@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Document</title>
     <style>
         body {
@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .container {
     position: relative;
   }
@@ -41,7 +41,7 @@ p {
   margin-bottom: 50px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 }
-  
+
 a {
   text-decoration: none;
   color: #ddd;
@@ -151,6 +151,8 @@ input[type="submit"] {
     </style>
 </head>
 <body>
+    {{-- si la l'inscription à un programme a échouer en raison de la déconnexion de l'utilisateur --}}
+
     <div class="container">
         <form method="POST" action="{{ route('login') }}">
             @csrf
@@ -159,26 +161,31 @@ input[type="submit"] {
             <span class="error_message">{{ __($message) }}</span><br>
           @enderror
           <input type="email" id="email" name="email" autofocus autocomplete="username"  value="{{ old('email') }}" required placeholder="Email"><br>
-          
+
           <input id="password" type="password" name="password"  autocomplete="current-password" required placeholder="Mot de passe" ><br>
           <div class="remember">
             <input id="remember_me" type="checkbox" class="" name="remember">
             <label for="remember_me" class="">{{ __('Se souvenir de moi') }}</label> <br>
           </div>
-            
-            
+
+
           <input type="submit" value="Connexion"><br>
           @if (Route::has('password.request'))
             <a href="{{ route('password.request') }}" class="my-3">{{__('Mot de passe oublié ?')}}</a>
           @endif
         </form>
-      
+
         <div class="drop drop-1"></div>
         <div class="drop drop-2"></div>
         <div class="drop drop-3"></div>
         <div class="drop drop-4"></div>
         <div class="drop drop-5"></div>
     </div>
+    @if(session('failled_inscrip_program'))
+    <script>
+        alert(' {{ session('failled_inscrip_program')}}')
+    </script>
+    @endif
 </body>
 </html>
-    
+

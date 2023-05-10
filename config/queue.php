@@ -38,7 +38,8 @@ return [
             'driver' => 'database',
             'table' => 'jobs',
             'queue' => 'default',
-            'retry_after' => 90,
+            'retry_after' => 60, // Ajout de la clé retry_after à 60 s temps après lequel les travaux échouer pourront être relancer
+            'retry_until' => 1200,
             'after_commit' => false,
         ],
 

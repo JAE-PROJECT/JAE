@@ -115,7 +115,7 @@ header .nava {
   color: rgb(214, 145, 66);
 }
 
-/* SOULIGNEMENT DES ELEMENTS DU MENU 
+/* SOULIGNEMENT DES ELEMENTS DU MENU
 .navbar-head .menu_composant ul li a::before {
     content: '';
     position: absolute;
@@ -511,6 +511,7 @@ header .nava {
   font-size: 21px;
   font-weight: bolder;
 }
+
 .count-box {
   width: 100%;
   text-align: center;
@@ -852,11 +853,20 @@ header .nava {
 #fondateur {
   color: #262424;
   padding: 50px 0px 0px 0px;
+  /* .titre_section{
+  }
+  .fondateur_contenu{
+  } */
 }
 #fondateur .presentation_img {
   padding: 0px;
   /* box-shadow: 7px 7px 7px  #000; */
   margin-top: -20px;
+  /* img{
+  }
+  figcaption{
+
+  } */
 }
 #fondateur .presentation_text {
   padding: 10px 10px;
@@ -1128,6 +1138,18 @@ header .nava {
 }
 #page_program #explication-program {
   /* ------------------------- vision_1 -------------- */
+}
+#page_program #explication-program .already_inscrip_program {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+  font-weight: lighter;
+  opacity: 1;
+  margin: auto;
+  transition: opacity 0.5s;
+  z-index: 21;
 }
 #page_program #explication-program .program_explain .content h3 {
   font-weight: 500;

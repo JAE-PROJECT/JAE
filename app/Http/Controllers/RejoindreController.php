@@ -19,7 +19,7 @@ class RejoindreController extends Controller
            'zones' => $zones
         ]);
     }
-    public function store(Request $request):RedirectResponse{
+   /*  public function store(Request $request):RedirectResponse{
         
         $validated = $request->validate([
             'nom' => 'required|max:255|regex:/^[^\s]+$/',
@@ -52,5 +52,5 @@ class RejoindreController extends Controller
         $form_rejoindre -> save();
     
         return redirect('/');
-    }
+    } */
 }

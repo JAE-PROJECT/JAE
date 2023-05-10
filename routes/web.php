@@ -38,6 +38,7 @@ Route::get('/forum', [ForumController::class, 'show'])->name('forum');
 
 // Les routes de la page Nos Programmes
 Route::get('/programme', [NosprogrammeController::class, 'show'])->name('programme');
+Route::post('/programme', [NosprogrammeController::class, 'store'])->name('inscription_programme');
 
 // Les routes de la page Nous Rejoindre
 Route::get('/rejoindre', [RejoindreController::class, 'show'])->name('rejoindre');

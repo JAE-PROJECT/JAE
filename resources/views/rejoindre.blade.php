@@ -41,11 +41,12 @@
             </div>
 
             <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-                
 
-                <form action="{{ route('register') }}" method="post" role="form" class="php-email-form" id="form-rejoindre">
+
+                <form action="{{ route('register') }}" method="POST" role="form" class="php-email-form" id="form-rejoindre">
                 @csrf
-                    <div class="row">
+{{--                     @if($errors->any()) <div>{{ $errors->first() }}</div> @endif
+ --}}                    <div class="row">
                         <div class="form-group col-md-6">
                             <label for="nom">Nom</label>
                             <input type="text" id="nom" name="nom" class="form-control" value="{{ old('nom') }}" required>
@@ -60,7 +61,7 @@
                                 <div class="text-danger">{{ $message }}</div>
                             @enderror
                         </div>
-                           
+
                     </div>
 
                     <div class="row">
@@ -104,7 +105,7 @@
                                             type="password"
                                             name="password"
                                             required autocomplete="new-password" /> -->
-                            <input id="password" type="password" name="password" class="form-control" autocomplete="new-password" required >               
+                            <input id="password" type="password" name="password" class="form-control" autocomplete="new-password" required >
                             @error('password')
                                 <div class="text-danger">{{ __($message) }}</div>
                             @enderror
@@ -118,30 +119,29 @@
                            <!--  <x-text-input id="password_confirmation" class="block mt-1 w-full"
                                             type="password"
                                             name="password_confirmation" required autocomplete="new-password" />
-                                      -->       
+                                      -->
                             @error('password_confirmation')
                                 <div class="text-danger">{{ $message }}</div>
                             @enderror
                         </div>
                     </div>
-                    
+
 
                     <div class="row">
                         <div class="form-group col-md-12">
-                        <label for="zone">Zone</label>
-                        <select id="zone" name="zone" class="form-control">
-                            @foreach($zones as $zone)
-                                <option value="{{ old($zone->id) }}">{{$zone->nom_zone}}</option>
-                            @endforeach
-                        </select>
+                            <label for="zone">Zone</label>
+                            <select id="zone" name="zone" class="form-control">
+                                @foreach($zones as $zone)
+                                    <option value="{{ str($zone->id) }}">{{$zone->nom_zone}}</option>
+                                @endforeach
+                            </select>
+                            @error('zone')
+                                <div class="text-danger">{{ __($message) }}</div>
+                            @enderror
                         </div>
                     </div>
                     <p class="mx-5 text-center fw-light text_bas_form">Selectionnez votre zone en fonction de votre pays de résidence et non en fonction de votre nationalité</p>
-                    <div class="my-3">
-                        <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                    </div>
+
                     <div class="text-center"><button type="submit">J'intègre la JAE</button></div>
                 </form>
             </div>
@@ -150,7 +150,7 @@
 
         </div>
         </section><!-- End rejoindre Section -->
-        
+
     </main>
-   
+
 @endsection('content')

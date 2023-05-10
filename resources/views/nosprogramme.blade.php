@@ -8,7 +8,19 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
         </section>
-        <section id="explication-program" class=" bg-color">
+        <section id="explication-program" class=" bg-color position-relative">
+                    @if (session('already_inscrip_program'))
+                        <div id="already_inscrip_program" class="already_inscrip_program text-danger" >
+                            <i class="bi bi-exclamation-circle-fill m-2"></i>{{session('already_inscrip_program')}}
+                        </div>
+                    @endif
+                    @if (session('success_inscrip_program'))
+                    {{-- juste à cause du style nous avons pris la même class et le même id que le precedent --}}
+                    <div id="already_inscrip_program" class="already_inscrip_program text-success" >
+                        <i class="bi bi-check-circle-fill m-2"></i>{{session('success_inscrip_program')}}
+                    </div>
+
+                    @endif
             <div class="container program_explain" data-aos="fade-up">
 
                 <div class="row gy-4" data-aos="fade-up">
@@ -83,71 +95,77 @@
 
                 </div>
 
-                <div class="programmes row">
+                <div class="programmes row position-relative">
 
-                <!-- Boucle à travers chaque programme -->
-                @foreach($programmes as $programme)
-                    @if((!isset($_GET['statut']) || $programme->statut == $_GET['statut']) && (!isset($_GET['type']) || $programme->type_id == $_GET['type']))
-                    <div class="programme col-lg-3 col-md-6 col-12 mx-3" data-aos="zoom-in">
+                     {{-- Boucle à travers chaque programme --}}
+                    @foreach($programmes as $programme)
+                        @if((!isset($_GET['statut']) || $programme->statut == $_GET['statut']) && (!isset($_GET['type']) || $programme->type_id == $_GET['type']))
+                        <div class="programme col-lg-3 col-md-6 col-12 mx-3" data-aos="zoom-in">
 
-                        <!-- Image du programme -->
-                        <div class="image_program">
-                            <img src="{{asset('img/about.jpg')}}" alt="">
-                            <div class="image_program-orateur">
-                                <h3> ORATEUR: {{str_replace(" - "," & ","$programme->orateur")}}</h3>
+                            {{-- <!-- Image du programme --> --}}
+                            <div class="image_program">
+                                <img src="{{asset('img/about.jpg')}}" alt="">
+                                <div class="image_program-orateur">
+                                    <h3> ORATEUR: {{str_replace(" - "," & ","$programme->orateur")}}</h3>
+                                </div>
+                            </div>
+
+                            <!-- Titre et description du programme -->
+                            <div class="text_program px-3">
+                                <h3 class="titre_program">{{$programme->event_titre}}</h3>
+                                <p class="description_program">{{$programme->event_description}}</p>
+                            </div>
+                             {{-- <div class="d-none">
+                                {{$programme->statut = "fermer"}}
+                            </div> --}}
+                            <!-- Bouton d'inscription -->
+                            @if(strtolower($programme->statut) != 'ouvert')
+                                <div class="d-none bouton_inscrire pt-3">
+                                    <button> Ferm&eacute;</button>
+                                </div>
+                            @else
+                                <div class="d-block bouton_inscrire pt-3">
+                                    <form action="{{ route('inscription_programme') }}" method="POST">
+                                        @csrf
+                                        <input type="hidden" name="event_id" value="{{ $programme->id }}">
+                                        <button type="submit">S'inscrire</button>
+                                    </form>
+                                </div>
+                            @endif
+
+                            <!-- Informations supplémentaires sur le programme (nombre de places, date et heure) -->
+                            <div class="other_infos_program mt-3">
+                                <span>
+                                    <!-- <i class="bi bi-person-fill"></i> -->{{$programme->nombre_place??'0'}} inscrits
+                                </span>
+                                <span>
+
+                                </span>
+                                <span>
+                                    <i class="bi bi-calendar-event"></i>{{$programme->event_date}}
+                                    <i class="bi bi-hourglass-split"></i>{{$programme->event_heure}}
+                                </span>
+                            </div>
+
+                            <!-- Statut du programme (ouvert ou fermé) -->
+                            <div class="statut_program">
+                                <span>
+                                    <!-- Si le programme est ouvert, affiche une coche verte, sinon affiche une croix rouge -->
+                                    @if (strtolower($programme->statut) == 'ouvert')
+                                        <i class="bi bi-record2 text-success"></i>
+                                    @else
+                                        <i class="bi bi-x text-danger"></i>
+                                    @endif
+                                    {{$programme->statut}}
+                                </span>
                             </div>
                         </div>
-
-                        <!-- Titre et description du programme -->
-                        <div class="text_program px-3">
-                            <h3 class="titre_program">{{$programme->event_titre}}</h3>
-                            <p class="description_program">{{$programme->event_description}}</p>
-                        </div>
-
-                        <!-- Bouton d'inscription -->
-                        @if($programme->statut != 'ouvert')
-                            <div class="d-none bouton_inscrire pt-3">
-                                <button> Ferm&eacute;</button>
-                            </div>
-                        @else
-                            <div class="d-block bouton_inscrire pt-3">
-                                <button> S'inscrire</button>
-                            </div>
                         @endif
-
-                        <!-- Informations supplémentaires sur le programme (nombre de places, date et heure) -->
-                        <div class="other_infos_program mt-3">
-                            <span>
-                                <!-- <i class="bi bi-person-fill"></i> -->{{$programme->nombre_place??'0'}} inscrits
-                            </span>
-                            <span>
-
-                            </span>
-                            <span>
-                                <i class="bi bi-calendar-event"></i>{{$programme->event_date}}
-                                <i class="bi bi-hourglass-split"></i>{{$programme->event_heure}}
-                            </span>
-                        </div>
-
-                        <!-- Statut du programme (ouvert ou fermé) -->
-                        <div class="statut_program">
-                            <span>
-                                <!-- Si le programme est ouvert, affiche une coche verte, sinon affiche une croix rouge -->
-                                @if ($programme->statut = "ouvert")
-                                    <i class="bi bi-record2 text-success"></i>
-                                @else
-                                    <i class="bi bi-x text-danger"></i>
-                                @endif
-                                {{$programme->statut}}
-                            </span>
-                        </div>
-                    </div>
-                    @endif
-                @endforeach
-                        
+                    @endforeach
+                </div>
             </div>
         </section>
-        
+
     </main>
-   
+
 @endsection('content')

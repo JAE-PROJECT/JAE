@@ -12,12 +12,12 @@ $cd: #a01313;
     padding: 0px;
     box-sizing: border-box;
     font-family: sans-serif ;
-    
+
 }
 body{
     overflow-x: hidden;
 
-    
+
 }
 
 .button{
@@ -40,7 +40,7 @@ header{
     z-index: 10;
 }
 header .nava{
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@ header .nava{
     justify-content: space-between;
     position: relative;
     z-index: 10;
-   
+
 }
 .navbar-head .img-logo{
     justify-self:flex-start;
@@ -67,7 +67,7 @@ header .nava{
     z-index: 31;
 }
 .bouton-menu .menu-toggle{
-    
+
     margin-right: 30px;
     position: absolute;
     top: 27%; right: 0;
@@ -80,7 +80,7 @@ header .nava{
 }
 .navbar-head .menu_composant{
     align-self: center;
-    
+
 }
 .navbar-head .menu_composant ul{
     display:flex;
@@ -113,7 +113,7 @@ header .nava{
 .navbar-head .menu_composant ul li a:hover{
     color: $couleur_or;
 }
-/* SOULIGNEMENT DES ELEMENTS DU MENU 
+/* SOULIGNEMENT DES ELEMENTS DU MENU
 .navbar-head .menu_composant ul li a::before {
     content: '';
     position: absolute;
@@ -148,27 +148,27 @@ header .nava{
 .nava.scrolled {
   background-color: $couleur_bois;
   transition: all .5s ease-in-out;
-  
+
 }
 .scrolled .btn-rejoindre{
- 
+
     background: $couleur_or;
     color: $couleur_bois;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    transition: all 0.4s ease;   
+    transition: all 0.4s ease;
 }
 .scrolled .btn-rejoindre:hover{
- 
+
   background: $couleur_bois;
   color: #fff !important ;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  transition: all 0.4s ease;   
+  transition: all 0.4s ease;
 }
 /* bouton nous dashboard */
 .navbar-head .btn-dashboard{
@@ -211,7 +211,7 @@ header .nava{
   i{
     margin-right: 5px;
   }
-  
+
 }
 /* affichage du menu hamburger en petit ecran*/
 @media screen and (max-width : 1091px) {
@@ -222,10 +222,10 @@ header .nava{
         display: flex;
         justify-content: space-between;
         border-radius: 0px 0px 5px 5px ;
-        
+
         padding: 0px;
         width: 100%;
-       
+
     }
     .menu_composant{
        position: absolute;
@@ -243,7 +243,7 @@ header .nava{
        transition: margin ease-in-out 0.8s;
        background-color: #0000006b;
        z-index: 30;
-       
+
     }
     .menu_composant ul{
         align-self: center;
@@ -256,7 +256,7 @@ header .nava{
     .mobile-menu{
         margin-top: 0px;
         transition: margin ease-in-out 0.8s;
-       
+
     }
     .navbar-head .menu_composant ul li{
         margin: 17px 0px;
@@ -269,7 +269,7 @@ header .nava{
       width: 100%;
       margin: 0px !important;
       transition: all 0.4s ease;
-    
+
       &:hover{
         background: $couleur_or;
         color: $couleur_bois !important;
@@ -280,7 +280,7 @@ header .nava{
         margin-right: 5px;
       }
     }
-    
+
     .bouton-menu{
         display: block;
         transition: all ease-in-out 1s;
@@ -296,18 +296,18 @@ header .nava{
         rotate: -135deg;
         position: absolute;
         top: 60%;
-       
+
     }
     .button-close .hr2{
         opacity: 0 !important;
-       
+
     }
     .button-close .hr3{
         rotate: 135deg;
         position: absolute;
         top: 60%;
     }
-    
+
 }
 
 /*=========================================
@@ -329,11 +329,11 @@ header .nava{
     100%{
         transform: translateY(-7px);
     }
-    
+
 }
 .filigrane{
     position: absolute;
-    
+
     color: #fff;
     font-size: 50px;
     transform: translateX(-50%), translateY(50%);
@@ -382,7 +382,7 @@ header .nava{
       height: 100%;
       position: absolute;
       top: 0;
-      left: 0; 
+      left: 0;
       background: linear-gradient(120deg, rgba(185, 127, 56, 0.697) 20%, $couleur_bois);
       z-index: -1;
     }
@@ -390,7 +390,7 @@ header .nava{
     .presentation_msg{
         color: #F5F5F5;
         width: 100%;
-        align-self: center; 
+        align-self: center;
     }
 
     .presentation_title{
@@ -401,7 +401,7 @@ header .nava{
     }
     .presentation_title .titre{
         font-size: 40px;
-       
+
     }
     .presentation_subtitle{
         margin: -12px 0px 20px 0px;
@@ -417,7 +417,7 @@ header .nava{
         margin-bottom: 15px;
         font-size: 17px;
         text-align: center;
-    
+
     }
 
     .btn_presentation{
@@ -433,7 +433,7 @@ header .nava{
         margin: 0px auto;
         animation: UpDown 1.3s ease 0s infinite alternate;
         overflow:hidden;
-    
+
     }
 }
 /* --------------------- OBJECTIFS ------------------*/
@@ -445,7 +445,7 @@ header .nava{
         font-size: $taille_titre;
         margin-bottom: 30px;
         color: $couleur_bois;
-       
+
     }
     .objectif_title h2{
       display: block;
@@ -479,15 +479,15 @@ header .nava{
          }
          .objectif_description_1_button span{
           text-align: center;
-          
+
           color: #F5F5F5;
           transition: all .5s ease;
          }
-         
+
          .objectif_video_1{
           video {
-            width: 640px; 
-            height: 360px; 
+            width: 640px;
+            height: 360px;
           }
           video:not([controls]) {
             object-fit: cover;
@@ -505,7 +505,7 @@ header .nava{
 
 /* --------------------- STATISTIQUE ------------------*/
 #statistique {
-   background: url("../img/bg9.jpg") fixed; 
+   background: url("../img/bg9.jpg") fixed;
   /* background-color: #0e0f15; */
   background-position: center;
   background-size: cover;
@@ -514,7 +514,7 @@ header .nava{
   transition: all 0.5s ease;
   position: relative;
   z-index: 3;
-  
+
   &::before{
     content: "";
   display: block;
@@ -524,33 +524,27 @@ header .nava{
   top: 0; bottom: 0;
   left: 0; right: 0;
   background: linear-gradient(120deg, rgba(48, 34, 19, 0.697) 20%, $couleur_bois);
-  
+
   z-index: 0;
 }
 
   .statistique_flex {
-   
+
     text-align: center;
    color: white;
   }
 
   .statistique_flex .nbre_occurence {
-    font-size: 30px; 
+    font-size: 30px;
     color: #f5f5dce0;
   }
 
   .statistique_flex i {
     font-size: 21px;
     font-weight: bolder;
-   
-    
-  }
-  .statistique_flex p:nth-last-child(1){
-  }
 
-  .stat_membre {
+
   }
-  
 }
 .count-box {
   width: 100%;
@@ -567,7 +561,7 @@ header .nava{
   margin: auto;
 }
 
- 
+
 /* --------------------- Team ------------------*/
 #team{
   .team_title{
@@ -577,9 +571,9 @@ header .nava{
          color: $couleur_bois;
       }
   }
-  
+
   .presentation img{
-    border-radius: 10px; /* Si cette valeur est modifié vous devriez aussi modifier le bordeur raduis de info-presentation et info-presentation:hover */ 
+    border-radius: 10px; /* Si cette valeur est modifié vous devriez aussi modifier le bordeur raduis de info-presentation et info-presentation:hover */
   }
   .info-presentation{
     border-radius: 10px;
@@ -593,8 +587,8 @@ header .nava{
     left: 12px;
     transition: all 0.6s;
     background: rgba(0, 0, 0, 0.8);
-    
-    
+
+
   }
   .info-presentation:hover{
     opacity: 0.80;
@@ -608,7 +602,7 @@ header .nava{
    opacity:1;
    z-index:7;
   }
-  
+
   .info-presentation h4 {
     font-size: 18px;
     color: #fff;
@@ -616,7 +610,7 @@ header .nava{
     color: #fff;
     margin-bottom: 0px;
   }
-  
+
   .info-presentation p {
     color: #f9fcfe;
     font-size: 14px;
@@ -633,8 +627,8 @@ header .nava{
       bottom: 0;
 
     }
-  
-  
+
+
 }
 }
 
@@ -658,34 +652,34 @@ header .nava{
       color:inherit;
       text-decoration: none;
     }
-    
+
     &:hover{
       box-shadow: 0px 0px 50px rgba(0,0,0,0.3);
     }
-    
-  } 
+
+  }
   .card__date{
     position: absolute;
     top: 20px;
     right: 20px;
-  
+
     width: 45px;
     height: 45px;
     padding-top: 10px;
-  
+
     color: #FFF;
     text-align: center;
     line-height: 13px;
     font-weight: bold;
-  
+
     background-color: $couleur_bois;
     border-radius: 50%;
-  
+
     &__day{
       display: block;
       font-size: 14px;
     }
-  
+
     &__month{
       display: block;
       font-size: 10px;
@@ -697,14 +691,14 @@ header .nava{
     overflow: hidden;
     background-color: #000;
     transition: height .5s;
-  
+
     img{
       display: block;
       opacity: 1;
       transition: opacity .5s, transform .5s;
       transform: scale(1);
     }
-  
+
     .card:hover & img{
       opacity: 0.6;
       transform: scale(1.2);
@@ -718,7 +712,7 @@ header .nava{
     padding: 20px;
     height: 185px;
     transition: height .5s;
-  
+
     .card:hover &{ height: 185px + 145px; }
   }
   .card__description{
@@ -726,19 +720,19 @@ header .nava{
     left: 20px;
     right: 20px;
     bottom: 65px;
-  
+
     margin: 0;
     padding: 0;
-  
+
     color: #666C74;
     font-size: 14px;
     line-height: 27px;
-  
+
     opacity: 0;
     transition: opacity .5s - 0.1s, transform .5s - 0.1s;
     transition-delay: 0s;
     transform: translateY(25px);
-  
+
     .card:hover &{
       opacity: 1;
       transition-delay: 0.1s;
@@ -750,10 +744,10 @@ header .nava{
     bottom: 20px;
     left: 20px;
     right: 20px;
-  
+
     font-size: 11px;
     color: #A3A9AB;
-  
+
     .icon--comment{
       margin-left: 12px;
     }
@@ -772,28 +766,28 @@ header .nava{
   .card__title{
     margin: 0;
     padding: 0 0 10px 0;
-  
+
     font-size: 22px;
     color: #000;
     font-weight: bold;
-  
+
     .card:hover &{
       animation: titleBlur .5s;
     }
   }
-  
+
   .card__subtitle{
     margin: 0;
     padding: 0 0 10px 0;
-  
+
     font-size: 19px;
     color: $couleur_bois;
-  
+
     .card:hover &{
       animation: subtitleBlur .5s;
     }
   }
-  
+
   @keyframes titleBlur {
     0%{
       opacity:0.6;
@@ -804,7 +798,7 @@ header .nava{
       text-shadow: 0px 5px 5px rgba(0,0,0,0);
     }
   }
-  
+
   @keyframes subtitleBlur {
     0%{
       opacity:0.6;
@@ -836,7 +830,7 @@ header .nava{
     display: flex;
     align-items: center;
     margin-bottom: 7px;
-    
+
   }
   .personne_temoignant .image_personne{
     margin-right: 10px;
@@ -855,10 +849,10 @@ header .nava{
     }
    .info_personne_nom{
       font-weight: bolder;
-    } 
+    }
     .info_personne_etoile{
       color: $couleur_bois;
-      
+
     }
   }
   .temoignagne_text{
@@ -892,7 +886,7 @@ header .nava{
   }
 }
 #banniere_apropos{
-  background: url("../img/bg9.jpg"); 
+  background: url("../img/bg9.jpg");
   /* background-color: #0e0f15; */
   background-position: center;
   background-size: cover;
@@ -901,7 +895,7 @@ header .nava{
   transition: all 0.5s ease;
   position: relative;
   z-index: 3;
-  
+
   &::before{
     content: "";
   display: block;
@@ -918,7 +912,7 @@ header .nava{
 
   .titre_page{
     text-align: center;
-  
+
     h2{
       font-size: 45px;
       font-weight: bold;
@@ -934,19 +928,19 @@ header .nava{
 #fondateur{
   color: #262424;
   padding: 50px 0px 0px 0px;
-  .titre_section{
+  /* .titre_section{
   }
   .fondateur_contenu{
-  }
+  } */
   .presentation_img{
     padding: 0px;
     /* box-shadow: 7px 7px 7px  #000; */
     margin-top: -20px;
-    img{
+    /* img{
     }
     figcaption{
 
-    }
+    } */
   }
   .presentation_text{
     padding: 10px 10px;
@@ -965,7 +959,7 @@ header .nava{
       margin-bottom: -20px;
     }
   }
-  
+
   .presentation_reseaux_sociaux{
     display: flex;
     justify-content: space-between;
@@ -1052,10 +1046,10 @@ header .nava{
       font-weight: lighter;
       color: $couleur_or;
       font-size: 40px;
-      
+
     }
     p{
-  
+
       text-align: justify;
       line-height: $line_height;
     }
@@ -1228,6 +1222,18 @@ header .nava{
 #page_program{
   /* -----------------------Explication de programmes */
 #explication-program{
+    .already_inscrip_program {
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+        font-weight: lighter;
+        opacity: 1;
+        margin: auto;
+        transition: opacity 0.5s;
+        z-index: 21;
+    }
   /* ------------------------- vision_1 -------------- */
 .program_explain .content h3 {
   font-weight: 500;
@@ -1282,6 +1288,7 @@ header .nava{
 
     display: flex !important;
     flex-direction: row;
+
   }
   .programme{
     overflow: hidden;
@@ -1310,7 +1317,7 @@ header .nava{
         margin: auto;
         padding: 10px;
       }
-      
+
     }
     &:hover .image_program-orateur{
       opacity: 1;
@@ -1319,13 +1326,13 @@ header .nava{
     .image_program img{
       margin: 0px 0px 15px 0px;
       border-radius: 10px;
-      border-bottom-right-radius: 0px !important; 
+      border-bottom-right-radius: 0px !important;
       border-bottom-left-radius: 0px !important;
       box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-      
-      
+
+
     }
-    
+
     .image_program .image_program_orateur{
       padding: 10px 10px;
       text-align: center;
@@ -1345,10 +1352,10 @@ header .nava{
       position: relative;
       color: $couleur_noir;
       font-weight:400;
-    
+
     }
-    
-     
+
+
     .text_program .description_program{
       line-height: 25px;
       position: relative;
@@ -1358,23 +1365,23 @@ header .nava{
       font-size: 15px;
       font-weight: lighter;
       padding: 0px 10px 0px 0px;
-      
+
     }
     .text_program .description_program::first-letter{
       text-transform: uppercase;
     }
     .bouton_inscrire{
-      
+
       button{
         background-color: $couleur_bois;
         color: #fff;
         /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
         border-radius: 5px;
-        border-top-left-radius: 0px !important; 
-        border-bottom-left-radius: 0px !important; 
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
         margin-top: 15px ;
         padding: 6px 30px;
-      
+
       }
       button:hover{
         background-color: #6e370f;
@@ -1404,8 +1411,8 @@ header .nava{
       position: absolute;
       top: 15px; right: 0px ;
       padding: 6px 6px 6px 6px;
-      border-top-left-radius: 3px !important; 
-        border-bottom-left-radius: 20px !important; 
+      border-top-left-radius: 3px !important;
+        border-bottom-left-radius: 20px !important;
       text-align: end;
       text-transform: capitalize;
       background-color: $couleur_or;
@@ -1446,7 +1453,7 @@ header .nava{
 
  /* ----------------------Bannière nous rejoindre -------------*/
  #banniere_nous_rejoindre{
-  background: url("../img/bg9.jpg"); 
+  background: url("../img/bg9.jpg");
   /* background-color: #0e0f15; */
   background-position: center;
   background-size: cover;
@@ -1455,7 +1462,7 @@ header .nava{
   transition: all 0.5s ease;
   position: relative;
   z-index: 3;
-  
+
   &::before{
     content: "";
   display: block;
@@ -1472,7 +1479,7 @@ header .nava{
 
   .titre_page{
     text-align: center;
-  
+
     h2{
       font-size: 45px;
       font-weight: bold;
@@ -1693,16 +1700,16 @@ header .nava{
     font-size: 14px;
     background: $couleur_bois;
   }
-  
+
   #footer .footer-top {
     padding: 60px 0 30px 0;
     background: #fffffff4;
   }
-  
+
   #footer .footer-top .footer-rejoindre {
     margin-bottom: 30px;
   }
-  
+
   #footer .footer-top .footer-rejoindre h3 {
     font-size: 28px;
     margin: 0 0 10px 0;
@@ -1712,7 +1719,7 @@ header .nava{
     font-weight: 600;
     color: #000;
   }
-  
+
   #footer .footer-top .footer-rejoindre p {
     font-size: 14px;
     line-height: 24px;
@@ -1720,7 +1727,7 @@ header .nava{
     font-family: "Jost", sans-serif;
     color: #5e5e5e;
   }
-  
+
   #footer .footer-top h4 {
     font-size: 16px;
     font-weight: bold;
@@ -1728,17 +1735,17 @@ header .nava{
     position: relative;
     padding-bottom: 12px;
   }
-  
+
   #footer .footer-top .footer-links {
     margin-bottom: 30px;
   }
-  
+
   #footer .footer-top .footer-links ul {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  
+
   #footer .footer-top .footer-links ul i {
     padding-right: 2px;
     color: $couleur_bois;
@@ -1746,29 +1753,29 @@ header .nava{
     line-height: 1;
     font-weight: bolder;
   }
-  
+
   #footer .footer-top .footer-links ul li {
     padding: 10px 0;
     display: flex;
     align-items: center;
   }
-  
+
   #footer .footer-top .footer-links ul li:first-child {
     padding-top: 0;
   }
-  
+
   #footer .footer-top .footer-links ul a {
     color: #777777;
     transition: 0.3s;
     display: inline-block;
     line-height: 1;
   }
-  
+
   #footer .footer-top .footer-links ul a:hover {
     text-decoration: none;
     color: rgb(199, 141, 70);
   }
-  
+
   #footer .footer-top .social-links a {
     font-size: 18px;
     display: inline-block;
@@ -1783,7 +1790,7 @@ header .nava{
     height: 36px;
     transition: 0.3s;
   }
-  
+
   #footer .footer-top .social-links a:hover {
     background: $couleur_or;
     text-decoration: none;
@@ -1802,22 +1809,22 @@ header .nava{
     padding: 3px;
     transition: background ease-in-out .5s;
   }
-  
+
   #footer .footer-bottom {
     padding-top: 30px;
     padding-bottom: 30px;
     color: #fff;
   }
-  
+
   #footer .copyright {
     float: left;
   }
-  
+
   #footer .credits {
     float: right;
     font-size: 13px;
   }
-  
+
   #footer .credits a {
     transition: 0.3s;
     color: $couleur_or;
@@ -1826,9 +1833,9 @@ header .nava{
   #footer .credits a:hover {
     color: $couleur_noir;
     transition: 0.3s;
-    
+
   }
-  
+
   @media (max-width: 768px) {
     #footer .footer-bottom {
       padding-top: 20px;
@@ -1843,8 +1850,4 @@ header .nava{
       padding-top: 4px;
     }
   }
-  .aryyyy{
-    
-  }
   /*# sourceMappingURL=style.css.map */
-  
