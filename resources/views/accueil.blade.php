@@ -23,7 +23,7 @@
     </section>
     <section id="objectif" class="bg-color">
         <div class="container" data-aos="fade-up" >
-           
+
            <div class ="objectif_1 row  flex-column flex-lg-row  jutify-content-between align-items-md-center">
                 <div class="objectif_description_1 col-lg-6  d-flex flex-column align-self-center my-4 my-lg-0" data-aos="fade-right" data-aos-delay="100">
                     <!-- <div class="objectif_title">
@@ -31,18 +31,18 @@
                     </div> -->
                     <h4 class="d-block objectif_description_1_title text-center mb-4 mb-lg-3 text-lg-start">Objectifs De La JAE</h4>
                     <p class="mt-1 txt-our objectif_description_1_paragraphe">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Quidem laboriosam vero ab fuga dolorum perferendis voluptatem recusandae, 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem laboriosam vero ab fuga dolorum perferendis voluptatem recusandae,
                     reprehenderit beatae consectetur molestiae asperiores, similique
-                    quasi dolores qui assumenda aperiam. Sit, aspernatur.
+                    quasi dolores qui assumenda aperiam. Sit.
                     </p>
                     <div>
                       <a href="{{route('apropos')}}" class=" objectif_description_1_button w-50">
                         <span class="btn">En Savoir Plus</span>
                       </a>
                     </div>
-                    
-                   
+
+
                 </div>
                 <div class="objectif_video_1 col-lg-6 mx-auto d-block" data-aos="fade-left" data-aos-delay="100">
                     <video class="video_objectif" width="640" height="360" controls preload="auto" >
@@ -59,13 +59,13 @@
                     <h4 class="d-block mx-auto fw-light">Lorem, ipsum</h4>
                     <p class="mt-3 txt-our">
                         Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. 
-                        Explicabo sequi nam numquam 
+                        adipisicing elit.
+                        Explicabo sequi nam numquam
                         tenetur doloribus vero tempora a quos earum? Obcaecati itaque facilis possimus doloremque nostrum
                         repudiandae nobis quia voluptates animi!
                     </p>
                 </div>
-            </div> 
+            </div>
              -->
         </div>
     </section>
@@ -87,7 +87,7 @@
                     <h4>Marcus Doe</h4>
                     <p>CEO</p>
                   </div>
-                  <a href="portfolio1" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle team_icon"></i></a> 
+                  <a href="portfolio1" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle team_icon"></i></a>
                 </div>
               </div>
             </div>
@@ -103,7 +103,7 @@
                     <h4>Marcus Doe</h4>
                     <p>CEO</p>
                   </div>
-                  <a href="portfolio2" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle team_icon"></i></a> 
+                  <a href="portfolio2" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle team_icon"></i></a>
                 </div>
               </div>
             </div>
@@ -120,8 +120,8 @@
                     <h4>Marcus Doe</h4>
                     <p>CEO</p>
                   </div>
-                  <a href="portfolio3" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle team_icon"></i></a> 
-                  
+                  <a href="portfolio3" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle team_icon"></i></a>
+
                 </div>
             </div>
           </div>
@@ -139,42 +139,42 @@
                     <h4>Marcus Doe</h4>
                     <p>CEO</p>
                   </div>
-                  <a href="portfolio4" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle team_icon"></i></a> 
+                  <a href="portfolio4" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle team_icon"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          
+
         </div>
     </section>
     <section id="statistique">
         <div class="container">
             <div class="statistique_flex row">
                 <div class="stat_membre  col-3" data-aos='fade-in' data-delay="0">
-                    
+
                     <i class="bi bi-person-fill"></i>
                     <span data-purecounter-start="0" data-purecounter-end="{{$nb_users}}" data-purecounter-duration="2" class="purecounter nbre_occurence d-block"></span>
                     <p>Membres</p>
 
                 </div>
                 <div class="stat_zone col-3" data-aos='fade-in' data-delay="200">
-                   
+
                     <i class="bi bi-geo-fill"></i> <!-- icône zone -->
                     <span data-purecounter-start="0" data-purecounter-end="{{$nb_zone}}" data-purecounter-duration="2" class="purecounter nbre_occurence d-block"></span>
                     <p>Zone</p>
                 </div>
                 <div class="stat_team col-3" data-aos='fade-in' data-delay="100">
-                   
+
                     <i class="mdi mdi-account-group"></i> <!-- icône groupe -->
                     <span data-purecounter-start="0" data-purecounter-end="{{$nb_team}}" data-purecounter-duration="2" class="purecounter nbre_occurence d-block"></span>
                     <p>Team</p>
                 </div>
                 <div class="stat_event col-3" data-aos='fade-in' data-delay="900">
-                   
+
                     <i class="bi bi-calendar-event"></i>
                     <span data-purecounter-start="0" data-purecounter-end="{{$nb_event}}" data-purecounter-duration="2" class="purecounter nbre_occurence d-block"></span>
                     <p>Ev&eacute;nements</p>
-    
+
                 </div>
             </div>
         </div>
@@ -199,7 +199,7 @@
               <div class="card__body">
                 <div class="card__category"><a href="#">Afrique</a></div>
                 <h2 class="card__title"><a href="#">Lorem ipsum dolor Lorem ipsum</a></h2>
-                <div class="card__subtitle">A Head in the Polls</div> 
+                <div class="card__subtitle">A Head in the Polls</div>
                 <p class="card__description">
                   With a warning label this big, you know they gotta be fun! This is the worst part. The calm before the battle. No! The cat shelter's on to me.
 
@@ -377,7 +377,7 @@
 
       </div>
     </section>
-    
+
 </main>
-   
+
 @endsection('content')
