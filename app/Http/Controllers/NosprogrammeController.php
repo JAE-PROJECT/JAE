@@ -58,7 +58,7 @@ class NosprogrammeController extends Controller
             return redirect()->back()->with('success_inscrip_program', 'Vous êtes bien inscrit au programme');
         }else {
 
-            return redirect()->route('login')->with('failled_inscrip_program', 'Vous devez vous connectez avant de vous inscrire à un programme');
+            return redirect()->route('login');
 
         }
     }

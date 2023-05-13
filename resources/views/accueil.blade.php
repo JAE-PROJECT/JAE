@@ -31,10 +31,11 @@
                     </div> -->
                     <h4 class="d-block objectif_description_1_title text-center mb-4 mb-lg-3 text-lg-start">Objectifs De La JAE</h4>
                     <p class="mt-1 txt-our objectif_description_1_paragraphe">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quidem laboriosam vero ab fuga dolorum perferendis voluptatem recusandae,
-                    reprehenderit beatae consectetur molestiae asperiores, similique
-                    quasi dolores qui assumenda aperiam. Sit.
+                        <i class="bi bi-check-circle-fill"></i> <span class="fw-bold">Sur le plan social: </span> Bâtir une communauté avec des mœurs et des valeurs saines prônant l'entraide et la solidarité sans distinction de provenance.
+
+                       <br><i class="bi bi-check-circle-fill"></i> <span class="fw-bold">Sur le plan éducationnel:</span> Offrir à la jeunesse une formation adaptée au développement de leurs potentiels individuels afin de faire de chacun d'eux une élite dans son domaine.
+
+                        <br><i class="bi bi-check-circle-fill"></i> <span class="fw-bold">Sur le plan financier:</span>  Développer l'économie de l'Afrique tout entière en optimisant la richesse par individu via l'entrepreneuriat
                     </p>
                     <div>
                       <a href="{{route('apropos')}}" class=" objectif_description_1_button w-50">
@@ -53,7 +54,7 @@
             </div>
             <!-- <div class ="objectif_2 row flex-column  flex-lg-row  jutify-content-between ">
                 <div class="objectif_image_2 col-lg-5 pt-lg-5  mx-auto d-block" data-aos="fade-right">
-                    <img src="{{asset('img/lion_1.jpg')}}" alt="oups" class ="w-100">
+                    <img src="{{--asset('img/lion_1.jpg')--}}" alt="oups" class ="w-100">
                 </div>
                 <div class="objectif_description_2 col-lg-7 d-flex flex-column align-self-center  content" data-aos="fade-left" >
                     <h4 class="d-block mx-auto fw-light">Lorem, ipsum</h4>

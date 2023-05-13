@@ -8,7 +8,7 @@ section{
    padding-bottom: 30px;
 }
 section.bg-color{
-    background-color: #a9581e0b;
+    background-color: #7b3f1520;
 }
 
 /* _________________BOUTON______________ */
@@ -16,7 +16,7 @@ section.bg-color{
     background-color: #8B4513 !important;
     border: none !important;
   }
-  
+
 .button:hover {
     background-color: rgb(199, 141, 70) !important;
     box-shadow: 0 6px 35px -13px #000;

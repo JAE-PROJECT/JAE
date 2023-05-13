@@ -5,7 +5,7 @@ $couleur_bois:  #8B4513;
 $couleur_or :  rgb(214, 145, 66);
 $couleur_noir: #000;
 $taille_titre : 27px;
-$line_height : 35px;
+$line_height : 33px;
 $cd: #a01313;
 *{
     margin: 0px;
@@ -464,6 +464,12 @@ header .nava{
          .objectif_description_1_paragraphe{
             text-align: justify;
             line-height: $line_height;
+            padding-left: 10px;
+            i{
+
+                margin-right: 7px;
+                color: $couleur_bois;
+            }
          }
 
          .objectif_description_1_button{
@@ -1496,7 +1502,7 @@ header .nava{
   border-top: 3px solid $couleur_bois;
   border-bottom: 3px solid $couleur_bois;
   padding: 30px;
-  background: #fff;
+  background: #ece6e2ac;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
@@ -1634,29 +1640,62 @@ header .nava{
 }
 
 .rejoindre .php-email-form label {
-  padding-bottom: 8px;
+  padding-bottom: 0px;
+/*   font-weight: lighter; */
+  color: #595656;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: block ;
+  &.required {
+    &::after {
+      content: "*";
+      color: rgb(161, 5, 5);
+    }
+  }
+  .rejoindre .php-email-form input:focus & {
+    margin-bottom: 0px;
+  }
 }
 
-.rejoindre .php-email-form input,
-.rejoindre .php-email-form textarea {
+
+
+
+
+
+
+.rejoindre .php-email-form input {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  border-radius: 4px;
+  padding-bottom: -5px;
+  transition: padding .5s ease;
+  color: #595656;
+
+
+  &:focus{
+    transition: margin .5s ease;
+    color: #a45e25;
+    display: block;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid $couleur_bois;
+    transition: padding .5s ease;
+
+  }
+
+
 }
 
-.rejoindre .php-email-form input:focus,
-.rejoindre .php-email-form textarea:focus {
-  border-color: $couleur_bois;
-}
 
 .rejoindre .php-email-form input {
   height: 44px;
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
 }
 
-.rejoindre .php-email-form textarea {
-  padding: 10px 12px;
-}
+
 
 .rejoindre .php-email-form button[type=submit] {
   background: $couleur_bois;

@@ -441,7 +441,12 @@ header .nava {
 }
 #objectif .objectif_1 .objectif_description_1_paragraphe {
   text-align: justify;
-  line-height: 35px;
+  line-height: 33px;
+  padding-left: 10px;
+}
+#objectif .objectif_1 .objectif_description_1_paragraphe i {
+  margin-right: 7px;
+  color: #8B4513;
 }
 #objectif .objectif_1 .objectif_description_1_button {
   border-radius: 10px;
@@ -880,7 +885,7 @@ header .nava {
   color: #8B4513;
 }
 #fondateur .presentation_text .presentation_text_palmares {
-  line-height: 35px;
+  line-height: 33px;
   text-align: justify;
   padding: 0px 40px 10px 40px;
   margin-bottom: -20px;
@@ -971,7 +976,7 @@ header .nava {
 }
 #vision .vision_explication_text p {
   text-align: justify;
-  line-height: 35px;
+  line-height: 33px;
 }
 #vision .genese_explication_img img {
   width: 100%;
@@ -1369,7 +1374,7 @@ header .nava {
   border-top: 3px solid #8B4513;
   border-bottom: 3px solid #8B4513;
   padding: 30px;
-  background: #fff;
+  background: rgba(236, 230, 226, 0.6745098039);
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
@@ -1509,28 +1514,44 @@ header .nava {
 }
 
 .rejoindre .php-email-form label {
-  padding-bottom: 8px;
+  padding-bottom: 0px;
+  /*   font-weight: lighter; */
+  color: #595656;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+}
+.rejoindre .php-email-form label.required::after {
+  content: "*";
+  color: rgb(161, 5, 5);
+}
+.rejoindre .php-email-form input:focus .rejoindre .php-email-form label {
+  margin-bottom: 0px;
 }
 
-.rejoindre .php-email-form input,
-.rejoindre .php-email-form textarea {
+.rejoindre .php-email-form input {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
-  border-radius: 4px;
+  padding-bottom: -5px;
+  transition: padding 0.5s ease;
+  color: #595656;
 }
-
-.rejoindre .php-email-form input:focus,
-.rejoindre .php-email-form textarea:focus {
-  border-color: #8B4513;
+.rejoindre .php-email-form input:focus {
+  transition: margin 0.5s ease;
+  color: #a45e25;
+  display: block;
+  margin-top: 0px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #8B4513;
+  transition: padding 0.5s ease;
 }
 
 .rejoindre .php-email-form input {
   height: 44px;
-}
-
-.rejoindre .php-email-form textarea {
-  padding: 10px 12px;
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 .rejoindre .php-email-form button[type=submit] {

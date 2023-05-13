@@ -44,18 +44,18 @@
 
 
                 <form action="{{ route('register') }}" method="POST" role="form" class="php-email-form" id="form-rejoindre">
-                @csrf
-{{--                     @if($errors->any()) <div>{{ $errors->first() }}</div> @endif
- --}}                    <div class="row">
+                    @csrf
+                        {{-- @if($errors->any()) <div>{{ $errors->first() }}</div> @endif --}}
+                    <div class="row">
                         <div class="form-group col-md-6">
-                            <label for="nom">Nom</label>
+                            <label for="nom" class="required">Nom</label>
                             <input type="text" id="nom" name="nom" class="form-control" value="{{ old('nom') }}" required>
                             @error('nom')
                                 <div class="text-danger">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="prenom">Prénoms</label>
+                            <label for="prenom" class="required">Prénoms</label>
                             <input type="text" id="prenom" name="prenom" class="form-control" value="{{ old('prenom') }}" required>
                             @error('prenom')
                                 <div class="text-danger">{{ $message }}</div>
@@ -66,14 +66,14 @@
 
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label for="date_naissance">Date De Naissance</label>
+                            <label for="date_naissance" class="required">Date De Naissance</label>
                             <input type="date" id="date_naissance" name="date_naissance" class="form-control" value="{{ old('date_naissance') }}" required>
                             @error('date_naissance')
                                 <div class="text-danger">{{ $message }}</div>
                             @enderror
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="email">Email</label>
+                            <label for="email" class="required">Email</label>
                             <input type="email" id="email" name="email" class="form-control" value="{{ old('email') }}" required>
                             @error('email')
                                 <div class="text-danger">{{ $message }}</div>
@@ -83,7 +83,7 @@
 
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label for="contact1">Contact 1 (whatsapp)</label>
+                            <label for="contact1" class="required">Contact 1 (whatsapp)</label>
                             <input type="tel" id="contact1" name="contact1" class="form-control" placeholder="+2250707074523" value="{{ old('contact1') }}" required>
                             @error('contact1')
                                 <div class="text-danger">{{ $message }}</div>
@@ -100,7 +100,7 @@
                     <div class="row">
                         <div class="form-group col-md-6">
                             <!-- <x-input-label for="password" :value="__('Password')" /> -->
-                            <label for="password">Password</label>
+                            <label for="password" class="required">Password</label>
                             <!-- <x-text-input id="password" class="block mt-1 w-full"
                                             type="password"
                                             name="password"
@@ -114,7 +114,7 @@
                         <!-- Confirm Password -->
                         <div class="form-group col-md-6">
                             <!-- <x-input-label for="password_confirmation" :value="__('Confirm Password')" /> -->
-                            <label for="password_confirmation">Confirm Password</label>
+                            <label for="password_confirmation" class="required">Confirm Password</label>
                             <input id="password_confirmation" type="password" name="password_confirmation" class="form-control" autocomplete="new-password" required >
                            <!--  <x-text-input id="password_confirmation" class="block mt-1 w-full"
                                             type="password"
@@ -129,7 +129,7 @@
 
                     <div class="row">
                         <div class="form-group col-md-12">
-                            <label for="zone">Zone</label>
+                            <label for="zone" class="required"> Zone</label>
                             <select id="zone" name="zone" class="form-control">
                                 @foreach($zones as $zone)
                                     <option value="{{ str($zone->id) }}">{{$zone->nom_zone}}</option>
@@ -140,7 +140,7 @@
                             @enderror
                         </div>
                     </div>
-                    <p class="mx-5 text-center fw-light text_bas_form">Selectionnez votre zone en fonction de votre pays de résidence et non en fonction de votre nationalité</p>
+                    <p class="mx-5 text-center fw-light mb-3 text_bas_form">Selectionnez votre zone en fonction de votre pays de résidence et non en fonction de votre nationalité</p>
 
                     <div class="text-center"><button type="submit">J'intègre la JAE</button></div>
                 </form>

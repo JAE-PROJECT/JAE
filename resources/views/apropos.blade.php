@@ -8,7 +8,7 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
         </section>
-        
+
        <!--  <section id="vision" class="">
             <div class="container">
                 <div class="titre_section">
@@ -20,7 +20,7 @@
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde nostrum culpa necessitatibus eveniet, voluptate tempora? Mollitia cumque
                             quod rem aliquid ex commodi ipsum vero dignissimos perferendis, labore culpa impedit esse!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, porro vitae labore provident sequi expedita quam velit. Eum amet voluptatem dignissimos tempora, quae pariatur dicta atque culpa sint accusantium nam?  
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, porro vitae labore provident sequi expedita quam velit. Eum amet voluptatem dignissimos tempora, quae pariatur dicta atque culpa sint accusantium nam?
                         </p>
                     </div>
                     <div class="genese_explication_img col-12 pb-4 col-lg-6 align-self-center" data-aos="fade-left">
@@ -33,7 +33,7 @@
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde nostrum culpa necessitatibus eveniet, voluptate tempora? Mollitia cumque
                             quod rem aliquid ex commodi ipsum vero dignissimos perferendis, labore culpa impedit esse!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, porro vitae labore provident sequi expedita quam velit. Eum amet voluptatem dignissimos tempora, quae pariatur dicta atque culpa sint accusantium nam?  
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, porro vitae labore provident sequi expedita quam velit. Eum amet voluptatem dignissimos tempora, quae pariatur dicta atque culpa sint accusantium nam?
                         </p>
                     </div>
                     <div class="genese_explication_img col-12 pb-4 col-lg-6 align-self-center order-1" data-aos="fade-right">
@@ -41,7 +41,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </section> -->
         <section id="fondateur" class="bg-color">
             <div class="titre_section" data-aos="zoom-out">
@@ -52,11 +52,11 @@
                     <div class="presentation_img col-12 col-lg-5 " data-aos="fade-left">
                         <figure>
                             <img src="{{asset('img/fake_lead1.png')}}" alt="Description de l'image">
-                            
+
                         </figure>
                     </div>
                     <div class="presentation_text col-12 col-lg-7" data-aos="fade-right">
-                       
+
                         <p class="presentation_text_palmares">
                             <span class="presentation_text_nom fs-1">John Doe</span>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae sapiente eius corporis porro eligendi aut laborum consequuntur, voluptas quia eveniet rerum facere repudiandae iure mollitia. Illo quas error iusto.
@@ -71,7 +71,7 @@
                                 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="bi bi-instagram"></i></a>
                                 <a href="https://www.facebook.com/" class="facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -218,7 +218,7 @@
 
         </div>
         </section><!-- End Team Section -->
-       
+
     </main>
-   
+
 @endsection('content')
