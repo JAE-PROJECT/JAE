@@ -12,7 +12,7 @@
                 <div class="presentation_msg col-12 col-md order-md-1 order-2">
                     <h1 class="presentation_title ">  <span class="titre">JA<span class="presentation_E">E</span> </h1>
                     <h2 class="presentation_subtitle fs-3">Pour le repositionnement de l'Afrique</h2>
-                    <p class="presentation_description">Lorem ipsum dolor sit amet Lorem, ipsum dolor ipsum dolor Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.<p>
+                    <p class="presentation_description">Ensemble redonnons à l'Afrique un visage et une position rayonnant de gloire, d'éclat, de respect et de royauté souveraine !<p>
                     <a  class="btn button btn_presentation"> Devenir Membre</a>
                 </div>
                 <div class="presentatin_img  col-12 col-md-7 order-md-2 order-1">

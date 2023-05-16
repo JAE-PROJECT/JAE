@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>JAE @auth| {{$title}} @endauth</title>
+        <title>JAE| {{$title?? ''}} </title>
         <!-- link css(public) -->
         <link rel="stylesheet" href="{{asset('css/style.css')}}">
         <!-- link bootstrap -->
@@ -33,6 +33,7 @@
 
 @include('partials.footer')
 
+@yield('script')
 
 <script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('purecounter/purecounter_vanilla.js')}}"></script>

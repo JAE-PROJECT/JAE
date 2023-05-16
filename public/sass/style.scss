@@ -1668,12 +1668,17 @@ header .nava{
   font-size: 14px;
   padding-bottom: -5px;
   transition: padding .5s ease;
-  color: #595656;
+  color: #2a2a2a;
+  height: 44px;
+  border-bottom: 1px solid rgb(175, 175, 175);
+  border-top: none;
+  border-left: none;
+  border-right: none;
 
 
   &:focus{
     transition: margin .5s ease;
-    color: #a45e25;
+    font-weight: bold;
     display: block;
     margin-top: 0px;
     padding-bottom: 20px;
@@ -1682,16 +1687,6 @@ header .nava{
 
   }
 
-
-}
-
-
-.rejoindre .php-email-form input {
-  height: 44px;
-  border-bottom: 1px solid black;
-  border-top: none;
-  border-left: none;
-  border-right: none;
 
 }
 

@@ -1,11 +1,10 @@
-body {
+body{
 
     height: 100vh;
     font-family: arial, sans-serif;
     display: flex;
     align-items: center;
 
-    background: url(../img/about.jpg) !important;
     justify-content: center;
 }
 
