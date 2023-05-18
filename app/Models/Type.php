@@ -9,4 +9,8 @@ class Type extends Model
 {
     use HasFactory;
     protected $table = 'type';
+
+    public function event(){
+        return $this->hasMany(Event::class);
+       }
 }

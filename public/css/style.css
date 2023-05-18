@@ -1528,7 +1528,7 @@ header .nava {
   margin-bottom: 0px;
 }
 
-.rejoindre .php-email-form input {
+.rejoindre .php-email-form input:not([type=radio]) {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -1541,7 +1541,7 @@ header .nava {
   border-left: none;
   border-right: none;
 }
-.rejoindre .php-email-form input:focus {
+.rejoindre .php-email-form input:not([type=radio]):focus {
   transition: margin 0.5s ease;
   font-weight: bold;
   display: block;

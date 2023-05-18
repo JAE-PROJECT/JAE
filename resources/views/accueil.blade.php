@@ -13,7 +13,12 @@
                     <h1 class="presentation_title ">  <span class="titre">JA<span class="presentation_E">E</span> </h1>
                     <h2 class="presentation_subtitle fs-3">Pour le repositionnement de l'Afrique</h2>
                     <p class="presentation_description">Ensemble redonnons à l'Afrique un visage et une position rayonnant de gloire, d'éclat, de respect et de royauté souveraine !<p>
-                    <a  class="btn button btn_presentation"> Devenir Membre</a>
+                    @guest
+                        <a href="{{route('rejoindre')}}" class="btn button btn_presentation"> Devenir Membre</a>
+                    @endguest
+                    @auth
+                    <a href="{{route('programme')}}" class="btn button btn_presentation"> Nos Programmes</a>
+                    @endauth
                 </div>
                 <div class="presentatin_img  col-12 col-md-7 order-md-2 order-1">
                     <img src="{{asset('img/membership-circles.png')}}" alt="image de la communauté">

@@ -1,30 +1,113 @@
 @extends('layouts.base')
 @section('style')
+    <style>
+        /* Styles personnalisés pour éviter les conflits avec Bootstrap */
+.custom-header-bg {
+    background-color: #343a40;
+    position: relative;
+}
+
+.custom-text-white {
+    color: #fff;
+}
+
+.custom-bg-opacity-6 {
+    opacity: 0.6;
+}
+
+.custom-page-header {
+
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+}
+.icon-verification{
+
+}
+.icon-verification i{
+    position: absolute;
+    top:0; left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: green;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.custom-lead {
+    font-size: 1.25rem;
+}
+.titre1{
+    font-weight: lighter;
+    margin-top: 10px ;
+}
+.titre2{
+    opacity: .7;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: all 0.15s ease-in-out;
+}
+
+.custom-btn-light {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.custom-btn-light:hover {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+.card{
+    position: relative;
+}
+
+    </style>
 @endsection
 @section('content')
-    <header class="bg-gradient-dark">
-        <div class="page-header min-vh-75"
-            style="background-image: url(&quot;../assets/img/bg9.jpg&quot;); transform: translate3d(0px, 13.3333px, 0px);">
-            <span class="mask bg-gradient-dark opacity-6"></span>
+    <div class="custom-header-bg">
+        <div class="custom-page-header min-vh-50 d-flex" style="background-image: url('../img/bg9.jpg');">
 
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center mx-auto my-auto">
-                        <h1 class="text-white">
-
+                    <div class="col-lg-8 text-center mx-auto align-self-center ">
+                        <h1 class="custom-text-white fs-3 titre1">
                             Felicitation ! vous êtes inscrit, vous recevrez un mail de confirmation contenant une carte d'invitation
-
                         </h1>
-                        <p class="lead mb-4 text-white opacity-8"> Vous serez rédirigé vers la page de nos programmes ! </p>
-                        <button type="submit" class="btn bg-white text-dark">
-                            Patientez pendant un instant...</button>
+                        <p class="custom-lead mb-4 text-white titre2"> Vous serez redirigé vers la page de nos programmes ! </p>
+                        <button type="submit" class="btn custom-btn-light custom-text-dark">Patientez pendant un instant...</button>
                     </div>
+
+        <div class="icon-verification">
+                    <i class="bi bi-check-circle-fill"></i>
                 </div>
-            </div>
         </div>
-    </header>
-    <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
+
+    </div>
+    <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6 mb-4">
         <!-- Section with four info areas left & one card right with image and waves -->
+
         <section class="py-7">
             <div class="container">
                 <div class="row align-items-center">
@@ -103,9 +186,11 @@
 
     </div>
 @endsection
-
+@php
+    $excludeHeaderFooter = true;
+@endphp
 @section('script')
-<script>
-    setTimeout(function(){ window.location.href = '{{route('programme')->with('success_inscrip_program', 'Vous êtes bien inscrit à ce programme')}}'; }, 6000);
-</script>";
+ <script>
+    setTimeout(function(){ window.location.href = '{{route('programme')}}'; }, 6000);
+</script>
 @endsection

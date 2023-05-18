@@ -3,10 +3,13 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Models\Team;
+use App\Models\Zone;
+use App\Models\Event;
+use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
@@ -49,4 +52,18 @@ class User extends Authenticatable
     ];
 
    protected $table = 'users';
+
+   public function team()
+   {
+       return $this->belongsTo(Team::class);
+   }
+
+   public function zone()
+   {
+       return $this->belongsTo(Zone::class);
+   }
+
+   public function event(){
+       return $this->BelongsToMany(Event::class);
+   }
 }

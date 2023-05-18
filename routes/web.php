@@ -6,6 +6,7 @@ use App\Http\Controllers\ForumController;
 use App\Http\Controllers\AccueilController;
 use App\Http\Controllers\AproposController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\MoncompteController;
 use App\Http\Controllers\RejoindreController;
 use App\Http\Controllers\NosprogrammeController;
 
@@ -40,9 +41,23 @@ Route::get('/forum', [ForumController::class, 'show'])->name('forum');
 Route::get('/programme', [NosprogrammeController::class, 'show'])->name('programme');
 Route::post('/programme', [NosprogrammeController::class, 'store'])->name('inscription_programme');
 
-// Les routes de la page Nous Rejoindre
+// Les routes de la page Nous Rejoindre ---------------------------->vvv
 Route::get('/rejoindre', [RejoindreController::class, 'show'])->name('rejoindre');
 Route::post('/rejoindre', [RejoindreController::class, 'store'])->name('rejoindre_form');
+
+//les routes du dashboard de l'utilisateur
+//Route::middleware('auth')->get('/mon-historique', [HistoriqueController::class, 'index'])->name('nos-programmes.historique');
+
+//mes infos modifications
+Route::middleware('auth')->get('/mon-compte', [MoncompteController::class, 'index'])->name('moncompte');
+
+//mes infos modifications edit
+Route::middleware('auth')->put('/mon-compte/editer', [MoncompteController::class, 'edit'])->name('moncompte.editer');
+
+
+
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -5,7 +5,7 @@
         <section id="banniere_apropos">
             <div class="titre_page">
                 <h2>A Propos</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                <!--<p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p> -->
             </div>
         </section>
 
@@ -24,7 +24,7 @@
                         </p>
                     </div>
                     <div class="genese_explication_img col-12 pb-4 col-lg-6 align-self-center" data-aos="fade-left">
-                        <img src="{{asset('img/bg9.jpg')}}" alt="Oups l'image ne s'est pas affiché">
+                        <img src="asset('img/bg9.jpg')" alt="Oups l'image ne s'est pas affiché">
                     </div>
                 </div>
                 <div class="genese_explication row align-items-center">
@@ -37,7 +37,7 @@
                         </p>
                     </div>
                     <div class="genese_explication_img col-12 pb-4 col-lg-6 align-self-center order-1" data-aos="fade-right">
-                        <img src="{{asset('img/bg9.jpg')}}" alt="Oups l'image ne s'est pas affiché">
+                        <img src="asset('img/bg9.jpg')" alt="Oups l'image ne s'est pas affiché">
                     </div>
                 </div>
             </div>
@@ -58,14 +58,19 @@
                     <div class="presentation_text col-12 col-lg-7" data-aos="fade-right">
 
                         <p class="presentation_text_palmares">
-                            <span class="presentation_text_nom fs-1">John Doe</span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae sapiente eius corporis porro eligendi aut laborum consequuntur, voluptas quia eveniet rerum facere repudiandae iure mollitia. Illo quas error iusto.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, atque? Pariatur eius consectetur quam, odio at tempora. Ea totam id corrupti fugiat doloremque accusamus, minus ex distinctio vero quisquam sed!
+                            <span class="presentation_text_nom fs-1">Jean Othniel SILUE</span>
+                            Il existe aujourd’hui une race de personnes qui se lèvent pour la révolution en Afrique, elles ont cette soif de hisser notre continent bien haut partout dans le monde.
+                            Notre Fierté Africaine du jour se porte sur un homme qu'on appelle affectueusement "Can't Fail Boy" : Monsieur JEAN-OTHNIEL SILUÉ.
+                            Ce jeune homme âgé de 24 ans est de nationalité ivoirienne 🇨🇮 et réside aux États-Unis où il étudie le management option entrepreneuriat.
+                            CEO de G-CAPITAL LLC déclarée dans l’Etat du Wyoming, USA, qui est une société de capital-risque, d’investissement privé et de management d’entreprise. Elle détient en première position dans son portefeuille, la société Risefire, spécialisée en communication et assistance en Marketing digital par l’utilisation de l’Intelligence Artificielle.
+                            Aussi il est le CEO de MoneyPool, une holding opérant dans le domaine de la finance décentralisée, avec en son sein, The Billion’s Club qui est une école de formation en expertise de marchés financiers.
+                            Il est également le leader du réseau JEUNE AFRIQUE ENTREPRENANTE  réunissant des centaines de jeunes entrepreneurs africains dans plusieurs pays (Côte d’Ivoire, Cameroun, Congo, France, etc.) dans le but de révéler leur potentiel et d’instaurer un environnement favorable à partir d’un agenda social, éducatif et financier qui se déploie sur toute la décennie.
+                            Le leader, Jean-Othniel SILUÉ, est une fierté pour notre continent, une source de motivation pour notre jeunesse africaine, un acteur positif de notre société et un modèle pour plusieurs.
                         </p>
                         <div class="presentation_reseaux_sociaux container mt-3 ">
-                            <div class="align-self-center">
+                            <!--<div class="align-self-center">
                                 <span class="fw-bold">Lorem, ipsum dolor.</span>
-                            </div>
+                            </div>-->
                             <div>
                                 <a href="https://twitter.com/" class="twitter" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
                                 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="bi bi-instagram"></i></a>
@@ -88,21 +93,32 @@
                 <div class="row content">
                 <div class="col-lg-6">
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
+                    La Jeune Afrique Entreprenante est une communauté comptant en son sein plus de 1300 membres réparties dans le monde.
+                    Né en Mai 2021, elle est fondée par le leader Jean-Othniel Silué.
+                    Elle fait ses premiers pas sur l'application Telegram en se créant une communauté qui asssite à des formations et des conférences gratuites. Pendant l'année 2022 elle connaît une ascension fulgurante qui la fera impacter et changer la vie de plusieurs jeunes.
+                    En 2022, la JAE lance son programme d'accompagnement dénommé Meet The Leader, programme au travers duquel elle coach et suit de façon personnel les membres de sa communauté et ce de façon gratuite.
+                    Sur des questions de :
                     </p>
                     <ul>
-                    <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-                    <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-                    <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                    <li><i class="bi bi-check2-all"></i> Stratégies en business </li>
+                    <li><i class="bi bi-check2-all"></i> Recherche de skills </li>
+                    <li><i class="bi bi-check2-all"></i> Besoin de financement</li>
                     </ul>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0">
                     <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    Tous les membres de la communauté était réuni sur la plateforme Telegram. En Septembre 2022, dans l'optique d'optimiser son impact en suivant au mieux ses membres, les leaders créent le système de répartition par zone.
+                    Une zone étant le regroupe par pays des membres de la JAE.
+                    C'est ainsi que naît:
                     </p>
+                    <ul>
+                    <li><i class="bi bi-check2-all"></i> La zone Côte d'Ivoire 🇨🇮  </li>
+                    <li><i class="bi bi-check2-all"></i> La zone Cameroun 🇨🇲  </li>
+                    <li><i class="bi bi-check2-all"></i> La zone Congo 🇨🇩 </li>
+                    <li><i class="bi bi-check2-all"></i> La zone Burkina Faso 🇧🇫  </li>
+                    <li><i class="bi bi-check2-all"></i> La zone Benin 🇧🇯  </li>
+                    <li><i class="bi bi-check2-all"></i> La zone France 🇫🇷</li>
+                    </ul>
                     <a href="#" class="btn-learn-more">Voir Plus</a>
                 </div>
                 </div>
@@ -121,13 +137,14 @@
                         <div class="content ps-lg-5">
                         <h3>Vision De La JAE</h3>
                         <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                        Notre vision est de repositionner l'Afrique. N'entendez pas changer la position géographique du continent, mais plutôt vous aider à développer votre potentiel, aiguiser votre personnalité, assumer vos responsabilités, affiner vos connaissances afin que nous devenions les décideurs de notre continent. Ceci est notre mission: FAIRE DE VOUS, PAR L'EXCELLENCE ET LE TRAVAIL ENCADRÉ, LES BÂTISSEURS D'UNE AFRIQUE FORTE DANS LES 50 prochaines années.
+                        Le blason de l'Afrique, C'EST NOUS. Nous sommes l'image de l'Afrique, c'est pourquoi nous travaillons à vous aider dans votre développement.
+                        Nous travaillons sur 3 volets avec les objectifs suivants:
                         </p>
                         <ul>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Le volet social : en vous aidant à développer des valeurs telles que la sociabilité, l'entraide, la solidarité... qui vous ouvriront des portes.</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Le volet éducatif : en vous aidant à acquérir les compétences nécessaires à votre épanouissement par le travail.</li>
+                            <li><i class="bi bi-check-circle-fill"></i> Le volet financier : en mettant à votre disposition des stratégies et des systèmes qui financeront vos projets et feront exploser vos potentiels.</li>
                         </ul>
                         </div>
                     </div>
@@ -150,13 +167,16 @@
                 <div class="member d-flex align-items-start">
                 <div class="pic"><img src="{{asset('img/team/lead_1.jpg')}}" class="img-fluid" alt="" style="width:100%; "> </div>
                 <div class="member-info">
-                    <h4>Henry Danbgedji</h4>
-                    <span>Cameroon</span>
-                    <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                    <h4>Alex-Wilfried DIGBEU</h4>
+                    <span>Chef JAE Cote d'Ivoire</span>
+                    <p>CEO et POOL BANK
+                       General Manager at MONEYPOOL
+                       570 Membres
+                    </p>
                     <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/NeksLion/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com/nekslion?igshid=NTc4MTIwNjQ2YQ=="><i class="bi bi-instagram"></i></a>
                     <a href=""> <i class="bi bi-linkedin"></i> </a>
                     </div>
                 </div>
@@ -167,12 +187,13 @@
                 <div class="member d-flex align-items-start">
                 <div class="pic"><img src="{{asset('img/team/lead_2.jpg')}}" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                    <h4>John Doe</h4>
-                    <span>France</span>
-                    <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                    <h4>Esmeralda AMESSAN</h4>
+                    <span>Chef JAE France 🇫🇷</span>
+                    <p>Étant étudiante en gestion d’entreprise à Paris, je suis Businesswoman, Entrepreneur dans l’événementiel: PDG de La Parole Planner, qui est une entreprise à taille humaine spécialisée dans la planification et la coordination d’événements privatifs et de mariages. Je suis aussi Créatrice de contenus et DG de Shekina Traiteur qui est une structure de restauration en ligne.
+                    Ma zone compte 32 Friends.</p>
                     <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.facebook.com/mera.amessan"><i class="bi bi-facebook"></i></a>
                     <a href=""><i class="bi bi-instagram"></i></a>
                     <a href=""> <i class="bi bi-linkedin"></i> </a>
                     </div>
@@ -184,9 +205,11 @@
                 <div class="member d-flex align-items-start">
                 <div class="pic"><img src="{{asset('img/team/lead_3.jpg')}}" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                    <h4>William Ouatara</h4>
-                    <span>C&ocirc;te D'ivoire</span>
-                    <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                    <h4>Boris AMANG</h4>
+                    <span>Chef JAE Cameroun</span>
+                    <p>Un jeune entrepreneur qui est à la tête des entreprises Elam Energy et Elam invest
+                    Qui exercent dans les énergies renouvelables et des placements financiers dans divers domaines (Agriculture, immobilier, distribution..etc. )depuis 2019
+                    Il est engagé dans le mouvement de la JAE et est responsable de la communauté camerounaise  qui est au nombre de 120 personnes  aujourd'hui</p>
                     <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -201,12 +224,49 @@
                 <div class="member d-flex align-items-start">
                 <div class="pic"><img src="{{asset('img/team/lead_4.jpg')}}" class="img-fluid" alt=""></div>
                 <div class="member-info">
-                    <h4>Konan Aristide</h4>
-                    <span>Etats-Unis</span>
-                    <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                    <h4>Abdoul Hamid GARBA</h4>
+                    <span>Chef JAE Benin</span>
+                    <p>Je suis étudiant en deuxième année de comptabilité et entrepreneur web dans le domaine du copywriting ,le community management ,rédaction web seo,E-commerce avec une année d’expérience et j’adore le domaine du digital. je possède l’agence de communication digitale Iroko Africa et je suis le chief de la zone du Bénin.  Et nous sommes au nombre de 15</p>
                     <div class="social">
                     <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.facebook.com/abdoulhamidofficiel?mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+                <div class="member d-flex align-items-start">
+                <div class="pic"><img src="{{asset('img/team/lead_4.jpg')}}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Germain ruan KATAKI</h4>
+                    <span>Chef JAE RDC</span>
+                    <p>CEO mutuelles des ingenieur,
+                    coach en develloppement personnel et professionel
+                    Germainruansniper@gmail.com</p>
+                    <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.facebook.com/germainruan.kataki"><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
+                <div class="member d-flex align-items-start">
+                <div class="pic"><img src="{{asset('img/team/lead_4.jpg')}}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                    <h4>Hugue Arnaud BAH </h4>
+                    <span>Chief Manager</span>
+                    <p>Responsable de DPS et AfriExchanger zone Sénégal puis de G-CONNEXT, des structures spécialisées dans la Cryptomonnaies, la monnaie électronique et bien d'autres.
+                    Au sein de la JAE mon travail consiste à coordonner et superviser les activités des Chiefs dans leurs différentes zones.</p>
+                    <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.facebook.com/abdoulhamidofficiel?mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
                     <a href=""><i class="bi bi-instagram"></i></a>
                     <a href=""> <i class="bi bi-linkedin"></i> </a>
                     </div>

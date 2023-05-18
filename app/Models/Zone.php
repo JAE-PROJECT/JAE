@@ -9,4 +9,9 @@ class Zone extends Model
 {
     use HasFactory;
     protected $table = 'zone';
+    
+    public function user()
+    {
+        return $this->hasMany(User::class);
+    }
 }

@@ -43,17 +43,17 @@ class NosprogrammeController extends Controller
                 dd($presence_confirmee);
                 $presence_confirmee->save();
                 return redirect()->back();
-            } */else{
+            }*/ else{
                 return redirect()->back()->with('already_inscrip_program', 'Vous êtes déjà inscrit à ce programme');
             }
             /* dd($event_id); */
 
-           /*  DB::table('event_user')->insert([
+             DB::table('event_user')->insert([
                 'event_id' => $event_id,
                 'user_id' => $user_id,
                 'presence_confimée' => $presence_confirme,
                 'created_at' => Carbon::now(),
-            ]); */
+            ]);
             $event = Event::find($event_id);
             $event->nombre_place++;
             $user = User::find($user_id);

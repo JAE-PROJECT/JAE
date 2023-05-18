@@ -121,20 +121,21 @@
                                             name="password_confirmation" required autocomplete="new-password" />
                                       -->
                             @error('password_confirmation')
-                                <div class="text-danger">{{ $message }}</div>
+                                <div class="text-danger">{{ __($message) }}</div>
                             @enderror
                         </div>
                     </div>
 
 
                     <div class="row">
-                        <div class="form-group col-md-12">
-                            <label for="zone" class="required"> Zone</label>
-                            <select id="zone" name="zone" class="form-control">
-                                @foreach($zones as $zone)
-                                    <option value="{{ str($zone->id) }}">{{$zone->nom_zone}}</option>
-                                @endforeach
-                            </select>
+                        <div class="form-group col-md-12 row">
+                            @foreach($zones as $zone)
+                                <div class="col-md-6 {{ $loop->iteration == $loop->count - 1 ? 'avant-dernier-element' : ($loop->last ? 'dernier-element' : 'mb-3') }}" >
+                                    <input type="radio" id="zone_{{ $zone->id }}" name="zone" value="{{ $zone->id }}" {{ $loop->first ? 'checked' : '' }}>
+                                    <label for="zone_{{ $zone->id }}" class="d-inline ms-1">{{ $zone->nom_zone }}</label>
+                                </div>
+                            @endforeach
+
                             @error('zone')
                                 <div class="text-danger">{{ __($message) }}</div>
                             @enderror

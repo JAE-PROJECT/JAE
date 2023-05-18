@@ -1662,7 +1662,7 @@ header .nava{
 
 
 
-.rejoindre .php-email-form input {
+.rejoindre .php-email-form input:not([type="radio"]) {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
