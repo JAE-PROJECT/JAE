@@ -180,16 +180,17 @@ header .nava {
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
-  transition: all 0.4s ease;
-}
-.navbar-head .btn-dashboard:hover {
-  background-color: rgba(195, 195, 195, 0.831372549);
-  color: #000 !important;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.4s ease;
+  transition: all 0.5s ease;
 }
 .navbar-head .btn-dashboard i {
   margin-right: 5px;
+}
+
+.nav-item:hover .btn-dashboard {
+  background-color: #ffffff;
+  color: #000 !important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
 }
 
 /* bouton nous dashboard */
@@ -1189,7 +1190,7 @@ header .nava {
 }
 #page_program .filter .dropdown button {
   color: #8B4513;
-  border-color: #8B4513;
+  border: solid 1px #8B4513 !important;
 }
 #page_program .filter .dropdown button:hover {
   background-color: #8B4513;
@@ -1224,7 +1225,7 @@ header .nava {
   background-color: rgba(0, 0, 0, 0.6862745098);
   color: #c6c1c1;
 }
-#page_program .programme .image_program .image_program-orateur h3 {
+#page_program .programme .image_program .image_program-orateur span {
   text-align: center;
   align-self: center;
   margin: auto;
@@ -1533,6 +1534,7 @@ header .nava {
   box-shadow: none;
   font-size: 14px;
   padding-bottom: -5px;
+  padding-left: 10px;
   transition: padding 0.5s ease;
   color: #2a2a2a;
   height: 44px;
@@ -1552,7 +1554,7 @@ header .nava {
 }
 
 .rejoindre .php-email-form button[type=submit] {
-  background: #8B4513;
+  background: #8B4513 !important;
   border: 0;
   padding: 12px 34px;
   color: #fff;

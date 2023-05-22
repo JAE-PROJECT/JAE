@@ -5,21 +5,65 @@ a des classe precise, quand ces classes sont appel√©es, les styles sont appliqu√
 /* ______________SECTION______________ */
 section{
    padding-top: 50px;
-   padding-bottom: 30px;
+   padding-bottom: 30px ;
 }
 section.bg-color{
-    background-color: #7b3f1520;
+    background-color: #7b3f1520 !important;
 }
-
+.bg-color_special_div{
+    background-color: #6f452632 !important;
+}
 /* _________________BOUTON______________ */
-.button {
-    background-color: #8B4513 !important;
-    border: none !important;
+.button-custom {
+    background: #957f6f !important;
+    border: 0;
+    padding: 12px 34px;
+    color: #fff  !important;
+    transition: 0.4s;
+    border-radius: 10px !important;
+
+  }
+  .button-custom2 {
+    background: #8B4513 !important;
+    border: 0;
+    padding: 12px 34px;
+    color: #fff  !important;
+    transition: ease 0.4s;
+    border-radius: 10px !important;
+
+  }
+  .button-custom2:hover {
+    background: #42220c !important;
+    transition: ease 0.4s;
   }
 
-.button:hover {
-    background-color: rgb(199, 141, 70) !important;
+.button-custom:hover {
+    background-color: rgb(113, 95, 72) !important;
     box-shadow: 0 6px 35px -13px #000;
     transition: all 0.7s;
   }
+
+.color-text-site_1{
+    color: #8B4513 !important;
+}
+.color-text-site_1-sombre{
+    color: #5f300f !important;
+}
+.custom_font_weight_site{
+    font-weight: bold !important;
+}
+.padding_custom{
+    padding: 1rem !important;
+}
+.custom_alert_site{
+    background: rgba(78, 53, 53, 0.824) ;
+    color: #fff;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    font-weight: lighter;
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px 10px;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+}
 

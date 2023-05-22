@@ -13,7 +13,7 @@
           <strong>Email:</strong><a href="mailto:info@jae.com"  target="_blank" rel="noopener noreferrer" > info@jae.com</a> <br>
         </p>
       </div>
-      
+
       <div class="col-lg-3 col-md-6 footer-links">
         <h4>Liens utiles</h4>
         <ul>
@@ -26,9 +26,12 @@
       <div class="col-lg-3 col-md-6 footer-links">
         <h4> Nos Programmes</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="/ecommerce">Programme 1</a></li>
-          <li><i class="bi bi-chevron-right"></i><a href="/consulting">Programme 2</a></li>
-          <li><i class="bi bi-chevron-right"></i><a href="/socialwork">Programme 3</a></li>
+            @php
+                $events = DB::table('event')->select('event_titre')->limit(3)->get();
+            @endphp
+            @foreach ($events as $item)
+                <li><i class="bi bi-chevron-right"></i> <a href="{{route('programme')}}">{{$item->event_titre}}</a></li>
+            @endforeach
         </ul>
       </div>
 

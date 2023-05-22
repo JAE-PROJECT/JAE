@@ -8,6 +8,7 @@ use App\Http\Controllers\AproposController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\MoncompteController;
 use App\Http\Controllers\RejoindreController;
+use App\Http\Controllers\HistoriqueController;
 use App\Http\Controllers\NosprogrammeController;
 
 /*
@@ -45,9 +46,10 @@ Route::post('/programme', [NosprogrammeController::class, 'store'])->name('inscr
 Route::get('/rejoindre', [RejoindreController::class, 'show'])->name('rejoindre');
 Route::post('/rejoindre', [RejoindreController::class, 'store'])->name('rejoindre_form');
 
-//les routes du dashboard de l'utilisateur
-//Route::middleware('auth')->get('/mon-historique', [HistoriqueController::class, 'index'])->name('nos-programmes.historique');
+//les routes du dashboard de l'utilisateur-------------------------------
 
+//historique de mes participations
+Route::middleware('auth')->get('/mon-historique', [HistoriqueController::class, 'index'])->name('nos-programmes.historique');
 //mes infos modifications
 Route::middleware('auth')->get('/mon-compte', [MoncompteController::class, 'index'])->name('moncompte');
 

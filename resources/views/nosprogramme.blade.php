@@ -106,7 +106,7 @@
                             <div class="image_program">
                                 <img src="{{asset('img/about.jpg')}}" alt="">
                                 <div class="image_program-orateur">
-                                    <h3> ORATEUR: {{str_replace(" - "," & ","$programme->orateur")}}</h3>
+                                    <span> ORATEUR: {{str_replace(" - "," & ","$programme->orateur")}}</span>
                                 </div>
                             </div>
 
