@@ -21,7 +21,7 @@ class AccueilController extends Controller
             $nb_team = Team::all()->count();
             $nb_zone = Zone::all()->count();
             $nb_event = Event::all()->count();
-            /* $users = DB::table('users')->select('id')->where('email', 'emmanueljeanmiessan@gmail.com')->get();
+           /*  $users = DB::table('users')->select(Auth::check('id'))->where('email', 'aaa@aaa.com')->get();
             dd($users); */
         return view('accueil', [
            'title' => $titre,

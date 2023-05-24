@@ -30,9 +30,9 @@ class RegisteredUserController extends Controller
      *
      * @throws \Illuminate\Validation\ValidationException
      */
-    public function store(Request $request): RedirectResponse
+    public function store(Request $request)
     {
-        $request->validate([
+        /* $request->validate([
         'nom' => 'required|max:255|string|regex:/^[^\s]+$/',
         'prenom' => 'required|max:255|string|regex:/^[a-zA-Z\- ]+$/',
         'email' => 'required|email|max:255|unique:users',
@@ -50,7 +50,7 @@ class RegisteredUserController extends Controller
         'contact2.regex' => 'Le champ :attribute doit être un numéro de téléphone valide au format international.',
         'prenom.regex' => 'Le champ :attribute ne doit contenir que des lettres.',
         'nom.regex' => 'Le champ :attribute ne doit contenir qu\'un seul nom.',
-    ]);
+    ]); */
 
 
 
@@ -70,8 +70,8 @@ class RegisteredUserController extends Controller
         event(new Registered($user));
 
         Auth::login($user);
-        return redirect(RouteServiceProvider::HOME)
-        ->with('lien_zones', $lien_zones->lien_wha);
+
+        return view('pages.adhesionok')->with('lien_zones', $lien_zones->lien_wha);
 
 }
 }

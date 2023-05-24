@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="{{asset('css/connexion.css')}}">
     <title>JAE Connexion</title>
     <style>
-        background: url({{asset('img/about.jpg')}});
-        
+
+
 
     </style>
 </head>
 
 <body>
     {{-- si la l'inscription à un programme a échouer en raison de la déconnexion de l'utilisateur --}}
-    <div class="inscription">
+    <div class="inscription bg">
         <div class="container">
             <form method="POST" action="{{ route('login') }}">
                 @csrf

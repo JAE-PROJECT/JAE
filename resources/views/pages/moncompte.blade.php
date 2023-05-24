@@ -1,4 +1,4 @@
-@extends('layouts.base')
+@extends('layouts.app')
 @section('style')
     <style>
 
@@ -70,8 +70,8 @@
 
 
 @endsection
-@section('content')
- <div class="bg-gradient-dark">
+@section('contentdash')
+                                     <div class="">
         <div class="page-header min-vh-50"
             style="background-image: url(&quot;../assets/img/bg9.jpg&quot;); transform: translate3d(0px, 13.3333px, 0px);">
             <span class="mask bg-gradient-dark opacity-6"></span>

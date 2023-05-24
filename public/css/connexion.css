@@ -1,11 +1,28 @@
-body{
 
+body{
+    width: 100vw;
+    margin: auto;
+}
+
+.bg{
     height: 100vh;
     font-family: arial, sans-serif;
     display: flex;
     align-items: center;
-
+    background: url('../img/about.jpg') no-repeat !important;
+    background-size: cover !important;
+    position: relative;
     justify-content: center;
+}
+.bg::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;bottom: 0;left: 0;right: 0;
+    background-color: rgba(0, 0, 0, 0.565);
+    z-index: 0;
+    width: 100%;
+
 }
 
 .container {
