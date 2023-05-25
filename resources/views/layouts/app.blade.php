@@ -9,6 +9,9 @@
         {{-- css --}}
         <link rel="stylesheet" href="{{asset('css/styledashboarduser.css')}}">
         <link rel="stylesheet" href="{{asset('assets/css/material-kit.css')}}">
+        <link rel="stylesheet" href="{{asset('sass/pbootstrap.css')}}">
+        {{-- icons --}}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -18,79 +21,75 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @yield('style')
     </head>
-    <body class="font-sans antialiased">
+    <body class=" antialiased">
 
-    <div class="min-h-full">
+    <div class=" flex justify-between">
 
-        <nav class="bg-color fixed w-100  ">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div class="flex h-16 items-center justify-between">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                    <a href="/"><img class="w-75" src="{{asset('img/logo_header.png')}}" alt=""></a>
+        <nav class="bg-color w-15 z-10" style="height: calc(100vh+100%)">
+            <div class="  py-4 sm:px-6 lg:py-8">
+                <div class="flex flex-col justify-between " style="align-content:space-between; height:100vh">
+                    <div class="flex flex-col items-center justify-between">
+                        <div class="flex-shrink-0">
+                            <a href="/"><img class="w-100" src="{{asset('img/logo_header.png')}}" alt=""></a>
+                        </div>
+                        <div class="hidden md:block py-6">
+                            <div class=" flex flex-col items-baseline justify-between space-y-6">
+                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                <a href="{{route('dashboard')}}" data-page="dashboard" class="text-white w-100 items_menu rounded-md px-3 py-2 text-sm font-medium" aria-current="page"><i class="bi bi-border-style"></i> Mon Espace</a>
+                                <a href="{{route('moncompte')}}" data-page="mon-compte" class="text-gray-300 w-100 items_menu hover:text-white rounded-md px-3 py-2 text-sm font-medium"><i class="bi bi-person-fill-gear"></i> Mon Compte</a>
+                                <a href="{{route('nos-programmes.historique')}}" data-page="mon-historique" class="text-gray-300 w-100 items_menu  hover:text-white rounded-md px-3 py-2 text-sm font-medium"><i class="bi bi-clock-history"></i> Mon Historique</a>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="{{route('dashboard')}}" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Mon Espace</a>
-                        <a href="{{route('moncompte')}}" class="text-gray-300 hover:bg-color-hover hover:text-white rounded-md px-3 py-2 text-sm font-medium">Mon Compte</a>
-                        <a href="#" class="text-gray-300 hover:bg-color-hover hover:text-white rounded-md px-3 py-2 text-sm font-medium">Profile</a>
-                        <a href="#" class="text-gray-300 hover:bg-color-hover hover:text-white rounded-md px-3 py-2 text-sm font-medium"></a>
-                        <a href="#" class="text-gray-300 hover:bg-color-hover hover:text-white rounded-md px-3 py-2 text-sm font-medium">Reports</a>
+                    <div class="hidden md:block flex self-end">
+                        <div class=" flex items-center">
+
+                            <!-- Profile dropdown -->
+                            <div class="relative">
+                                <button type="button" class="flex max-w-xs items-center rounded-full  text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                                    <img class="w-50 my-3 mx-auto rounded-full" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" onclick="window.location.href='/mon-compte'">
+                                </button>
+
+                                <!--
+                                Dropdown menu, show/hide based on menu state.
+
+                                Entering: "transition ease-out duration-100"
+                                    From: "transform opacity-0 scale-95"
+                                    To: "transform opacity-100 scale-100"
+                                Leaving: "transition ease-in duration-75"
+                                    From: "transform opacity-100 scale-100"
+                                    To: "transform opacity-0 scale-95"
+                                -->
+                                <form action="http://127.0.0.1:8000/logout" method="post">
+                                     <input type="hidden" name="_token" value="qlUZUjQzS1JO0EdIuXHGIOmu6JQrgcwKwv57NPIe">
+                                        <button type="submit" href="{{route('logout')}}" class="dropdown-item border-radius-md button items-center" style="
+                                        background-color: rgb(68, 47, 20);
+                                        padding:10px;
+                                        border-radius: 5px; color:rgb(203, 202, 202);
+
+                                        ">Se D&eacute;connecter</button>
+
+                                </form>
+
+
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-4 flex items-center md:ml-6">
-                    <button type="button" class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                        <span class="sr-only">View notifications</span>
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                    <div class="-mr-2 flex md:hidden">
+                        <!-- Mobile menu button -->
+                        <button type="button" class="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Menu open: "hidden", Menu closed: "block" -->
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
-                    </button>
-
-                    <!-- Profile dropdown -->
-                    <div class="relative ml-3">
-                        <div>
-                        <button type="button" class="flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                            <span class="sr-only">Open user menu</span>
-                            <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                        <!-- Menu open: "block", Menu closed: "hidden" -->
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
                         </button>
-                        </div>
-
-                        <!--
-                        Dropdown menu, show/hide based on menu state.
-
-                        Entering: "transition ease-out duration-100"
-                            From: "transform opacity-0 scale-95"
-                            To: "transform opacity-100 scale-100"
-                        Leaving: "transition ease-in duration-75"
-                            From: "transform opacity-100 scale-100"
-                            To: "transform opacity-0 scale-95"
-                        -->
-                        <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-                        <!-- Active: "bg-gray-100", Not Active: "" -->
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
-                        </div>
                     </div>
-                    </div>
-                </div>
-                <div class="-mr-2 flex md:hidden">
-                    <!-- Mobile menu button -->
-                    <button type="button" class="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" aria-controls="mobile-menu" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <!-- Menu open: "hidden", Menu closed: "block" -->
-                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                    <!-- Menu open: "block", Menu closed: "hidden" -->
-                    <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                    </button>
-                </div>
                 </div>
             </div>
 
@@ -130,13 +129,31 @@
         </nav>
 
 
-        <main>
-        <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+        <main class="z-100 w-100">
+        {{-- <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8"> --}}
            @yield('contentdash')
-        </div>
+        {{-- </div> --}}
         </main>
     </div>
 
 
     </body>
+    <script>
+        // Dans votre fichier JavaScript
+        document.addEventListener("DOMContentLoaded", function() {
+            var currentPath = window.location.pathname;
+            var menuItems = document.getElementsByClassName("items_menu");
+
+            for (var i = 0; i < menuItems.length; i++) {
+                var menuItem = menuItems[i];
+                var page = menuItem.getAttribute("data-page");
+
+                if (currentPath === "/" + page) {
+                    menuItem.classList.add("activedash");
+                    break; // Si vous souhaitez arrêter la boucle après avoir trouvé l'élément actif
+                }
+            }
+        });
+
+    </script>
 </html>
