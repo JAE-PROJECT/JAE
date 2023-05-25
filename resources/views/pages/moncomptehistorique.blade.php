@@ -1,28 +1,25 @@
-@extends('layouts.base')
+@extends('layouts.app')
 @section('style')
     <style>
-
-
-
     </style>
 
 @endsection
-@section('content')
-    <div class="container-fluid bg-color_special_div pb-4">
-        <div class="row padding-0">
-            <div class="page-header min-vh-45" style="background-image: url('../assets/img/bg9.jpg');">
-                <span class="mask bg-gradient-dark opacity-6"></span>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 text-center mx-auto my-auto">
-                            <h1 class="text-white">Mon historique</h1>
-                        </div>
+@section('contentdash')
+    <div class="px-2 bg-color_special_div pb-4" >
 
+        <div class="page-header min-vh-25" style="background-image: url('../assets/img/bg9.jpg');">
+            <span class="mask bg-gradient-dark opacity-6"></span>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center mx-auto my-auto">
+                        <h1 class="text-white">Mon historique</h1>
                     </div>
+
                 </div>
             </div>
         </div>
-        <div class="container-xl px-4 mt-4">
+
+        <div class="container-xl px-4 mt-4 ">
             <div class="row">
                 <div class="col-lg-4 mb-4">
                     <!-- Billing card 1-->

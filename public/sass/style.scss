@@ -179,7 +179,7 @@ header .nava{
   border-radius: 5px;
   font-size: 16px;
   font-weight: bold;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 
 
   i{
@@ -187,10 +187,10 @@ header .nava{
   }
 }
 .nav-item:hover .btn-dashboard{
-    background-color: #ffffff;
-    color: #000 !important;
+    background-color: #72523b;
+    color: #ffffff !important;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    transition: all .4s ease;
+    transition: all .5s ease-in-out;
 }
 /* bouton nous dashboard */
 .navbar-head .btn-logout{

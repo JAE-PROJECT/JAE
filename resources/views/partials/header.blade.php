@@ -32,9 +32,10 @@
               <li></li>
             </div>
             <div>
+                <?php $routedashboard="{{route('dashboard')}}"  ?>
                 <li class="nav-item dropdown dropdown-hover mx-2">
-                    <a type="button" class=" btn-dashboard " class="" id="dropdownMenuPages" data-bs-toggle="dropdown"
-                    aria-expanded="false" href="/dashboard"><i class="bi bi-person-fill"></i>Tableau de bord</a>
+                    <a type="button" class="btn-dashboard" class="" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false" href="{{route('dashboard')}}" onclick="window.location.href='/dashboard'"><i class="bi bi-person-fill"></i>Mon Espace</a>
+
                     {{-- <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" >
                         <i class="material-icons opacity-6 me-2 text-md">&nbsp;</i>
                         Mon espace personnel

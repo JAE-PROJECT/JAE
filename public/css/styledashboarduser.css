@@ -2,7 +2,14 @@
     background-color: #563924;
 }
 .bg-color-hover{
-    background-color: #bb5d1982;
+    background-color: #6f411dea;
+}
+.items_menu:hover{
+    background-color: #6f411dea;
+}
+
+.activedash{
+    background-color: #6f411dea;
 }
 
 /* form de l'edition  du profil*/
@@ -17,6 +24,7 @@
 
   .rejoindre .text_bas_form {
     color: #9c9c9c;
+
   }
 
   .rejoindre .php-email-form .form-group {

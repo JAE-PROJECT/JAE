@@ -47,7 +47,7 @@
         .account-settings .about p {
             font-size: 0.825rem;
         }
-/*
+        /*
         .form-control {
             border: 1px solid #473710 !important;
             -webkit-border-radius: 2px !important;
@@ -71,11 +71,10 @@
 
 @endsection
 @section('contentdash')
-                                     <div class="">
-        <div class="page-header min-vh-50"
-            style="background-image: url(&quot;../assets/img/bg9.jpg&quot;); transform: translate3d(0px, 13.3333px, 0px);">
+    <div class="container-fluid bg-color_special_div px-2 ">
+        <div class="page-header min-vh-25"
+            style="background-image: url(&quot;../assets/img/bg9.jpg&quot;);">
             <span class="mask bg-gradient-dark opacity-6"></span>
-
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center mx-auto my-auto">
