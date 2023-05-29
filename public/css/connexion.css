@@ -24,6 +24,9 @@ body{
     width: 100%;
 
 }
+.inscription{
+    z-index: 1;
+}
 
 .container {
 position: relative;
@@ -138,6 +141,10 @@ z-index: -1;
 .drop-2 {
 height: 80px; width: 80px;
 bottom: -30px; right: -10px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 500;
 }
 
 .drop-3 {
@@ -149,6 +156,10 @@ z-index: -1;
 .drop-4 {
 height: 120px; width: 120px;
 top: -60px; right: -60px;
+display: flex;
+align-items: center;
+justify-content: center;
+
 }
 
 .drop-5 {

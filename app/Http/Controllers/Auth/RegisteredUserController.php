@@ -51,8 +51,7 @@ class RegisteredUserController extends Controller
         'prenom.regex' => 'Le champ :attribute ne doit contenir que des lettres.',
         'nom.regex' => 'Le champ :attribute ne doit contenir qu\'un seul nom.',
     ]); */
-
-
+ $lien_zones = DB::table('zone')->select('lien_wha')->where('id', $request->zone)->first();
 
     $user = User::create([
         'nom' => $request->nom,
@@ -65,7 +64,7 @@ class RegisteredUserController extends Controller
         'password' => Hash::make($request->password)
     ]);
 
-    $lien_zones = DB::table('zone')->select('lien_wha')->where('id', $request->zone)->first();
+
 
         event(new Registered($user));
 

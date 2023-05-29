@@ -35,7 +35,7 @@
                         <div class="hidden md:block py-6">
                             <div class=" flex flex-col items-baseline justify-between space-y-6">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                <a href="{{route('dashboard')}}" data-page="dashboard" class="text-white w-100 items_menu rounded-md px-3 py-2 text-sm font-medium" aria-current="page"><i class="bi bi-border-style"></i> Mon Espace</a>
+                                <a href="{{route('dashboard')}}" data-page="dashboard" class="text-white w-100 items_menu rounded-md px-3 py-2 text-sm font-medium" aria-current="page"><i class="bi bi-border-style"></i> Programme</a>
                                 <a href="{{route('moncompte')}}" data-page="mon-compte" class="text-gray-300 w-100 items_menu hover:text-white rounded-md px-3 py-2 text-sm font-medium"><i class="bi bi-person-fill-gear"></i> Mon Compte</a>
                                 <a href="{{route('nos-programmes.historique')}}" data-page="mon-historique" class="text-gray-300 w-100 items_menu  hover:text-white rounded-md px-3 py-2 text-sm font-medium"><i class="bi bi-clock-history"></i> Mon Historique</a>
 
@@ -43,10 +43,10 @@
                         </div>
                     </div>
                     <div class="hidden md:block flex self-end">
-                        <div class=" flex items-center">
+                        <div class=" flex items-center md:ml-3">
 
                             <!-- Profile dropdown -->
-                            <div class="relative">
+                            <div class="relative md:ml-3">
                                 <button type="button" class="flex max-w-xs items-center rounded-full  text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                                     <img class="w-50 my-3 mx-auto rounded-full" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" onclick="window.location.href='/mon-compte'">
                                 </button>
@@ -63,7 +63,7 @@
                                 -->
                                 <form action="http://127.0.0.1:8000/logout" method="post">
                                      <input type="hidden" name="_token" value="qlUZUjQzS1JO0EdIuXHGIOmu6JQrgcwKwv57NPIe">
-                                        <button type="submit" href="{{route('logout')}}" class="dropdown-item border-radius-md button items-center" style="
+                                        <button type="submit" href="{{route('logout')}}" class="dropdown-item border-radius-md button items-center " style="
                                         background-color: rgb(68, 47, 20);
                                         padding:10px;
                                         border-radius: 5px; color:rgb(203, 202, 202);

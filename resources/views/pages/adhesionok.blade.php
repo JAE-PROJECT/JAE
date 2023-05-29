@@ -1,7 +1,7 @@
 @extends('layouts.base')
 @section('content')
      <!-- -------- START HEADER 7 w/ text and video ------- -->
-  <header class="bg-gradient-dark">
+  <div class="bg-gradient-dark">
     <div class="page-header min-vh-75" style="background-image: url('../assets/img/bg9.jpg');">
       <span class="mask bg-gradient-dark opacity-6"></span>
       <div class="container">
@@ -17,9 +17,19 @@
         </div>
       </div>
     </div>
-  </header>
+</div>
   <!-- -------- END HEADER 7 w/ text and video ------- -->
 @endsection
+<?php
+    //dd($lien_zones);
+    ?>
 @section('script')
-    <script>setTimeout(function(){ window.location.href = '{{$lien_zones->lien_wha}}'; }, 6000);</script>";
+
+    <script>
+        setTimeout(function() {
+    window.location.href = '{{ $lien_zones }}';
+    }, 2000);
+
+    </script>
+
 @endsection
