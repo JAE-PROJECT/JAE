@@ -21,7 +21,7 @@
                     @endauth
                 </div>
                 <div class="presentatin_img  col-12 col-md-7 order-md-2 order-1">
-                    <img src="{{asset('img/membership-circles.png')}}" alt="image de la communauté">
+                    <img src="{{asset('img/COVER.png')}}" alt="image de la communauté">
                 </div>
             </div>
         </div>
@@ -304,7 +304,7 @@
                   <img src="{{asset('img/temoignage/temoignant_1.png')}}" alt="oups" >
                 </div>
               <div class="info_personne">
-                <span class="info_personne_nom">Jack Dolor</span>
+                <span class="info_personne_nom"> Noho Prince</span>
                 <span class="info_personne_etoile">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -316,8 +316,7 @@
             </div>
             <div class="temoignagne_text">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus, veniam autem optio atque provident. Ad, reiciendis in atque tenetur odio, ipsam corporis sapiente non, itaque obcaecati tempora? Earum, modi.
-              </p>
+                Grace a la JAE, j’ai appris à créer et maintenir une entreprise, j’ai appris également à gérer mon argent. Je sais dans quoi investir mon argent pour que cela me soit rentable et je sais aussi gérer les hommes.              </p>
             </div>
             <span class="guillement">
               <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
@@ -331,7 +330,7 @@
                   <img src="{{asset('img/temoignage/temoignant_1.png')}}" alt="oups" >
                 </div>
               <div class="info_personne">
-                <span class="info_personne_nom">Francis Gba</span>
+                <span class="info_personne_nom">Dagnogo Abdoul</span>
                 <span class="info_personne_etoile">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -343,8 +342,7 @@
             </div>
             <div class="temoignagne_text">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus, veniam autem optio atque provident. Ad, reiciendis in atque tenetur odio, ipsam corporis sapiente non, itaque obcaecati tempora? Earum, modi.
-              </p>
+                Quelques leaders de la JAE m’ont impressionné et m’ont donné une certaine confiance en moi pour pouvoir lutter.              </p>
             </div>
             <span class="guillement">
               <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
@@ -358,7 +356,7 @@
                   <img src="{{asset('img/temoignage/temoignant_1.png')}}" alt="oups" >
                 </div>
               <div class="info_personne">
-                <span class="info_personne_nom">John Doe</span>
+                <span class="info_personne_nom">Thomas Oulaï</span>
                 <span class="info_personne_etoile">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -370,8 +368,7 @@
             </div>
             <div class="temoignagne_text">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus, veniam autem optio atque provident. Ad, reiciendis in atque tenetur odio, ipsam corporis sapiente non, itaque obcaecati tempora? Earum, modi.
-              </p>
+                Je me sens très bien à la JAE. A vrai dire la JAE m’a apporté assez d’inspiration et de motivation qui chaque jour me permettre de continuer malgré les difficultés et j’en suis ravis.              </p>
             </div>
             <span class="guillement">
               <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">

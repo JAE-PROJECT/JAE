@@ -32,7 +32,7 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
-        /* $request->validate([
+        $request->validate([
         'nom' => 'required|max:255|string|regex:/^[^\s]+$/',
         'prenom' => 'required|max:255|string|regex:/^[a-zA-Z\- ]+$/',
         'email' => 'required|email|max:255|unique:users',
@@ -50,7 +50,7 @@ class RegisteredUserController extends Controller
         'contact2.regex' => 'Le champ :attribute doit être un numéro de téléphone valide au format international.',
         'prenom.regex' => 'Le champ :attribute ne doit contenir que des lettres.',
         'nom.regex' => 'Le champ :attribute ne doit contenir qu\'un seul nom.',
-    ]); */
+    ]);
  $lien_zones = DB::table('zone')->select('lien_wha')->where('id', $request->zone)->first();
 
     $user = User::create([

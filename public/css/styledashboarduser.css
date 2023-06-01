@@ -1,146 +1,235 @@
-.bg-color{
-    background-color: #563924;
-}
-.bg-color-hover{
-    background-color: #6f411dea;
-}
-.items_menu:hover{
-    background-color: #6f411dea;
+@charset "UTF-8";
+.bg-color {
+  background-color: #563924;
 }
 
-.activedash{
-    background-color: #6f411dea;
+.bg-color-hover {
+  background-color: rgba(111, 65, 29, 0.9176470588);
+}
+
+.items_menu:hover {
+  background-color: rgba(111, 65, 29, 0.9176470588);
+}
+
+.activedash {
+  background-color: rgba(111, 65, 29, 0.9176470588);
 }
 
 /* form de l'edition  du profil*/
 .rejoindre .php-email-form {
-    width: 100%;
-    border-top: 3px solid #8B4513;
-    border-bottom: 3px solid #8B4513;
-    padding: 30px;
-    background: #fff;
-    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-  }
+  width: 100%;
+  border-top: 3px solid #8B4513;
+  border-bottom: 3px solid #8B4513;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
 
-  .rejoindre .text_bas_form {
-    color: #9c9c9c;
+.rejoindre .text_bas_form {
+  color: #9c9c9c;
+}
 
-  }
+.rejoindre .php-email-form .form-group {
+  padding-bottom: 8px;
+}
 
-  .rejoindre .php-email-form .form-group {
-    padding-bottom: 8px;
-  }
+.rejoindre .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
 
-  .rejoindre .php-email-form .validate {
-    display: none;
-    color: red;
-    margin: 0 0 15px 0;
-    font-weight: 400;
-    font-size: 13px;
-  }
+.rejoindre .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
 
-  .rejoindre .php-email-form .error-message {
-    display: none;
-    color: #fff;
-    background: #ed3c0d;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-  }
+.rejoindre .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
 
-  .rejoindre .php-email-form .error-message br + br {
-    margin-top: 25px;
-  }
+.rejoindre .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
 
-  .rejoindre .php-email-form .sent-message {
-    display: none;
-    color: #fff;
-    background: #18d26e;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-  }
+.rejoindre .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
 
-  .rejoindre .php-email-form .loading {
-    display: none;
-    background: #fff;
-    text-align: center;
-    padding: 15px;
-  }
+.rejoindre .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
 
-  .rejoindre .php-email-form .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid #18d26e;
-    border-top-color: #eee;
-    animation: animate-loading 1s linear infinite;
-  }
+.rejoindre .php-email-form .form-group {
+  margin-bottom: 20px;
+}
 
-  .rejoindre .php-email-form .form-group {
-    margin-bottom: 20px;
-  }
+.rejoindre .php-email-form label {
+  padding-bottom: 0px;
+  /*   font-weight: lighter; */
+  color: #595656;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+}
 
-  .rejoindre .php-email-form label {
-    padding-bottom: 0px;
-    /*   font-weight: lighter; */
-    color: #595656;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    display: block;
-  }
-  .rejoindre .php-email-form label.required::after {
-    content: "*";
-    color: rgb(161, 5, 5);
-  }
-  .rejoindre .php-email-form input:focus .rejoindre .php-email-form label {
-    margin-bottom: 0px;
-  }
+.rejoindre .php-email-form label.required::after {
+  content: "*";
+  color: rgb(161, 5, 5);
+}
 
-  .rejoindre .php-email-form input:not([type=radio]) {
-    border-radius: 0;
-    box-shadow: none;
-    font-size: 14px;
-    padding-bottom: -5px;
-    padding-left: 10px;
-    transition: padding 0.5s ease;
-    color: #2a2a2a;
-    height: 44px;
-    border-bottom: 1px solid rgb(175, 175, 175);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-  }
-  .rejoindre .php-email-form input:not([type=radio]):focus {
-    transition: margin 0.5s ease;
-    font-weight: bold;
-    display: block;
-    margin-top: 0px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #8B4513;
-    transition: padding 0.5s ease;
-  }
+.rejoindre .php-email-form input:focus .rejoindre .php-email-form label {
+  margin-bottom: 0px;
+}
 
-  .rejoindre .php-email-form button[type=submit] {
-    background: #8B4513 !important;
-    border: 0;
-    padding: 12px 34px;
-    color: #fff;
-    transition: 0.4s;
-    border-radius: 50px;
-  }
+.rejoindre .php-email-form input:not([type=radio]) {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  padding-bottom: -5px;
+  padding-left: 10px;
+  transition: padding 0.5s ease;
+  color: #2a2a2a;
+  height: 44px;
+  border-bottom: 1px solid rgb(175, 175, 175);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
 
-  .rejoindre .php-email-form button[type=submit]:hover {
-    background: #7b3c0f;
-  }
+.rejoindre .php-email-form input:not([type=radio]):focus {
+  transition: margin 0.5s ease;
+  font-weight: bold;
+  display: block;
+  margin-top: 0px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #8B4513;
+  transition: padding 0.5s ease;
+}
 
-  @keyframes animate-loading {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+.rejoindre .php-email-form button[type=submit] {
+  background: #8B4513 !important;
+  border: 0;
+  padding: 12px 34px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.rejoindre .php-email-form button[type=submit]:hover {
+  background: #7b3c0f;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* ----------------------- page DASHBOARD(programme)------------- */
+/* >>>>>en haut de l'en têtre où s'est marqué rejoindre ma zone et autre */
+.sub_entete {
+  background-color: #18d26e !important;
+}
+
+/*>>>>>Menu des différentes manière de s'affiché des programmes  */
+.header_dash {
+  position: relative;
+}
+
+.menu_program_dash {
+  position: absolute;
+  width: 22%;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  left: 4rem;
+}
+.menu_program_dash a {
+  border: 2px solid #8B4513;
+  padding: 5px 10px;
+  color: #8B4513;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+}
+.menu_program_dash a:hover {
+  background-color: #8B4513;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.tri_dash {
+  background-color: #8B4513;
+}
+
+/* >>>>>Les programmes filtré en fonction du menu choisit */
+.evenement_section .card_event {
+  border-radius: 10px;
+}
+.evenement_section .card_event .img_event {
+  position: relative;
+  /*
+  &::before{
+      content: '';
+      position: absolute;
+
+      top: 0%; bottom: 0%;
+      left: 0%; right: 0%;
+      background-color: #0000006e;
+      opacity: 0;
+  } */
+}
+.evenement_section .card_event .body_card .staut_event {
+  background-color: rgba(53, 135, 173, 0.5607843137);
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+.evenement_section .card_event .body_card .staut_event .bi {
+  font-size: 10px;
+}
+.evenement_section .card_event .body_card .card_desc {
+  text-align: justify;
+}
+.evenement_section .card_event .body_card .event_participation {
+  margin: auto;
+  background-color: #7b3c0f;
+  color: #eee;
+  /* border-radius: 10px; */
+  padding: 5px 10px;
+  transition: all 0.5s ease-in-out;
+}
+.evenement_section .card_event .body_card .event_participation:hover {
+  background-color: #512f17;
+  transition: all 0.4s ease-in-out;
+}
+.evenement_section .card_event .body_card .event_participation_disable {
+  background-color: #bcbbba;
+  color: #3f3e3e;
+  padding: 5px 10px;
+}
+
+/*# sourceMappingURL=styledashboarduser.css.map */

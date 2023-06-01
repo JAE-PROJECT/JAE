@@ -65,10 +65,23 @@
 });
 new PureCounter();
 
-setTimeout(function() {
-    var texteElement = document.getElementById("already_inscrip_program");
-    texteElement.style.opacity = "0";
-}, 5000);
+const elementId = "already_inscrip_program"; // ID de l'élément spécifique
+const className = "already_inscrip_program"; // Nom de la classe à ajouter
+
+const element = document.getElementById(elementId); // Récupère l'élément par son ID
+
+if (element) {
+  element.classList.add(className); // Ajoute la classe à l'élément
+  element.style.display = "block"; // Applique le style "display: none" à l'élément
+
+  setTimeout(() => {
+    element.classList.remove(className); // Supprime la classe de l'élément
+    element.style.display = "none"; // Rétablit le style d'affichage par défaut après 3 secondes
+  }, 3000);
+}
+
+
+
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

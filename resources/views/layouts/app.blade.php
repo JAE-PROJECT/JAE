@@ -21,11 +21,11 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @yield('style')
     </head>
-    <body class=" antialiased">
+    <body class="antialiased">
 
     <div class=" flex justify-between">
 
-        <nav class="bg-color w-15 z-10" style="height: calc(100vh+100%)">
+        <nav class="bg-color w-15 " style="height: calc(100vh+100%)">
             <div class="  py-4 sm:px-6 lg:py-8">
                 <div class="flex flex-col justify-between " style="align-content:space-between; height:100vh">
                     <div class="flex flex-col items-center justify-between">
@@ -129,7 +129,7 @@
         </nav>
 
 
-        <main class="z-100 w-100">
+        <main class=" w-100">
         {{-- <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8"> --}}
            @yield('contentdash')
         {{-- </div> --}}
@@ -155,5 +155,18 @@
             }
         });
 
+        // Fonction pour changer le background d'un élément et restaurer les autres
+  function changeBackground(element) {
+    // Récupérer tous les éléments avec la classe "highlight"
+    var highlightedElements = document.getElementsById('tri_dash');
+
+    // Restaurer le fond des éléments précédemment mis en évidence
+    for (var i = 0; i < highlightedElements.length; i++) {
+      highlightedElements[i].classList.add('tri_dash');
+    }
+
+    // Appliquer le fond mis en évidence à l'élément actuel
+    element.classList.remove('tri_dash');
+  }
     </script>
 </html>

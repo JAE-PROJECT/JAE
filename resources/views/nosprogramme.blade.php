@@ -1,4 +1,4 @@
-@extends('layouts/base')
+@extends('layouts.base')
 
 @section('content')
     <main id="page_program">
@@ -8,19 +8,19 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
         </section>
-        <section id="explication-program" class=" bg-color position-relative">
+        <section id="explication-program" class=" bg-color">
                     @if (session('already_inscrip_program'))
-                        <div id="already_inscrip_program" class="already_inscrip_program text-danger" >
-                            <i class="bi bi-exclamation-circle-fill m-2"></i>{{session('already_inscrip_program')}}
+                        <div id="already_inscrip_program" class="">
+                            <div class="">
+                                <p class="nom_user fs-2">Hello {{ auth()->user()->nom }}</p>
+                                <span class="warning_inscrip"><i class="bi bi-exclamation-circle-fill m-2 exclamation"></i> {{session('already_inscrip_program')}}</span>
+                            </div>
+
+
                         </div>
                     @endif
-                    @if (session('success_inscrip_program'))
-                    {{-- juste à cause du style nous avons pris la même class et le même id que le precedent --}}
-                    <div id="already_inscrip_program" class="already_inscrip_program text-success" >
-                        <i class="bi bi-check-circle-fill m-2"></i>{{session('success_inscrip_program')}}
-                    </div>
 
-                    @endif
+
             <div class="container program_explain" data-aos="fade-up">
 
                 <div class="row gy-4" data-aos="fade-up">
@@ -31,13 +31,12 @@
                         <div class="content ps-lg-5">
                         <h3>Lorem, ipsum dolor.</h3>
                         <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                            Nous organisons différents programmes et activités dans le but de former, d'encadrer, de coacher, d'éduquer, de participer à l'épanouissement personnel de chacun de nos membres.
+                            La plupart de nos activités se font en ligne en attendant les programmes en présentiel et ses activités sont regroupés en deux groupes qui sont :
                         </p>
                         <ul>
-                            <li><i class="bi bi-check2-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li><i class="bi bi-check2-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li><i class="bi bi-check2-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                            <li><i class="bi bi-check2-circle"></i> MENTORSHIP/EDUCATION</li>
+                            <li><i class="bi bi-check2-circle"></i> SOCIAL/DIVERTISSEMENT</li>
                         </ul>
                         </div>
                     </div>

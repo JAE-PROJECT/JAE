@@ -765,7 +765,7 @@ header .nava {
 .temoignage .personne_temoignant {
   display: flex;
   align-items: center;
-  margin-bottom: 7px;
+  margin-bottom: 13px;
 }
 .temoignage .personne_temoignant .image_personne {
   margin-right: 10px;
@@ -1146,16 +1146,46 @@ header .nava {
   /* ------------------------- vision_1 -------------- */
 }
 #page_program #explication-program .already_inscrip_program {
-  position: absolute;
-  top: 10px;
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3607843137);
   font-size: 15px;
   text-align: center;
   font-weight: lighter;
-  opacity: 1;
-  margin: auto;
-  transition: opacity 0.5s;
+  transition: display 0.5s;
   z-index: 21;
+  transform: translate(-50%, -50%);
+  transition: display 0.5s ease-in-out;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  align-items: center;
+}
+#page_program #explication-program .already_inscrip_program div {
+  margin: auto;
+  align-self: center;
+  justify-self: center;
+  width: 30%;
+  border-radius: 10px;
+  background: whitesmoke;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 90px 10px;
+}
+#page_program #explication-program .already_inscrip_program div .warning_inscrip {
+  color: #6a0d0d;
+}
+#page_program #explication-program .already_inscrip_program div .exclamation {
+  position: absolute;
+  top: 15%;
+  font-size: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #page_program #explication-program .program_explain .content h3 {
   font-weight: 500;

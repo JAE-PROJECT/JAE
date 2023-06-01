@@ -39,9 +39,9 @@
         <h4>Nos réseaux sociaux</h4>
         <p>Rejoignez-nous sur nos différents réseaux sociaux</p>
         <div class="social-links mt-3">
-          <a href="https://twitter.com/lenoiresthomme" class="twitter" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
-          <a href="https://www.facebook.com/" class="facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://twitter.com/jae_officiel" class="twitter" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.facebook.com/jaeofficiel.co" class="facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/jae_officiel/" target="_blank" rel="noopener noreferrer" class="instagram"><i class="bi bi-instagram"></i></a>
         </div>
       </div>
 

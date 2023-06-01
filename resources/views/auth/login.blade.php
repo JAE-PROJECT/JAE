@@ -34,6 +34,7 @@
 
 
                 <input type="submit" value="Connexion"><br>
+                <span class="hvntaccount"> Vous n'avez pas de compte? <a href="{{ route('rejoindre') }}">S'inscrire</a></span><br>
                 @if (Route::has('password.request'))
                     <a href="{{ route('password.request') }}" class="my-3">{{__('Mot de passe oublié ?')}}</a>
                 @endif
@@ -41,7 +42,6 @@
 
                 <div class="drop drop-1"></div>
                 <div class="drop drop-2">
-                    <a href="{{ route('rejoindre') }}">S'inscrire</a>
                 </div>
                 <div class="drop drop-3"></div>
                 <div class="drop drop-4">
