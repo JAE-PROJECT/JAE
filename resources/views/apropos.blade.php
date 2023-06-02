@@ -51,7 +51,7 @@
                 <div class="row">
                     <div class="presentation_img col-12 col-lg-5 " data-aos="fade-left">
                         <figure>
-                            <img src="{{asset('img/fake_lead1.png')}}" alt="Description de l'image">
+                            <img src="{{asset('img/jos.jpg')}}" alt="Description de l'image">
 
                         </figure>
                     </div>
@@ -132,7 +132,7 @@
 
                 <div class="row gy-4" data-aos="fade-up">
                     <div class="col-lg-4">
-                        <img src="{{asset('img/about.jpg')}}" class="img-fluid" alt="">
+                        <img src="{{asset('img/newimg/vision_1.jpg')}}" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-8">
                         <div class="content ps-lg-5">

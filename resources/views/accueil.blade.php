@@ -84,13 +84,13 @@
         <div class="row">
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="presentation ">
-              <img src="{{asset('img/bg9.jpg')}}" alt="oups" class="w-100">
+              <img src="{{asset('img/newimg/team/team1.jpg')}}" alt="oups" class="w-100">
             </div>
             <div class="info-presentation">
               <div class="info-presentation-text position-relative">
                 <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
                   <div class="">
-                    <h4>Marcus Doe</h4>
+                    <h4>Pharès KOUADIO</h4>
                     <p>CEO</p>
                   </div>
                   <a href="portfolio1" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle team_icon"></i></a>
@@ -100,13 +100,13 @@
           </div>
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="presentation">
-              <img src="{{asset('img/bg9.jpg')}}" alt="oups" class="w-100">
+              <img src="{{asset('img/newimg/team/team2.jpg')}}" alt="oups" class="w-100">
             </div>
             <div class="info-presentation">
               <div class="info-presentation-text position-relative">
                 <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
                   <div class="">
-                    <h4>Marcus Doe</h4>
+                    <h4>Prunelle ADJRABE</h4>
                     <p>CEO</p>
                   </div>
                   <a href="portfolio2" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle team_icon"></i></a>
@@ -117,13 +117,13 @@
 
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="presentation">
-              <img src="{{asset('img/bg9.jpg')}}" alt="oups" class="w-100">
+              <img src="{{asset('img/newimg/team/team5.jpg')}}" alt="oups" class="w-100">
             </div>
             <div class="info-presentation">
               <span class="info-presentation-text position-relative"></span>
               <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
                   <div class="">
-                    <h4>Marcus Doe</h4>
+                    <h4>Ruth Esther OUATTARA</h4>
                     <p>CEO</p>
                   </div>
                   <a href="portfolio3" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle team_icon"></i></a>
@@ -135,14 +135,14 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
             <div class="presentation">
               <div>
-                <img src="{{asset('img/bg9.jpg')}}" alt="oups" class="w-100">
+                <img src="{{asset('img/newimg/team/team4.jpg')}}" alt="oups" class="w-100">
               </div>
             </div>
             <div class="info-presentation">
               <div class="info-presentation-text position-relative">
                 <div class="info-presentation-text-position position-absolute bottom-0 start-0 d-flex w-100 justify-content-between p-3">
                   <div class="">
-                    <h4>Marcus Doe</h4>
+                    <h4>Mannn Paace</h4>
                     <p>CEO</p>
                   </div>
                   <a href="portfolio4" class="d-block align-self-center" target="blank" name="portfolio"><i class="bi bi-plus-circle team_icon"></i></a>
@@ -350,7 +350,7 @@
               </svg>
             </span>
           </div>
-          <div class="temoignage_x_personne my-xl-0 my-4 mx-3 col-xl col-md-11 col-12" data-aos="zoom-in">
+          <div class="temoignage_x_personne my-xl-0 my-4 mx-3 col-xl col-md-5 col-12" data-aos="zoom-in">
             <div class="personne_temoignant">
                 <div class="image_personne">
                   <img src="{{asset('img/temoignage/temoignant_1.png')}}" alt="oups" >
@@ -369,6 +369,32 @@
             <div class="temoignagne_text">
               <p>
                 Je me sens très bien à la JAE. A vrai dire la JAE m’a apporté assez d’inspiration et de motivation qui chaque jour me permettre de continuer malgré les difficultés et j’en suis ravis.              </p>
+            </div>
+            <span class="guillement">
+              <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+              </svg>
+            </span>
+          </div>
+          <div class="temoignage_x_personne d-xl-none d-md-block  my-xl-0 my-4 mx-3 col-xl col-md-5 col-12" data-aos="zoom-in">
+            <div class="personne_temoignant">
+                <div class="image_personne">
+                  <img src="{{asset('img/temoignage/temoignant_1.png')}}" alt="oups" >
+                </div>
+              <div class="info_personne">
+                <span class="info_personne_nom">Marc Brayane</span>
+                <span class="info_personne_etoile">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fille"></i>
+                </span>
+              </div>
+            </div>
+            <div class="temoignagne_text">
+              <p>
+                Je me sens super bien a la JAE car elle m’apporte de la motivation chaque matin lorsque je vois les postes de Miss Maro et franchement ca me pousse encore plus vers mes challenges et objectifs. En un mot je suis ravi d’être de la communauté JAE Cote d’ivoire. Merci à toute l’équipe pour tout l’effort fourni</p>
             </div>
             <span class="guillement">
               <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
