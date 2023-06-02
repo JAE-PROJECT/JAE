@@ -26,30 +26,28 @@
     <div class=" flex justify-between">
 
         <nav class="bg-color w-15 " style="height: calc(100vh+100%)">
-            <div class="  py-4 sm:px-6 lg:py-8">
+            <div class=" py-4 sm:px-6 lg:py-8">
                 <div class="flex flex-col justify-between " style="align-content:space-between; height:100vh">
                     <div class="flex flex-col items-center justify-between">
                         <div class="flex-shrink-0">
                             <a href="/"><img class="w-100" src="{{asset('img/logo_header.png')}}" alt=""></a>
                         </div>
-                        <div class="hidden md:block py-6">
+                        <div class=" md:block py-6">
                             <div class=" flex flex-col items-baseline justify-between space-y-6">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                <a href="{{route('dashboard')}}" data-page="dashboard" class="text-white w-100 items_menu rounded-md px-3 py-2 text-sm font-medium" aria-current="page"><i class="bi bi-border-style"></i> Programme</a>
-                                <a href="{{route('moncompte')}}" data-page="mon-compte" class="text-gray-300 w-100 items_menu hover:text-white rounded-md px-3 py-2 text-sm font-medium"><i class="bi bi-person-fill-gear"></i> Mon Compte</a>
-                                <a href="{{route('nos-programmes.historique')}}" data-page="mon-historique" class="text-gray-300 w-100 items_menu  hover:text-white rounded-md px-3 py-2 text-sm font-medium"><i class="bi bi-clock-history"></i> Mon Historique</a>
+                                <a href="{{route('dashboard')}}" data-page="dashboard" class="text-white text-center w-100 items_menu rounded-md px-3 py-2 text-sm font-medium" aria-current="page"><i class="bi bi-border-style sm:block md:inline "></i> Programme</a>
+                                <a href="{{route('moncompte')}}" data-page="mon-compte" class="text-gray-300 text-center w-100 items_menu hover:text-white rounded-md px-3 py-2 text-sm font-medium"><i class="bi bi-person-fill-gear block md:inline"></i> Mon Compte</a>
+                                <a href="{{route('nos-programmes.historique')}}" data-page="mon-historique" class="text-gray-300 text-center w-100 items_menu  hover:text-white rounded-md px-3 py-2 text-sm font-medium"><i class="bi bi-clock-history block md:inline"></i> Mon Historique</a>
 
                             </div>
                         </div>
                     </div>
-                    <div class="hidden md:block flex self-end">
+                    <div class=" md:block flex self-end">
                         <div class=" flex items-center md:ml-3">
 
                             <!-- Profile dropdown -->
                             <div class="relative md:ml-3">
-                                <button type="button" class="flex max-w-xs items-center rounded-full  text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                                    <img class="w-50 my-3 mx-auto rounded-full" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" onclick="window.location.href='/mon-compte'">
-                                </button>
+
 
                                 <!--
                                 Dropdown menu, show/hide based on menu state.
@@ -61,8 +59,8 @@
                                     From: "transform opacity-100 scale-100"
                                     To: "transform opacity-0 scale-95"
                                 -->
-                                <form action="http://127.0.0.1:8000/logout" method="post">
-                                     <input type="hidden" name="_token" value="qlUZUjQzS1JO0EdIuXHGIOmu6JQrgcwKwv57NPIe">
+                                <form action="{{route('logout')}}" method="post">
+                                    @csrf
                                         <button type="submit" href="{{route('logout')}}" class="dropdown-item border-radius-md button items-center " style="
                                         background-color: rgb(68, 47, 20);
                                         padding:10px;
@@ -76,7 +74,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="-mr-2 flex md:hidden">
+                    {{-- <div class="-mr-2 flex md:hidden">
                         <!-- Mobile menu button -->
                         <button type="button" class="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" aria-controls="mobile-menu" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
@@ -89,12 +87,12 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                         </button>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
             <!-- Mobile menu, show/hide based on menu state. -->
-            <div class="md:hidden" id="mobile-menu">
+           {{--  <div class="md:hidden" id="mobile-menu">
                 <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
@@ -125,7 +123,7 @@
                     <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Sign out</a>
                 </div>
                 </div>
-            </div>
+            </div> --}}
         </nav>
 
 
@@ -155,7 +153,7 @@
             }
         });
 
-        // Fonction pour changer le background d'un élément et restaurer les autres
+ // Fonction pour changer le background d'un élément et restaurer les autres
   function changeBackground(element) {
     // Récupérer tous les éléments avec la classe "highlight"
     var highlightedElements = document.getElementsById('tri_dash');
@@ -168,5 +166,22 @@
     // Appliquer le fond mis en évidence à l'élément actuel
     element.classList.remove('tri_dash');
   }
+
+  const elementId = "already_inscrip_program"; // ID de l'élément spécifique
+const className = "already_inscrip_program"; // Nom de la classe à ajouter
+
+const element = document.getElementById(elementId); // Récupère l'élément par son ID
+
+if (element) {
+  element.classList.add(className); // Ajoute la classe à l'élément
+  element.style.display = "block"; // Applique le style "display: none" à l'élément
+
+  setTimeout(() => {
+    element.classList.remove(className); // Supprime la classe de l'élément
+    element.style.display = "none"; // Rétablit le style d'affichage par défaut après 3 secondes
+  }, 3000);
+}
+
+
     </script>
 </html>

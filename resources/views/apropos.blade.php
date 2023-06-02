@@ -1,4 +1,4 @@
-@extends('layouts/base')
+@extends('layouts.base')
 
 @section('content')
     <main class="a_propos">
@@ -57,8 +57,8 @@
                     </div>
                     <div class="presentation_text col-12 col-lg-7" data-aos="fade-right">
 
-                        <p class="presentation_text_palmares">
-                            <span class="presentation_text_nom fs-1">Jean Othniel SILUE</span>
+                        <div class="presentation_text_palmares" id="content_leado">
+                            <span class="presentation_text_nom fs-2" >Jean Othniel SILUE</span>
                             Il existe aujourd’hui une race de personnes qui se lèvent pour la révolution en Afrique, elles ont cette soif de hisser notre continent bien haut partout dans le monde.
                             Notre Fierté Africaine du jour se porte sur un homme qu'on appelle affectueusement "Can't Fail Boy" : Monsieur JEAN-OTHNIEL SILUÉ.
                             Ce jeune homme âgé de 24 ans est de nationalité ivoirienne 🇨🇮 et réside aux États-Unis où il étudie le management option entrepreneuriat.
@@ -66,7 +66,8 @@
                             Aussi il est le CEO de MoneyPool, une holding opérant dans le domaine de la finance décentralisée, avec en son sein, The Billion’s Club qui est une école de formation en expertise de marchés financiers.
                             Il est également le leader du réseau JEUNE AFRIQUE ENTREPRENANTE  réunissant des centaines de jeunes entrepreneurs africains dans plusieurs pays (Côte d’Ivoire, Cameroun, Congo, France, etc.) dans le but de révéler leur potentiel et d’instaurer un environnement favorable à partir d’un agenda social, éducatif et financier qui se déploie sur toute la décennie.
                             Le leader, Jean-Othniel SILUÉ, est une fierté pour notre continent, une source de motivation pour notre jeunesse africaine, un acteur positif de notre société et un modèle pour plusieurs.
-                        </p>
+                        </div>
+                         <button id="showButton" onclick="showMore()" class="w-100 text-start" style="padding: 30px 40px 10px 40px; text-decoration:underline;">Voir plus</button>
                         <div class="presentation_reseaux_sociaux container mt-3 ">
                             <!--<div class="align-self-center">
                                 <span class="fw-bold">Lorem, ipsum dolor.</span>
@@ -119,7 +120,7 @@
                     <li><i class="bi bi-check2-all"></i> La zone Benin 🇧🇯  </li>
                     <li><i class="bi bi-check2-all"></i> La zone France 🇫🇷</li>
                     </ul>
-                    <a href="#" class="btn-learn-more">Voir Plus</a>
+                    <a href="{{route('dashboard')}}" class="btn-learn-more">Ma Zone</a>
                 </div>
                 </div>
 
@@ -158,7 +159,7 @@
 
             <div class="titre_section">
             <h2 class="mb-2">Chef De Zone</h2>
-            <p class="text-center">Uscipit alias euia fugiat sit</p>
+            {{-- <p class="text-center">Uscipit alias euia fugiat sit</p> --}}
             </div>
 
             <div class="row">

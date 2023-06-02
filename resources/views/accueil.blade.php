@@ -79,7 +79,7 @@
       <div class="container" data-aos="fade-up">
         <div class="mb-5 team_title">
           <h2 class="text-center mb-1 fw-bold team_title_titre">Team</h2>
-          <p class="w-75  mx-auto text-center team_title_descrip"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <p class="w-75  mx-auto text-center team_title_descrip"> Une équipe Jeune et dynamique.</p>
         </div>
         <div class="row">
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
@@ -295,7 +295,7 @@
       <div class="container">
         <div class="mb-5 temoignage_title">
           <h2 class="text-center mb-1 fw-bold temoignage_title_titre" data-aos="fade-up">Temoignage</h2>
-          <p class="w-75  mx-auto text-center temoignage_title_descrip" data-aos="fade-up"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <p class="w-75  mx-auto text-center temoignage_title_descrip" data-aos="fade-up"> Ces personnes qui ont expérimenté cette vision.</p>
         </div>
         <div class="row liste_temoignages">
           <div class="temoignage_x_personne my-xl-0 my-4 mx-3 col-xl col-md-5 col-12" data-aos="zoom-in">

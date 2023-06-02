@@ -16,11 +16,11 @@
       <!-- partie du menu de navigation -->
       <div class="menu_composant">
         <ul class="">
-          <li><a href="/" class="active">Accueil</a></li>
-          <li><a href="{{route('apropos')}}" class="">A Propos</a></li>
-          <li><a href="{{route('programme')}}">Nos Programmes</a></li>
-          <li><a href="{{route('forum')}}">Forum</a></li>
-          <li><a href="{{route('blog')}}">Blog</a></li>
+          <li><a href="/" class='{{$statut_menu_ac?? ""}}'>Accueil</a></li>
+          <li><a href="{{route('apropos')}}" class='{{$statut_menu_ap?? ""}}'>A Propos</a></li>
+          <li><a href="{{route('programme')}}" class='{{$statut_menu_pr?? ""}}'>Nos Programmes</a></li>
+          {{-- <li><a href="{{route('forum')}}">Forum</a></li>
+          <li><a href="{{route('blog')}}">Blog</a></li> --}}
           @guest
           <div class="d-flex">
             <li><a type="button" class="btn-rejoindre p-3  rounded-pill" href="{{route('rejoindre')}}"><i class="fas fa-users"></i>Nous Rejoindre</a></li>

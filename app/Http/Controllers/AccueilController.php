@@ -16,7 +16,8 @@ class AccueilController extends Controller
 } */
     public function index()
     {
-        $titre = "Accueil";
+            $statut_menu_ac = 'active';
+            $titre = 'Accueil';
             $nb_users = DB::table('users')->count();
             $nb_team = Team::all()->count();
             $nb_zone = Zone::all()->count();
@@ -29,6 +30,7 @@ class AccueilController extends Controller
            'nb_team' => $nb_team,
            'nb_zone' => $nb_zone,
            'nb_event' => $nb_event,
+           'statut_menu_ac'=> $statut_menu_ac
         ]);
 
 

@@ -16,14 +16,15 @@ class NosprogrammeController extends Controller
 {
     public function show(){
         $titre = "Programmes";
-
+        $statut_menu_pr = 'active';
         $programmes = Event::all();
 
 
 
         return view('nosprogramme', [
            'title' => $titre,
-           'programmes'=> $programmes
+           'programmes'=> $programmes,
+           'statut_menu_pr'=> $statut_menu_pr
         ]);
 
     }

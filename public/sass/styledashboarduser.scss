@@ -152,7 +152,17 @@ $couleur_noir: #000;
 /* ----------------------- page DASHBOARD(programme)------------- */
 /* >>>>>en haut de l'en têtre où s'est marqué rejoindre ma zone et autre */
 .sub_entete{
-    background-color: #18d26e!important;
+    .sub_entete-lien_wha{
+
+        a{
+            border: solid rgb(107 114 128 / var(--tw-bg-opacity)) 2px;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                background-color: #4CAF50 !important;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
 }
 
 /*>>>>>Menu des différentes manière de s'affiché des programmes  */
@@ -173,6 +183,8 @@ $couleur_noir: #000;
         color: $couleur_bois;
         font-weight: 400;
         transition: all .5s ease-in-out;
+        min-width: 100px;
+        text-align: center;
 
         &:hover{
             background-color: $couleur_bois;
@@ -184,6 +196,7 @@ $couleur_noir: #000;
 }
 .tri_dash{
     background-color: $couleur_bois;
+    color: white !important;
 }
 /* >>>>>Les programmes filtré en fonction du menu choisit */
 
@@ -245,6 +258,50 @@ $couleur_noir: #000;
                 color: #3f3e3e;
                 padding: 5px 10px;
             }
+        }
+    }
+}
+
+.already_inscrip_program {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    background-color: #0000005c;
+    font-size: 15px;
+    text-align: center;
+    font-weight: lighter;
+    transition: display 0.5s;
+    z-index: 21;
+    transform: translate(-50%,-50%);
+    transition: display .5s ease-in-out;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    align-items: center;
+    div{
+        margin: auto;
+        align-self: center;
+        justify-self: center;
+        width: 30%;
+        border-radius: 10px;
+        background: whitesmoke;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 90px 10px;
+
+        .warning_inscrip{
+            color: #6a0d0d;
+        }
+        .exclamation{
+            position: absolute;
+             top: 15%;
+             font-size: 50px;
+             left: 50%;
+            transform: translate(-50%,-50%);
         }
     }
 }

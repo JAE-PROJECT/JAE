@@ -246,8 +246,7 @@
 
                                     <div  >
                                         <p>
-                                        Vous avez officiellement rejoint la Jeune Afrique Entreprenante sur Telegram et nous sommes ravis de vous compter dans la grande famille.
-                                        Dans ce groupe, vous serez notifiés de toutes nos activités et  programmes, vous y recevrez les liens des conférences Zoom et surtout vous pouvez vous sentir libres d’intéragir dans le groupe en échangeant avec les autres membres.
+                                        Vous avez officiellement rejoint la Jeune Afrique Entreprenante et nous sommes ravis de vous compter dans la grande famille.
                                         </p>
                                     </div>
 

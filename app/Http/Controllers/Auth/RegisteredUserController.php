@@ -4,12 +4,14 @@ namespace App\Http\Controllers\Auth;
 
 use App\Models\User;
 use Illuminate\View\View;
+use App\Mail\WellcomeMail;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rules;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Auth\Events\Registered;
 use App\Providers\RouteServiceProvider;
@@ -69,6 +71,10 @@ class RegisteredUserController extends Controller
         event(new Registered($user));
 
         Auth::login($user);
+
+        $user_id = Auth::id();
+        $user_log = User::find($user_id);
+        Mail::to($user_log->email)->send(new WellcomeMail());
 
         return view('pages.adhesionok')->with('lien_zones', $lien_zones->lien_wha);
 

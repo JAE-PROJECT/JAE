@@ -81,6 +81,15 @@ if (element) {
 }
 
 
+// a propos test leader
+
+function showMore() {
+            var content = document.getElementById("content_leado");
+            var button = document.getElementById("showButton");
+
+            content.classList.add("showContent");
+            button.style.display = "none";
+        }
 
 </script>
 

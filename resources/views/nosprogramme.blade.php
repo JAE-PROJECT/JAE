@@ -5,7 +5,7 @@
         <section id="banniere_nous_rejoindre">
             <div class="titre_page">
                 <h2>Nos Programmes</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+ {{--                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p> --}}
             </div>
         </section>
         <section id="explication-program" class=" bg-color">
@@ -29,7 +29,7 @@
                     </div>
                     <div class="col-lg-8">
                         <div class="content ps-lg-5">
-                        <h3>Lorem, ipsum dolor.</h3>
+                        <h3>Ce que nous faisons à la JAE</h3>
                         <p>
                             Nous organisons différents programmes et activités dans le but de former, d'encadrer, de coacher, d'éduquer, de participer à l'épanouissement personnel de chacun de nos membres.
                             La plupart de nos activités se font en ligne en attendant les programmes en présentiel et ses activités sont regroupés en deux groupes qui sont :
@@ -94,74 +94,79 @@
 
                 </div>
 
-                <div class="programmes row position-relative">
+                <div class="programmes row  position-relative">
 
                      {{-- Boucle à travers chaque programme --}}
                     @foreach($programmes as $programme)
                         @if((!isset($_GET['statut']) || $programme->statut == $_GET['statut']) && (!isset($_GET['type']) || $programme->type_id == $_GET['type']))
-                        <div class="programme col-lg-3 col-md-6 col-12 mx-3" data-aos="zoom-in">
+                        <div class="col-12 col-md-6 col-lg-4 mb-4">
+                            <div class="programme mx-2" data-aos="zoom-in">
 
-                            {{-- <!-- Image du programme --> --}}
-                            <div class="image_program">
-                                <img src="{{asset('img/about.jpg')}}" alt="">
-                                <div class="image_program-orateur">
-                                    <span> ORATEUR: {{str_replace(" - "," & ","$programme->orateur")}}</span>
+                                {{-- <!-- Image du programme --> --}}
+                                <div class="image_program">
+                                    <img src="{{asset('img/about.jpg')}}" alt="">
+                                    <div class="image_program-orateur">
+                                        <span> ORATEUR: {{str_replace(" - "," & ","$programme->orateur")}}</span>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <!-- Titre et description du programme -->
-                            <div class="text_program px-3">
-                                <h3 class="titre_program">{{$programme->event_titre}}</h3>
-                                <p class="description_program">{{$programme->event_description}}</p>
-                            </div>
-                             {{-- <div class="d-none">
-                                {{$programme->statut = "fermer"}}
-                            </div> --}}
-                            <!-- Bouton d'inscription -->
-                            @if(strtolower($programme->statut) != 'ouvert')
-                                <div class="d-none bouton_inscrire pt-3">
-                                    <button> Ferm&eacute;</button>
+                                <!-- Titre et description du programme -->
+                                <div class="text_program px-3">
+                                    <h3 class="titre_program">{{$programme->event_titre}}</h3>
+                                    <p class="description_program">{{$programme->event_description}}</p>
                                 </div>
-                            @else
-                                <div class="d-block bouton_inscrire pt-3">
-                                    <form action="{{ route('inscription_programme') }}" method="POST">
-                                        @csrf
-                                        <input type="hidden" name="event_id" value="{{ $programme->id }}">
-                                        <button type="submit">S'inscrire</button>
-                                    </form>
+                                {{-- <div class="d-none">
+                                    {{$programme->statut = "fermer"}}
+                                </div> --}}
+                                <!-- Bouton d'inscription -->
+                                @if(strtolower($programme->statut) != 'ouvert')
+                                    <div class="d-none bouton_inscrire pt-3">
+                                        <button> Ferm&eacute;</button>
+                                    </div>
+                                @else
+                                    <div class="d-block bouton_inscrire pt-3">
+                                        <form action="{{ route('inscription_programme') }}" method="POST">
+                                            @csrf
+                                            <input type="hidden" name="event_id" value="{{ $programme->id }}">
+                                            <button type="submit">S'inscrire</button>
+                                        </form>
+                                    </div>
+                                @endif
+
+                                <!-- Informations supplémentaires sur le programme (nombre de places, date et heure) -->
+                                <div class="other_infos_program mt-3">
+                                    <span>
+                                        <!-- <i class="bi bi-person-fill"></i> -->{{$programme->nombre_place??'0'}} inscrits
+                                    </span>
+                                    <span>
+
+                                    </span>
+                                    <span>
+                                        <i class="bi bi-calendar-event"></i>{{$programme->event_date}}
+                                        <i class="bi bi-hourglass-split"></i>{{$programme->event_heure}}
+                                    </span>
                                 </div>
-                            @endif
 
-                            <!-- Informations supplémentaires sur le programme (nombre de places, date et heure) -->
-                            <div class="other_infos_program mt-3">
-                                <span>
-                                    <!-- <i class="bi bi-person-fill"></i> -->{{$programme->nombre_place??'0'}} inscrits
-                                </span>
-                                <span>
-
-                                </span>
-                                <span>
-                                    <i class="bi bi-calendar-event"></i>{{$programme->event_date}}
-                                    <i class="bi bi-hourglass-split"></i>{{$programme->event_heure}}
-                                </span>
-                            </div>
-
-                            <!-- Statut du programme (ouvert ou fermé) -->
-                            <div class="statut_program">
-                                <span>
-                                    <!-- Si le programme est ouvert, affiche une coche verte, sinon affiche une croix rouge -->
-                                    @if (strtolower($programme->statut) == 'ouvert')
-                                        <i class="bi bi-record2 text-success"></i>
-                                    @else
-                                        <i class="bi bi-x text-danger"></i>
-                                    @endif
-                                    {{$programme->statut}}
-                                </span>
+                                <!-- Statut du programme (ouvert ou fermé) -->
+                                <div class="statut_program">
+                                    <span>
+                                        <!-- Si le programme est ouvert, affiche une coche verte, sinon affiche une croix rouge -->
+                                        @if (strtolower($programme->statut) == 'ouvert')
+                                            <i class="bi bi-record2 text-success"></i>
+                                        @else
+                                            <i class="bi bi-x text-danger"></i>
+                                        @endif
+                                        {{$programme->statut}}
+                                    </span>
+                                </div>
                             </div>
                         </div>
+
                         @endif
                     @endforeach
+
                 </div>
+
             </div>
         </section>
 

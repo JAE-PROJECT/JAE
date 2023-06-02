@@ -87,6 +87,15 @@ header .nava{
     justify-content: space-between;
     margin-right:30px;
     align-items: center;
+    .active{
+        font-weight: bold;
+        color: $couleur_bois;
+        .scrolled &{
+            color:rgb(238,168,84);
+            transition: all .5s ease;
+        }
+    }
+
 }
 .navbar-head .menu_composant ul li{
    margin: 0px 15px;
@@ -100,16 +109,20 @@ header .nava{
 .navbar-head .menu_composant ul li a .active{
     color: $couleur_or;
 }
-/*.navbar-head .menu_composant ul li .active::before {
-    color:rgb(238,168,84);
+.navbar-head .menu_composant ul li .active::before {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: rgb(238,168,84);
-}*/
+    background-color: $couleur_bois;
+
+}
+.scrolled .navbar-head .menu_composant ul li .active::before{
+    background-color:rgb(238,168,84);
+    transition: all .5s ease;
+}
 .navbar-head .menu_composant ul li a:hover{
     color: $couleur_or;
 }
@@ -964,6 +977,20 @@ header .nava{
       text-align: justify;
       padding: 0px 40px 10px 40px;
       margin-bottom: -20px;
+        overflow: hidden;
+        max-height: 200px; /* Hauteur initiale du texte affiché */
+
+
+
+    }
+    .showContent {
+        max-height: none !important; /* Supprime la limite de hauteur pour afficher tout le contenu */
+        overflow: initial;
+
+    }
+
+    .showButton {
+        display: none; /* Masque le bouton "Voir plus" lorsqu'il est affiché */
     }
   }
 
