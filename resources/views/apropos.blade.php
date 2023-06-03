@@ -158,7 +158,7 @@
         <div class="container" data-aos="fade-up">
 
             <div class="titre_section">
-            <h2 class="mb-2">Chef De Zone</h2>
+            <h2 class="mb-2">Che f De Zone</h2>
             {{-- <p class="text-center">Uscipit alias euia fugiat sit</p> --}}
             </div>
 
