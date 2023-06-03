@@ -165,9 +165,9 @@
             <div class="row">
 
             <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
-                <div class="member d-flex align-items-start">
-                <div class="pic"><img src="{{asset('img/team/lead_1.jpg')}}" class="img-fluid" alt="" style="width:100%; "> </div>
-                <div class="member-info">
+                <div class="member row">
+                <div class="col-4"><img src="{{asset('img/chefdezone/chefdezone_5.jpeg')}}" class="img-fluid" alt="" style="width:100%; "> </div>
+                <div class="member-info col-8">
                     <h4>Alex-Wilfried DIGBEU</h4>
                     <span>Chef JAE Cote d'Ivoire</span>
                     <p>CEO et POOL BANK
@@ -181,7 +181,7 @@
 
             <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
                 <div class="member row">
-                <div class=" col-4"><img src="{{asset('img/team/lead_2.jpg')}}" class="img-fluid" alt=""></div>
+                <div class=" col-4"><img src="{{asset('img/chefdezone/chefdezone_4.jpeg')}}" class="img-fluid" alt=""></div>
                 <div class="member-info col-8">
                     <h4>Esmeralda AMESSAN</h4>
                     <span>Chef JAE France 🇫🇷</span>
@@ -194,7 +194,7 @@
 
             <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
                 <div class="member row">
-                <div class="pic col-4"><img src="{{asset('img/team/lead_3.jpg')}}" class="img-fluid" alt=""></div>
+                <div class=" col-4"><img src="{{asset('img/chefdezone/chefdezone_3.jpeg')}}" class="img-fluid" alt=""></div>
                 <div class="member-info col-8">
                     <h4>Boris AMANG</h4>
                     <span>Chef JAE Cameroun</span>
@@ -208,7 +208,7 @@
 
             <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
                 <div class="member row">
-                <div class="col-4"><img src="{{asset('img/team/lead_4.jpg')}}" class="img-fluid" alt=""></div>
+                <div class="col-4"><img src="{{asset('img/chefdezone/chefdezone_1.jpeg')}}" class="img-fluid" alt=""></div>
                 <div class="member-info col-8">
                     <h4>Abdoul Hamid GARBA</h4>
                     <span>Chef JAE Benin</span>
@@ -220,8 +220,8 @@
 
             <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
                 <div class="member row">
-                <div class="pic"><img src="{{asset('img/team/lead_4.jpg')}}" class="img-fluid" alt=""></div>
-                <div class="member-info">
+                <div class="col-4"><img src="{{asset('img/chefdezone/chefdezone_2.jpeg')}}" class="img-fluid" alt=""></div>
+                <div class="member-info col-8">
                     <h4>Germain ruan KATAKI</h4>
                     <span>Chef JAE RDC</span>
                     <p>CEO mutuelles des ingenieur,
@@ -233,9 +233,9 @@
             </div>
 
             <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-                <div class="member d-flex align-items-start">
-                <div class="pic"><img src="{{asset('img/team/lead_4.jpg')}}" class="img-fluid" alt=""></div>
-                <div class="member-info">
+                <div class="member row">
+                <div class="col-4"><img src="{{asset('img/chefdezone/chefdezone_6.jpeg')}}" class="img-fluid" alt=""></div>
+                <div class="member-info col-8">
                     <h4>Hugue Arnaud BAH </h4>
                     <span>Chief Manager</span>
                     <p>Responsable de DPS et AfriExchanger zone Sénégal puis de G-CONNEXT, des structures spécialisées dans la Cryptomonnaies, la monnaie électronique et bien d'autres.
