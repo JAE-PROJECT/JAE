@@ -9,7 +9,9 @@
       <a href="/" class="logo me-auto"><img src="{{asset('img/logo_header.png')}}" alt="oups"  style="width: 100px;"></a>
         <p>
         <br>
-          <strong>Téléphone:</strong><a  target="_blank" rel="noopener noreferrer">+225 48 66 43 62<br>
+          <strong>Téléphone 1:</strong><a  target="_blank" rel="noopener noreferrer">+225 07 48 66 43 62<br>
+            <strong>Téléphone 2:</strong><a  target="_blank" rel="noopener noreferrer">+225 07 69 86 35 50<br>
+
           <strong>Email:</strong><a href="mailto:contact@jae.gcapholding.com"  target="_blank" rel="noopener noreferrer" > contact@jae.gcapholding.com</a> <br>
         </p>
       </div>
