@@ -51,7 +51,7 @@
                 <div class="row">
                     <div class="presentation_img col-12 col-lg-5 " data-aos="fade-left">
                         <figure>
-                            <img src="{{asset('img/jos.jpg')}}" alt="Description de l'image">
+                            <img src="{{asset('img/jos.jpg')}}" class="" alt="Description de l'image">
 
                         </figure>
                     </div>
@@ -67,7 +67,7 @@
                             Il est également le leader du réseau JEUNE AFRIQUE ENTREPRENANTE  réunissant des centaines de jeunes entrepreneurs africains dans plusieurs pays (Côte d’Ivoire, Cameroun, Congo, France, etc.) dans le but de révéler leur potentiel et d’instaurer un environnement favorable à partir d’un agenda social, éducatif et financier qui se déploie sur toute la décennie.
                             Le leader, Jean-Othniel SILUÉ, est une fierté pour notre continent, une source de motivation pour notre jeunesse africaine, un acteur positif de notre société et un modèle pour plusieurs.
                         </div>
-                         <button id="showButton" onclick="showMore()" class="w-100 text-start" style="padding: 30px 40px 10px 40px; text-decoration:underline;">Voir plus</button>
+                         <button id="showButton" onclick="showMore()" class="w-100 text-start  " style="padding: 0px 40px 10px 40px; text-decoration:underline;">Voir plus</button>
                         <div class="presentation_reseaux_sociaux container mt-3 ">
                             <!--<div class="align-self-center">
                                 <span class="fw-bold">Lorem, ipsum dolor.</span>
@@ -185,9 +185,9 @@
             </div>
 
             <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
-                <div class="member d-flex align-items-start">
-                <div class="pic"><img src="{{asset('img/team/lead_2.jpg')}}" class="img-fluid" alt=""></div>
-                <div class="member-info">
+                <div class="member row">
+                <div class=" col-4"><img src="{{asset('img/team/lead_2.jpg')}}" class="img-fluid" alt=""></div>
+                <div class="member-info col-8">
                     <h4>Esmeralda AMESSAN</h4>
                     <span>Chef JAE France 🇫🇷</span>
                     <p>Étant étudiante en gestion d’entreprise à Paris, je suis Businesswoman, Entrepreneur dans l’événementiel: PDG de La Parole Planner, qui est une entreprise à taille humaine spécialisée dans la planification et la coordination d’événements privatifs et de mariages. Je suis aussi Créatrice de contenus et DG de Shekina Traiteur qui est une structure de restauration en ligne.
@@ -203,9 +203,9 @@
             </div>
 
             <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
-                <div class="member d-flex align-items-start">
-                <div class="pic"><img src="{{asset('img/team/lead_3.jpg')}}" class="img-fluid" alt=""></div>
-                <div class="member-info">
+                <div class="member row">
+                <div class="pic col-4"><img src="{{asset('img/team/lead_3.jpg')}}" class="img-fluid" alt=""></div>
+                <div class="member-info col-8">
                     <h4>Boris AMANG</h4>
                     <span>Chef JAE Cameroun</span>
                     <p>Un jeune entrepreneur qui est à la tête des entreprises Elam Energy et Elam invest
@@ -222,9 +222,9 @@
             </div>
 
             <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-                <div class="member d-flex align-items-start">
-                <div class="pic"><img src="{{asset('img/team/lead_4.jpg')}}" class="img-fluid" alt=""></div>
-                <div class="member-info">
+                <div class="member row">
+                <div class="col-4"><img src="{{asset('img/team/lead_4.jpg')}}" class="img-fluid" alt=""></div>
+                <div class="member-info col-8">
                     <h4>Abdoul Hamid GARBA</h4>
                     <span>Chef JAE Benin</span>
                     <p>Je suis étudiant en deuxième année de comptabilité et entrepreneur web dans le domaine du copywriting ,le community management ,rédaction web seo,E-commerce avec une année d’expérience et j’adore le domaine du digital. je possède l’agence de communication digitale Iroko Africa et je suis le chief de la zone du Bénin.  Et nous sommes au nombre de 15</p>
@@ -239,7 +239,7 @@
             </div>
 
             <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
-                <div class="member d-flex align-items-start">
+                <div class="member row">
                 <div class="pic"><img src="{{asset('img/team/lead_4.jpg')}}" class="img-fluid" alt=""></div>
                 <div class="member-info">
                     <h4>Germain ruan KATAKI</h4>
