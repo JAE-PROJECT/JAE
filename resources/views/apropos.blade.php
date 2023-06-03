@@ -174,12 +174,7 @@
                        General Manager at MONEYPOOL
                        570 Membres
                     </p>
-                    <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href="https://www.facebook.com/NeksLion/"><i class="bi bi-facebook"></i></a>
-                    <a href="https://instagram.com/nekslion?igshid=NTc4MTIwNjQ2YQ=="><i class="bi bi-instagram"></i></a>
-                    <a href=""> <i class="bi bi-linkedin"></i> </a>
-                    </div>
+
                 </div>
                 </div>
             </div>
@@ -192,12 +187,7 @@
                     <span>Chef JAE France 🇫🇷</span>
                     <p>Étant étudiante en gestion d’entreprise à Paris, je suis Businesswoman, Entrepreneur dans l’événementiel: PDG de La Parole Planner, qui est une entreprise à taille humaine spécialisée dans la planification et la coordination d’événements privatifs et de mariages. Je suis aussi Créatrice de contenus et DG de Shekina Traiteur qui est une structure de restauration en ligne.
                     Ma zone compte 32 Friends.</p>
-                    <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href="https://www.facebook.com/mera.amessan"><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""> <i class="bi bi-linkedin"></i> </a>
-                    </div>
+
                 </div>
                 </div>
             </div>
@@ -211,12 +201,7 @@
                     <p>Un jeune entrepreneur qui est à la tête des entreprises Elam Energy et Elam invest
                     Qui exercent dans les énergies renouvelables et des placements financiers dans divers domaines (Agriculture, immobilier, distribution..etc. )depuis 2019
                     Il est engagé dans le mouvement de la JAE et est responsable de la communauté camerounaise  qui est au nombre de 120 personnes  aujourd'hui</p>
-                    <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href=""><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""> <i class="bi bi-linkedin"></i> </a>
-                    </div>
+
                 </div>
                 </div>
             </div>
@@ -228,12 +213,7 @@
                     <h4>Abdoul Hamid GARBA</h4>
                     <span>Chef JAE Benin</span>
                     <p>Je suis étudiant en deuxième année de comptabilité et entrepreneur web dans le domaine du copywriting ,le community management ,rédaction web seo,E-commerce avec une année d’expérience et j’adore le domaine du digital. je possède l’agence de communication digitale Iroko Africa et je suis le chief de la zone du Bénin.  Et nous sommes au nombre de 15</p>
-                    <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href="https://www.facebook.com/abdoulhamidofficiel?mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""> <i class="bi bi-linkedin"></i> </a>
-                    </div>
+
                 </div>
                 </div>
             </div>
@@ -247,12 +227,7 @@
                     <p>CEO mutuelles des ingenieur,
                     coach en develloppement personnel et professionel
                     Germainruansniper@gmail.com</p>
-                    <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href="https://www.facebook.com/germainruan.kataki"><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""> <i class="bi bi-linkedin"></i> </a>
-                    </div>
+
                 </div>
                 </div>
             </div>
@@ -265,12 +240,7 @@
                     <span>Chief Manager</span>
                     <p>Responsable de DPS et AfriExchanger zone Sénégal puis de G-CONNEXT, des structures spécialisées dans la Cryptomonnaies, la monnaie électronique et bien d'autres.
                     Au sein de la JAE mon travail consiste à coordonner et superviser les activités des Chiefs dans leurs différentes zones.</p>
-                    <div class="social">
-                    <a href=""><i class="bi bi-twitter"></i></a>
-                    <a href="https://www.facebook.com/abdoulhamidofficiel?mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
-                    <a href=""><i class="bi bi-instagram"></i></a>
-                    <a href=""> <i class="bi bi-linkedin"></i> </a>
-                    </div>
+
                 </div>
                 </div>
             </div>
