@@ -11,7 +11,7 @@ $cd: #a01313;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif ;
+    font-family: sans-serif;
 
 }
 body{
@@ -756,7 +756,7 @@ header .nava{
     .card:hover &{
       opacity: 1;
       transition-delay: 0.1s;
-      transform: translateY(0);
+      transform: translateY(2);
     }
   }
   .card__footer{
@@ -830,6 +830,77 @@ header .nava{
     }
   }
 
+.popup_articles
+{   position: fixed;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    top:0;bottom: 0;left: 0;right: 0;
+    z-index: 100;
+    overflow: scroll;
+
+    .article{
+        width: 40%;
+        height: 80%;
+        margin: 0 auto;
+        background-color: white;
+        overflow: scroll;
+        .image_articles{
+
+            position: relative;
+            .img{
+                display: block;
+                opacity: 1;
+                transition: opacity .5s, transform .5s;
+                transform: scale(1);
+            }
+        }
+        .body_article{
+            box-shadow: #000 0px -7px 19px ;
+            position: absolute;
+            top: 70%;
+            bottom: 0;
+            width: 40%;
+            height: 100%;
+            background-color: white;
+            padding: 50px;
+            .titre{
+                color: $couleur_bois;
+                font-size: 38px;
+            }
+            .description{
+                margin-top: 20px;
+                line-height: 32px;
+            }
+            .category{
+                position: absolute;
+                top: -34px;
+                font-weight: lighter;
+                width: 20%;
+                text-transform: uppercase;
+                font-size: 15px;
+                left: 0;
+                background-color: $couleur_bois;
+                color: #fff;
+                padding: 5px  15px;
+              }
+
+
+        }
+        .button_close{
+            display: block;
+            position: absolute;
+            top: 0;
+            z-index: 120;
+            font-size: 40px;
+            color: $couleur_bois;
+            &:hover{
+                color: $couleur_or;
+            }
+          }
+
+    }
+}
 /* --------------------- Temoignagne ------------------*/
 .temoignage{
   .temoignage_title{
@@ -976,9 +1047,9 @@ header .nava{
       line-height: $line_height;
       text-align: justify;
       padding: 0px 40px 10px 40px;
-      margin-bottom: -20px;
+      margin-bottom: -10px;
         overflow: hidden;
-        max-height: 200px; /* Hauteur initiale du texte affiché */
+        max-height: 400px; /* Hauteur initiale du texte affiché */
 
 
 
