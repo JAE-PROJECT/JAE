@@ -28,13 +28,14 @@
                     <div class="email">
                         <i class="bi bi-envelope"></i>
                         <h4>Email:</h4>
-                        <p>info@jae.com</p>
+                        <p>contact@jae.gcapholding.com</p>
                     </div>
 
                     <div class="phone">
                         <i class="bi bi-phone"></i>
                         <h4>Appel:</h4>
-                        <p>+1 5589 55488 55</p>
+                        <p>+225 07 48 66 43 62</p>
+                        <p>+225 07 69 86 35 50</p>
                     </div>
                 </div>
 
