@@ -7,11 +7,15 @@
         $user_auth = DB::select('select * from users where id='.Auth()->id());
         $programmes = DB::select('select * from event');
        /* dd($programmes); */
+        $nom_zone = auth()->user()->zone()->first()->nom_zone;
         $aujourdHui = Carbon::now()->toDateString();
         $heureActuelle = Carbon::now()->toTimeString();
         $path_wha = DB::table('zone')->join('users', 'zone.id', '=', 'users.zone_id')
-                            ->select('zone.lien_wha')
+                            ->select('lien_wha')
+                            ->where('nom_zone',$nom_zone)
                             ->first();
+
+
 
     ?>
     <div class=" sub_entete  bg-gray-700 py-3 h-15 text-white">
