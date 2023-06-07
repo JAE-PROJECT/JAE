@@ -120,7 +120,9 @@
                     <li><i class="bi bi-check2-all"></i> La zone Benin 🇧🇯  </li>
                     <li><i class="bi bi-check2-all"></i> La zone France 🇫🇷</li>
                     </ul>
-                    <a href="{{route('dashboard')}}" class="btn-learn-more">Ma Zone</a>
+                     @auth
+                         <a href="{{route('dashboard')}}" class="btn-learn-more">Ma Zone</a>
+                     @endauth
                 </div>
                 </div>
 
@@ -162,11 +164,11 @@
             {{-- <p class="text-center">Uscipit alias euia fugiat sit</p> --}}
             </div>
 
-            <div class="row">
+            <div class="row gx-6">
 
             <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
                 <div class="member row">
-                <div class="col-4"><img src="{{asset('img/chefdezone/chefdezone_5.jpeg')}}" class="img-fluid" alt="" style="width:100%; "> </div>
+                <div class="col-4"><img src="{{asset('img/chefdezone/chefdezone_5.jpg')}}" class="img-fluid rounded-circle" alt="" style="width:100%; "> </div>
                 <div class="member-info col-8">
                     <h4>Alex-Wilfried DIGBEU</h4>
                     <span>Chef JAE Cote d'Ivoire</span>
@@ -179,22 +181,25 @@
                 </div>
             </div>
 
-            <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
-                <div class="member row">
-                <div class=" col-4"><img src="{{asset('img/chefdezone/chefdezone_4.jpeg')}}" class="img-fluid" alt=""></div>
-                <div class="member-info col-8">
-                    <h4>Esmeralda AMESSAN</h4>
-                    <span>Chef JAE France 🇫🇷</span>
-                    <p>Étant étudiante en gestion d’entreprise à Paris, je suis Businesswoman, Entrepreneur dans l’événementiel: PDG de La Parole Planner, qui est une entreprise à taille humaine spécialisée dans la planification et la coordination d’événements privatifs et de mariages. Je suis aussi Créatrice de contenus et DG de Shekina Traiteur qui est une structure de restauration en ligne.
-                    Ma zone compte 32 Friends.</p>
+            <div class="col-lg-6 mt-4 " data-aos="zoom-in" data-aos-delay="200">
 
-                </div>
-                </div>
+                    <div class="member row">
+                    <div class=" col-4"><img src="{{asset('img/chefdezone/chefdezone_4.jpeg')}}" class="img-fluid  rounded-circle" alt=""></div>
+                    <div class="member-info col-8">
+                        <h4>Esmeralda AMESSAN</h4>
+                        <span>Chef JAE France 🇫🇷</span>
+                        <p>Étant étudiante en gestion d’entreprise à Paris, je suis Businesswoman, Entrepreneur dans l’événementiel: PDG de La Parole Planner, qui est une entreprise à taille humaine spécialisée dans la planification et la coordination d’événements privatifs et de mariages. Je suis aussi Créatrice de contenus et DG de Shekina Traiteur qui est une structure de restauration en ligne.
+                        Ma zone compte 32 Friends.</p>
+
+                    </div>
+                    </div>
+
+
             </div>
 
             <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
                 <div class="member row">
-                <div class=" col-4"><img src="{{asset('img/chefdezone/chefdezone_3.jpeg')}}" class="img-fluid" alt=""></div>
+                <div class=" col-4"><img src="{{asset('img/chefdezone/chefdezone_3.jpeg')}}" class="img-fluid rounded-circle" alt=""></div>
                 <div class="member-info col-8">
                     <h4>Boris AMANG</h4>
                     <span>Chef JAE Cameroun</span>
@@ -208,7 +213,7 @@
 
             <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
                 <div class="member row">
-                <div class="col-4"><img src="{{asset('img/chefdezone/chefdezone_1.jpeg')}}" class="img-fluid" alt=""></div>
+                <div class="col-4"><img src="{{asset('img/chefdezone/chefdezone_1.jpg')}}" class="img-fluid rounded-circle" alt=""></div>
                 <div class="member-info col-8">
                     <h4>Abdoul Hamid GARBA</h4>
                     <span>Chef JAE Benin</span>
@@ -220,7 +225,7 @@
 
             <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
                 <div class="member row">
-                <div class="col-4"><img src="{{asset('img/chefdezone/chefdezone_2.jpeg')}}" class="img-fluid" alt=""></div>
+                <div class="col-4"><img src="{{asset('img/chefdezone/chefdezone_2.jpg')}}" class="img-fluid rounded-circle" alt=""></div>
                 <div class="member-info col-8">
                     <h4>Germain ruan KATAKI</h4>
                     <span>Chef JAE RDC</span>
@@ -234,7 +239,7 @@
 
             <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="400">
                 <div class="member row">
-                <div class="col-4"><img src="{{asset('img/chefdezone/chefdezone_6.jpeg')}}" class="img-fluid" alt=""></div>
+                <div class="col-4"><img src="{{asset('img/chefdezone/chefdezone_6.jpg')}}" class="img-fluid rounded-circle" alt=""></div>
                 <div class="member-info col-8">
                     <h4>Hugue Arnaud BAH </h4>
                     <span>Chief Manager</span>

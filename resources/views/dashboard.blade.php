@@ -37,9 +37,10 @@
             <h1 class="text-3xl font-bold tracking-tight text-gray-900">Programmes</h1>
         </div>
         <div class="menu_program_dash">
-            <a href="{{ route('dashboard', ['statut' => 'termine']) }}" id="tri_dash" class="@if(request('statut') === 'termine') tri_dash @endif mx-3 " >Terminé</a>
-            <a href="{{ route('dashboard', ['statut' => 'en_cours']) }}" id="tri_dash" class="@if(request('statut') === 'en_cours') tri_dash @endif mx-3" >En Cours</a>
             <a href="{{ route('dashboard', ['statut' => 'a_venir']) }}" id="tri_dash" class="@if(request('statut') === 'a_venir') tri_dash @endif mx-3" >À Venir</a>
+            <a href="{{ route('dashboard', ['statut' => 'en_cours']) }}" id="tri_dash" class="@if(request('statut') === 'en_cours') tri_dash @endif mx-3" >En Cours</a>
+            <a href="{{ route('dashboard', ['statut' => 'termine']) }}" id="tri_dash" class="@if(request('statut') === 'termine') tri_dash @endif mx-3 " >Terminé</a>
+
         </div>
     </header>
     <div class="body_programme">

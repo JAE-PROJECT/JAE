@@ -164,6 +164,10 @@ header .nava {
   transition: all 0.5s ease-in-out;
 }
 
+.bouton_des_inscrtip {
+  display: flex;
+}
+
 .scrolled .btn-rejoindre {
   background: rgb(214, 145, 66);
   color: #8B4513;
@@ -314,6 +318,9 @@ header .nava {
     position: absolute;
     top: 60%;
   }
+  .bouton_des_inscrtip {
+    display: block;
+  }
 }
 /*=========================================
                 ACCUEIL
@@ -402,7 +409,7 @@ header .nava {
   color: #8B4513;
 }
 #home_presentation .presentation_title .titre {
-  font-size: 40px;
+  font-size: 45px;
 }
 #home_presentation .presentation_subtitle {
   margin: -12px 0px 20px 0px;
@@ -414,7 +421,7 @@ header .nava {
 }
 #home_presentation .presentation_description {
   margin-bottom: 15px;
-  font-size: 17px;
+  font-size: 19px;
   text-align: center;
 }
 #home_presentation .btn_presentation {
@@ -796,9 +803,10 @@ header .nava {
   top: 70%;
   bottom: 0;
   width: 40%;
-  height: 100%;
+  height: 70%;
   background-color: white;
   padding: 50px;
+  overflow: scroll;
 }
 .popup_articles .article .body_article .titre {
   color: #8B4513;
@@ -832,6 +840,94 @@ header .nava {
   color: rgb(214, 145, 66);
 }
 
+@media screen and (max-width: 1400px) {
+  .popup_articles .article {
+    width: 80%;
+  }
+  .popup_articles .article .body_article {
+    width: 80%;
+  }
+  .popup_articles .article .body_article .titre {
+    font-size: 38px;
+  }
+  .popup_articles .article .body_article .description {
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .popup_articles .article {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: white;
+    overflow: scroll;
+  }
+  .popup_articles .article .image_articles {
+    position: relative;
+  }
+  .popup_articles .article .image_articles .img {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: scale(1);
+  }
+  .popup_articles .article .body_article {
+    box-shadow: #000 0px -7px 19px;
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    width: 80%;
+    height: 70%;
+    background-color: white;
+    padding: 50px;
+    overflow: scroll;
+  }
+  .popup_articles .article .body_article .titre {
+    color: #8B4513;
+    font-size: 38px;
+  }
+  .popup_articles .article .body_article .description {
+    margin-top: 20px;
+    line-height: 32px;
+  }
+  .popup_articles .article .body_article .category {
+    position: absolute;
+    top: -34px;
+    font-weight: lighter;
+    width: 20%;
+    text-transform: uppercase;
+    font-size: 15px;
+    left: 0;
+    background-color: #8B4513;
+    color: #fff;
+    padding: 5px 15px;
+  }
+  .popup_articles .article .button_close {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 120;
+    font-size: 40px;
+    color: #8B4513;
+  }
+  .popup_articles .article .button_close:hover {
+    color: rgb(214, 145, 66);
+  }
+}
+@media screen and (max-width: 220px) {
+  .popup_articles .article {
+    width: 80%;
+  }
+  .popup_articles .article .body_article {
+    width: 80%;
+  }
+  .popup_articles .article .body_article .titre {
+    font-size: 38px;
+  }
+  .popup_articles .article .body_article .description {
+    line-height: 28px;
+  }
+}
 /* --------------------- Temoignagne ------------------*/
 .temoignage .temoignage_title .temoignage_title_titre {
   font-size: 27px;
@@ -901,7 +997,7 @@ header .nava {
 }
 
 #banniere_apropos {
-  background: url("../img/bg9.jpg");
+  background: url("../img/newimg/objectifs1_redimensionner.jpg");
   /* background-color: #0e0f15; */
   background-position: center;
   background-size: cover;

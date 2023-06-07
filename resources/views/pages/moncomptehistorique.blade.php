@@ -7,7 +7,7 @@
 @section('contentdash')
     <div class="px-2 bg-color_special_div pb-4" >
 
-        <div class="page-header min-vh-25" style="background-image: url('../assets/img/bg9.jpg');">
+        <div class="page-header min-vh-25" style="background-image: url('../img/bg_historique.jpeg');">
             <span class="mask bg-gradient-dark opacity-6"></span>
             <div class="container">
                 <div class="row justify-content-center">

@@ -122,7 +122,7 @@ function showMore() {
     });
   });
  */
-//
+//fabrice sawegnon
 document.addEventListener("DOMContentLoaded", function() {
     var lienAffichage = document.getElementById("lien-affichage");
     var maDiv = document.getElementById("popup_articles");
@@ -134,9 +134,31 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-//
+  document.addEventListener("DOMContentLoaded", function() {
+    var lienAffichage = document.getElementById("lien-affichage2");
+    var maDiv = document.getElementById("popup_articles");
+
+    lienAffichage.addEventListener("click", function(event) {
+      event.preventDefault(); // Pour éviter que le lien ne recharge la page (si href="#" est utilisé)
+
+      maDiv.classList.remove("d-none"); // Supprime la classe d-none pour afficher la div
+    });
+  });
+
+//konnie toure
 document.addEventListener("DOMContentLoaded", function() {
     var lienAffichage = document.getElementById("affichage-lien_konnie");
+    var maDiv = document.getElementById("popup_article_konnie");
+
+    lienAffichage.addEventListener("click", function(event) {
+      event.preventDefault(); // Pour éviter que le lien ne recharge la page (si href="#" est utilisé)
+
+      maDiv.classList.remove("d-none"); // Supprime la classe d-none pour afficher la div
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var lienAffichage = document.getElementById("affichage-lien_konnie2");
     var maDiv = document.getElementById("popup_article_konnie");
 
     lienAffichage.addEventListener("click", function(event) {
@@ -157,10 +179,30 @@ document.addEventListener("DOMContentLoaded", function() {
       maDiv.classList.remove("d-none"); // Supprime la classe d-none pour afficher la div
     });
   });
+  document.addEventListener("DOMContentLoaded", function() {
+    var lienAffichage = document.getElementById("affichage-lien_morrison2");
+    var maDiv = document.getElementById("popup_article_morrison");
+
+    lienAffichage.addEventListener("click", function(event) {
+      event.preventDefault(); // Pour éviter que le lien ne recharge la page (si href="#" est utilisé)
+
+      maDiv.classList.remove("d-none"); // Supprime la classe d-none pour afficher la div
+    });
+  });
 
   //geekette
   document.addEventListener("DOMContentLoaded", function() {
     var lienAffichage = document.getElementById("affichage-lien_geekette");
+    var maDiv = document.getElementById("popup_article_geekette");
+
+    lienAffichage.addEventListener("click", function(event) {
+      event.preventDefault(); // Pour éviter que le lien ne recharge la page (si href="#" est utilisé)
+
+      maDiv.classList.remove("d-none"); // Supprime la classe d-none pour afficher la div
+    });
+  });
+  document.addEventListener("DOMContentLoaded", function() {
+    var lienAffichage = document.getElementById("affichage-lien_geekette2");
     var maDiv = document.getElementById("popup_article_geekette");
 
     lienAffichage.addEventListener("click", function(event) {

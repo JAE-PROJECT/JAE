@@ -10,9 +10,9 @@
                 <p class="filigrane filigrane2">JAE</span> </p>
                 <p class="filigrane filigrane3">JAE</span> </p>
                 <div class="presentation_msg col-12 col-md order-md-1 order-2">
-                    <h1 class="presentation_title ">  <span class="titre">JA<span class="presentation_E">E</span> </h1>
-                    <h2 class="presentation_subtitle fs-3">Pour le repositionnement de l'Afrique</h2>
-                    <p class="presentation_description">Ensemble redonnons à l'Afrique un visage et une position rayonnant de gloire, d'éclat, de respect et de royauté souveraine !<p>
+                    <h1 class="presentation_title ">  <span class="titre">{{config('textes.Nom_site')}}</span> </h1>
+                    <h2 class="presentation_subtitle fs-2">{{config('textes.slogan')}}</h2>
+                    <p class="presentation_description">{{config('textes.slogan2')}}<p>
                     @guest
                         <a href="{{route('rejoindre')}}" class="btn button btn_presentation"> Devenir Membre</a>
                     @endguest
@@ -51,8 +51,8 @@
 
                 </div>
                 <div class="objectif_video_1 col-lg-6 mx-auto d-block" data-aos="fade-left" data-aos-delay="100">
-                    <video class="video_objectif" width="640" height="360" controls preload="auto" >
-                        <source src="{{asset('videos/Objectifs_video.mp4')}}" type="video/mp4">
+                    <video class="video_objectif" width="640" height="360" controls autoplay muted>
+                        <source src="{{asset('videos/Objectifs_video.mp4')}}" type="video/mp4"  >
                         Votre navigateur ne prend pas en charge les vidéos.
                     </video>
                 </div>
@@ -167,7 +167,7 @@
 
                     <i class="bi bi-geo-fill"></i> <!-- icône zone -->
                     <span data-purecounter-start="0" data-purecounter-end="{{$nb_zone}}" data-purecounter-duration="2" class="purecounter nbre_occurence d-block"></span>
-                    <p>Zone</p>
+                    <p>Zones</p>
                 </div>
                 <div class="stat_team col-3" data-aos='fade-in' data-delay="100">
 
@@ -188,22 +188,21 @@
     <section id="articles" class="bg-color">
       <div class="container">
         <div class="mb-5 article_title">
-          <h2 class="text-center mb-1 fw-bold article_title_titre" data-aos="fade-up">Articles</h2>
-          <p class="w-75  mx-auto text-center article_title_descrip" data-aos="fade-up"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <h2 class="text-center mb-1 fw-bold article_title_titre" data-aos="fade-up">PROUD JAE</h2>
         </div>
         <div class="row liste_articles mx-auto">
-            <article class="card px-0 my-xl-0 my-4 mx-3 col-xl col-md-5 col-12" data-aos="zoom-in">
+            <article class="card px-0 my-xxl-0 my-4 mx-3 col-xxl col-md-5 col-12" data-aos="zoom-in">
               <div class="card__thumb">
-                <a href="#">
+                <a href=""id="affichage-lien_konnie2">
                   <img src="{{asset('img/newimg/articles/kony_toure.jpeg')}}" alt="oups">
                 </a>
               </div>
               <div class="card__date">
-                <span class="card__date__day">12</span>
+                <span class="card__date__day">17</span>
                 <span class="card__date__month">Mai</span>
               </div>
               <div class="card__body">
-                <div class="card__category"><a href="#">Media</a></div>
+                <div class="card__category"><a>Media</a></div>
                 <h2 class="card__title"><a href="#" id="affichage-lien_konnie">Personnalit&eacute; talentueuse et polyvalente</a></h2>
                 <div class="card__subtitle">Konnie TOURE</div>
                 <p class="card__description">
@@ -211,48 +210,48 @@
                 </p>
               </div>
               <div class="card__footer">
-                <span class="icon icon--time"></span>6 min
-                <span class="icon icon--comment"></span><a href="#">39 comments</a>
+                <span class="icon icon--time">6 min</span>
+               {{--  <span class="icon icon--comment"></span><a href="#">39 comments</a> --}}
               </div>
             </article>
 
-            <article class="card px-0 my-xl-0 my-4 mx-3 col-xl col-md-5 col-12 " data-aos="zoom-in">
+            <article class="card px-0 my-xxl-0 my-4 mx-3 col-xxl col-md-5 col-12 " data-aos="zoom-in">
               <div class="card__thumb">
-                <a href="#">
+                <a href="" id="affichage-lien_morrison2">
                   <img src="{{asset('img/newimg/articles/morrison.jpeg')}}" alt="oups">
                 </a>
               </div>
               <div class="card__date">
-                <span class="card__date__day">17</span>
+                <span class="card__date__day">05</span>
                 <span class="card__date__month">Avril</span>
               </div>
               <div class="card__body">
-                <div class="card__category"><a href="#">Business</a></div>
+                <div class="card__category"><a>Business</a></div>
                 <h2 class="card__title"><a href="#" id="affichage-lien_morrison">L'homme du futur</a></h2>
                 <div class="card__subtitle">Jonathan Morrison</div>
                 <p class="card__description">
                     Jonathan Morrison, diplômé de l'Académie Nationale des Futures Scientifiques et Technologues de Boston, est un entrepreneur et footballeur.
-                    En 2022, il a organisé avec succès le plus grand tournoi de maracana petit poto jamais organisé...
+                    En 2022, il a organisé avec succès le plus grand tournoi de maracana...
                 </p>
               </div>
               <div class="card__footer">
-                <span class="icon icon--time"></span>15 min
-                <span class="icon icon--comment"></span><a href="#">13 comments</a>
+                <span class="icon icon--time">15 min</span>
+                {{-- <span class="icon icon--comment"></span><a href="#">13 comments</a> --}}
               </div>
             </article>
 
-            <article class="card px-0 my-xl-0 my-4 mx-3 col-xl col-md-5 col-12  " data-aos="zoom-in">
+            <article class="card px-0 my-xxl-0 my-4 mx-3 col-xxl col-md-5 col-12  " data-aos="zoom-in">
               <div class="card__thumb">
-                <a href="#">
+                <a href="" id="lien-affichage2">
                   <img src="{{asset('img/newimg/articles/fabrice_sawegnon.jpeg')}}" alt="oups" class="">
                 </a>
               </div>
               <div class="card__date">
-                <span class="card__date__day">29</span>
-                <span class="card__date__month">Juin</span>
+                <span class="card__date__day">22</span>
+                <span class="card__date__month">Mars</span>
               </div>
               <div class="card__body">
-                <div class="card__category"><a href="#">Business</a></div>
+                <div class="card__category"><a >Business</a></div>
                 <h2 class="card__title"><a href="#" id="lien-affichage">Hommes de succ&egrave;s</a></h2>
                 <div class="card__subtitle">Fabrice SAWEGNON</div>
                 <p class="card__description">
@@ -260,23 +259,23 @@
                 </p>
               </div>
               <div class="card__footer">
-                <span class="icon icon--time"></span>18 min
-                <span class="icon icon--comment"></span><a href="#">30 comments</a>
+                <span class="icon icon--time">18 min</span>
+                {{-- <span class="icon icon--comment"></span><a href="#">30 comments</a> --}}
               </div>
             </article>
 
-            <article class="card px-0 my-xl-0 my-4 mx-3 col-xl col-md-5 col-12 " data-aos="zoom-in">
+            <article class="card px-0 my-xxl-0 my-4 mx-3 col-xxl col-md-5 col-12 " data-aos="zoom-in">
               <div class="card__thumb">
-                <a href="#">
+                <a href="#" id="affichage-lien_geekette2">
                   <img src="{{asset('img/newimg/articles/edith_yah.jpeg')}}" alt="oups">
                 </a>
               </div>
               <div class="card__date">
-                <span class="card__date__day">11</span>
+                <span class="card__date__day">29</span>
                 <span class="card__date__month">Mars</span>
               </div>
               <div class="card__body">
-                <div class="card__category"><a href="#">News</a></div>
+                <div class="card__category"><a>News</a></div>
                 <h2 class="card__title"><a href="#" id="affichage-lien_geekette">La "GEEKETTE" Ivoirienne</a></h2>
                 <div class="card__subtitle"> Edith Yah BROU</div>
                 <p class="card__description">
@@ -284,8 +283,8 @@
                 </p>
               </div>
               <div class="card__footer">
-                <span class="icon icon--time"></span>2 hrs
-                <span class="icon icon--comment"></span><a href="#">150 comments</a>
+                <span class="icon icon--time">2 hrs</span>
+                {{-- <span class="icon icon--comment"></span><a href="#">150 comments</a> --}}
               </div>
             </article>
         </div>
@@ -295,10 +294,10 @@
       <div class="container">
         <div class="mb-5 temoignage_title">
           <h2 class="text-center mb-1 fw-bold temoignage_title_titre" data-aos="fade-up">Temoignage</h2>
-          <p class="w-75  mx-auto text-center temoignage_title_descrip" data-aos="fade-up"> Ces personnes qui ont expérimenté cette vision.</p>
+          <p class="w-75  mx-auto text-center temoignage_title_descrip" data-aos="fade-up"> Ces personnes qui ont expérimentés cette vision.</p>
         </div>
         <div class="row liste_temoignages">
-          <div class="temoignage_x_personne my-xl-0 my-4 mx-3 col-xl col-md-5 col-12" data-aos="zoom-in">
+          <div class="temoignage_x_personne my-xxl-0 my-4 mx-3 col-xl col-md-5 col-12" data-aos="zoom-in">
             <div class="personne_temoignant">
                 <div class="image_personne fs-1">
                     <i class="bi bi-person-circle"></i>
@@ -379,7 +378,7 @@
           <div class="temoignage_x_personne d-xl-none d-md-block  my-xl-0 my-4 mx-3 col-xl col-md-5 col-12" data-aos="zoom-in">
             <div class="personne_temoignant">
                 <div class="image_personne fs-1">
-                  <<i class="bi bi-person-circle"></i>
+                  <i class="bi bi-person-circle"></i>
                 </div>
               <div class="info_personne">
                 <span class="info_personne_nom">Marc Brayane</span>

@@ -56,7 +56,7 @@
                     <!-- Dropdown pour le statut de l'événement -->
                     <div class="dropdown ">
                         <!-- Récupération des statuts uniques des événements -->
-                        <div class="d-none">{{$statuts= DB::table('Event')->select('statut')->distinct()->get()}}</div>
+                        <div class="d-none">{{$statuts= DB::table('event')->select('statut')->distinct()->get()}}</div>
                         <!-- Bouton déclenchant le menu déroulant pour le choix du statut -->
                         <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Statut

@@ -73,7 +73,7 @@
 @section('contentdash')
     <div class="container-fluid bg-color_special_div px-2 ">
         <div class="page-header min-vh-25"
-            style="background-image: url(&quot;../assets/img/bg9.jpg&quot;);">
+            style="background-image: url(&quot;../img/bg_compte.jpeg&quot;);">
             <span class="mask bg-gradient-dark opacity-6"></span>
             <div class="container">
                 <div class="row justify-content-center">

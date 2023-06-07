@@ -5,7 +5,6 @@
          <section id="banniere_nous_rejoindre">
             <div class="titre_page">
                 <h2>Nous Rejoindre</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
         </section>
         <!-- ======= rejoindre Section ======= -->
@@ -34,8 +33,7 @@
                     <div class="phone">
                         <i class="bi bi-phone"></i>
                         <h4>Appel:</h4>
-                        <p>+225 07 48 66 43 62</p>
-                        <p>+225 07 69 86 35 50</p>
+                        <p>+225 07 48 66 43 62 <br> +225 07 69 86 35 50</p>
                     </div>
                 </div>
 

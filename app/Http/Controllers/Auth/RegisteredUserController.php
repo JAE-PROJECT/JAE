@@ -76,7 +76,7 @@ class RegisteredUserController extends Controller
         $user_log = User::find($user_id);
         Mail::to($user_log->email)->send(new WellcomeMail());
 
-        return view('pages.adhesionok')->with('lien_zones', $lien_zones->lien_wha);
+        return view('Pages.adhesionok')->with('lien_zones', $lien_zones->lien_wha);
 
 }
 }

@@ -9,7 +9,7 @@ body{
     font-family: arial, sans-serif;
     display: flex;
     align-items: center;
-    background: url('../img/bg9.jpg') no-repeat !important;
+    background: url('../img/Cover-Connexion.png') no-repeat !important;
     background-size: cover !important;
     position: relative;
     justify-content: center;
@@ -34,7 +34,7 @@ position: relative;
 form {
 background: rgba(255, 255, 255, .3);
 padding: 3rem;
-height: 350px;
+height: 375px;
 border-radius: 20px;
 border-left: 1px solid rgba(255, 255, 255, .3);
 border-top: 1px solid rgba(255, 255, 255, .3);
@@ -141,7 +141,7 @@ z-index: -1;
 
 .drop-2 {
 height: 80px; width: 80px;
-bottom: -30px; right: -10px;
+bottom: -50px; right: -10px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -176,4 +176,9 @@ display: inline-block;
 margin-bottom: 20px;
 z-index: 100;
 }
+.hvntaccount a{
 
+}
+a{
+    text-decoration: underline;
+}
