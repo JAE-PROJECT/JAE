@@ -58,7 +58,7 @@
                     <div class="presentation_text col-12 col-lg-7" data-aos="fade-right">
 
                         <div class="presentation_text_palmares" id="content_leado">
-                            <span class="presentation_text_nom fs-2" >Jean Othniel SILUE</span>
+                            <span class="presentation_text_nom fs-2 mb-2" >Jean Othniel SILUE</span> <br/>
                             Il existe aujourd’hui une race de personnes qui se lèvent pour la révolution en Afrique, elles ont cette soif de hisser notre continent bien haut partout dans le monde.
                             Notre Fierté Africaine du jour se porte sur un homme qu'on appelle affectueusement "Can't Fail Boy" : Monsieur JEAN-OTHNIEL SILUÉ.
                             Ce jeune homme âgé de 24 ans est de nationalité ivoirienne 🇨🇮 et réside aux États-Unis où il étudie le management option entrepreneuriat.
@@ -68,7 +68,7 @@
                             Le leader, Jean-Othniel SILUÉ, est une fierté pour notre continent, une source de motivation pour notre jeunesse africaine, un acteur positif de notre société et un modèle pour plusieurs.
                         </div>
                          <button id="showButton" onclick="showMore()" class="w-100 text-start  " style="padding: 0px 40px 10px 40px; text-decoration:underline;">Voir plus</button>
-                        <div class="presentation_reseaux_sociaux container mt-3 ">
+                        {{-- <div class="presentation_reseaux_sociaux container mt-3 ">
                             <!--<div class="align-self-center">
                                 <span class="fw-bold">Lorem, ipsum dolor.</span>
                             </div>-->
@@ -78,7 +78,7 @@
                                 <a href="https://www.facebook.com/" class="facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
                             </div>
 
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -158,7 +158,7 @@
         <div class="container" data-aos="fade-up">
 
             <div class="titre_section">
-            <h2 class="mb-2">Che f De Zone</h2>
+            <h2 class="mb-2">Chefs De Zone</h2>
             {{-- <p class="text-center">Uscipit alias euia fugiat sit</p> --}}
             </div>
 
