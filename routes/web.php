@@ -71,5 +71,21 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+// Gestion des rôles et l'administration
+
+Route::middleware(['auth','role:admin'])->group(function () {
+    Route::get('/admin', function () {
+        return "Hello mon pote l'admin";
+    });
+});
+
+Route::middleware(['auth','role:chief'])->group(function () {
+    Route::get('/chief', function () {
+        return "Hello mon pote l'admin";
+    });
+});
+
+
+
 require __DIR__.'/auth.php';
 

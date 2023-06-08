@@ -3,6 +3,7 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Models\Role;
 use App\Models\Team;
 use App\Models\Zone;
 use App\Models\Event;
@@ -32,6 +33,7 @@ class User extends Authenticatable
         'zone_id',
     ];
 
+
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -51,19 +53,25 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-   protected $table = 'users';
+    protected $table = 'users';
 
-   public function team()
-   {
-       return $this->belongsTo(Team::class);
-   }
+    public function team()
+    {
+        return $this->belongsTo(Team::class);
+    }
 
-   public function zone()
-   {
-       return $this->belongsTo(Zone::class);
-   }
+    public function zone()
+    {
+        return $this->belongsTo(Zone::class);
+    }
 
-   public function event(){
-       return $this->BelongsToMany(Event::class);
-   }
+    public function event()
+    {
+        return $this->BelongsToMany(Event::class);
+    }
+
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class);
+    }
 }
