@@ -81,7 +81,7 @@ Route::middleware(['auth','role:admin'])->group(function () {
 
 Route::middleware(['auth','role:chief'])->group(function () {
     Route::get('/chief', function () {
-        return "Hello mon pote l'admin";
+        return "Hello mon pote le chef";
     });
 });
 
