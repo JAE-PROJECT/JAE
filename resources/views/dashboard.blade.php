@@ -36,7 +36,7 @@
         <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
             <h1 class="text-3xl font-bold tracking-tight text-gray-900">Programmes</h1>
         </div>
-        <div class="menu_program_dash">
+        <div class="menu_program_dash sm:fs-10">
             <a href="{{ route('dashboard', ['statut' => 'a_venir']) }}" id="tri_dash" class="@if(request('statut') === 'a_venir') tri_dash @endif mx-3" >À Venir</a>
             <a href="{{ route('dashboard', ['statut' => 'en_cours']) }}" id="tri_dash" class="@if(request('statut') === 'en_cours') tri_dash @endif mx-3" >En Cours</a>
             <a href="{{ route('dashboard', ['statut' => 'termine']) }}" id="tri_dash" class="@if(request('statut') === 'termine') tri_dash @endif mx-3 " >Terminé</a>
@@ -52,8 +52,7 @@
                 if ($_GET['statut'] === 'termine') {
                 $query->whereDate('event_date', '<', $aujourdHui);
             } elseif ($_GET['statut'] === 'en_cours') {
-                $query->whereDate('event_date', '=', $aujourdHui)
-                    ->whereTime('event_heure', '<', $heureActuelle);
+                $query->whereDate('event_date', '=', $aujourdHui);
             } elseif ($_GET['statut'] === 'a_venir') {
                 $query->whereDate('event_date', '>', $aujourdHui);
             }
@@ -61,14 +60,15 @@
             $programmes = $query->get();
             /* dd($programmes ); */
             ?>
-        <div class="evenement_section  m-5 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+        <div class="evenement_section  m-5 sm:m-0 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 ">
 
             @foreach ($programmes as $program )
                 <?php
-                     $dateProgramme = Carbon::parse($program->event_date);
-                    $heureProgramme = Carbon::parse($program->event_heure);
+                     $dateProgramme = (Carbon::parse($program->event_date))->toDateString();
+                     $heureProgramme = (Carbon::parse($program->event_heure))->format('H:i:s');
+
                 ?>
-                <div class="card_event shadow">
+                <div class="card_event shadow ">
                     <div class="img_event p-2">
                         <img src="{{asset('assets/img/bg9.jpg')}}" alt="">{{--
                         <span class="mask bg-gradient-dark p-2 opacity-6 hover:opacity-"></span> --}}
@@ -77,13 +77,13 @@
                         <div class="flex flex-row justify-between my-2">
                             <p class="titre_event self-center text-bold">{{$program->event_titre}}</p>
                             {{-- {{$program->statut = "fermé"}} --}}
-                            @if ($dateProgramme->isPast())
+                            @if ($dateProgramme < $aujourdHui)
                                 <span class="staut_event self-center "> <i class="bi bi-circle-fill text-gray-700 mr-2"></i>Dépassé</span>
-                            @elseif ($dateProgramme->isSameAs($aujourdHui) && $heureProgramme->lessThan($heureActuelle))
-                                <span class="staut_event self-center "> <i class="bi bi-circle-fill text-danger mr-2"></i>En Cours</span>
-                            @else
+                            @elseif($dateProgramme > $aujourdHui && $dateProgramme!= $aujourdHui)
                                 <span class="staut_event self-center "> <i class="bi bi-circle-fill text-gray-700 mr-2"></i>A Venir</span>
 
+                            @elseif ($dateProgramme == $aujourdHui && $heureProgramme >= $heureActuelle )
+                                <span class="staut_event self-center "> <i class="bi bi-circle-fill text-danger mr-2"></i>En Cours</span>
                             @endif
 
                         </div>
@@ -91,11 +91,17 @@
                             {{$program->event_description}}
                          </p>
 
-                         @if ($dateProgramme->isPast())
+                         @if ($dateProgramme < $aujourdHui)
                             <button class="my-3 event_participation_disable " >Fermé <i class="bi bi-eye-slash-fill pt-2"></i></button>
-                         @elseif ($dateProgramme->isSameAs($aujourdHui) && $heureProgramme->lessThan($heureActuelle))
+                        @elseif ($dateProgramme == $aujourdHui && $heureProgramme < $heureActuelle )
+                        <form action="{{ route('inscription_programme') }}" method="POST">
+                            @csrf
+                            <input type="hidden" name="event_id" value="{{ $program->id }}">
+                            <button class="my-3 event_participation">S'inscrire <i class="bi bi-eye-fill pt-2"></i></button>
+                        </form>
+                        @elseif ($dateProgramme == $aujourdHui && $heureProgramme >= $heureActuelle )
                             <button class="my-3 event_participation_disable">Trop tard <i class="bi bi-eye-slash-fill pt-2"></i></button>
-                         @else
+                        @elseif($dateProgramme > $aujourdHui && $dateProgramme!= $aujourdHui)
                             <form action="{{ route('inscription_programme') }}" method="POST">
                                 @csrf
                                 <input type="hidden" name="event_id" value="{{ $program->id }}">
