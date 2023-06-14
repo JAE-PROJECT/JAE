@@ -39,8 +39,10 @@ Route::get('/blog', [BlogController::class, 'show'])->name('blog');
 Route::get('/forum', [ForumController::class, 'show'])->name('forum');
 
 // Les routes de la page Nos Programmes
+Route::middleware('auth')->group(function () {
 Route::get('/programme', [NosprogrammeController::class, 'show'])->name('programme');
 Route::post('/programme', [NosprogrammeController::class, 'store'])->name('inscription_programme');
+});
 
 // Les routes de la page Nous Rejoindre ---------------------------->vvv
 Route::get('/rejoindre', [RejoindreController::class, 'show'])->name('rejoindre');

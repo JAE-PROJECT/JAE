@@ -31,6 +31,7 @@ class User extends Authenticatable
         'contact_direct',
         'contact',
         'zone_id',
+        'image_profile'
     ];
 
 

@@ -3,7 +3,7 @@
 @section('contentdash')
     <?php
         use Carbon\Carbon;
-
+        $user = auth()->user();
         $user_auth = DB::select('select * from users where id='.Auth()->id());
         $programmes = DB::select('select * from event');
        /* dd($programmes); */
@@ -26,7 +26,11 @@
             <div class="flex items-center justify-end">
 
                         <p class="mx-2 text-white">{{ auth()->user()->nom  }} {{auth()->user()->prenom}}</p>
-                        <img class="w-10 rounded-full " src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Photo de Profil" onclick="window.location.href='/mon-compte'">
+                        @if ( $user->image_profile != NULL)
+                                        <img class="rounded-full" src=" {{ asset('storage/'.str_replace('public/u','u', $user->image_profile)) }}" alt="Photo de Profil" onclick="window.location.href='/mon-compte'" style="height: 3rem;width:3rem; ">
+                                            @else
+                                        <img class="rounded-full w-10" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Photo de Profil" srcset="" onclick="window.location.href='/mon-compte'" style="height: 3rem;width:3rem;">
+                                            @endif
 
                 </div>
         </div>

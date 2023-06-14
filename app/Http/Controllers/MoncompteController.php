@@ -7,6 +7,7 @@ use App\Models\Zone;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Storage;
 
 class MonCompteController extends Controller
 {
@@ -43,10 +44,9 @@ class MonCompteController extends Controller
         ); */
         //Mise à jour des infos
         DB::transaction(function () use ($request,$user) {
-
             if($request->image_profile){
                 //Sauvegarde du fichier
-                $image_path = $request->file('image_profile')->storeAs('users', $request->file('image_profile')->getClientOriginalName());
+                $image_path = $request->file('image_profile')->storeAs('public/users', $request->file('image_profile')->getClientOriginalName());
             }
             else{
                  $image_path = null;
@@ -66,6 +66,7 @@ class MonCompteController extends Controller
 
 
         });
+
         return redirect()->route('moncompte')->with('addSucces','Evennement crée avec succès!');
     }
 }

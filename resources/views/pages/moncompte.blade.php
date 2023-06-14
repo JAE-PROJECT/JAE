@@ -99,7 +99,7 @@
                                     <div class="user-profile">
                                         <div class="user-avatar">
                                             @if ( $user->image_profile != NULL)
-                                        <img src="  {{ asset('storage/' .$user->image_profile) }}" alt="">
+                                        <img src=" {{ asset('storage/'.str_replace('public/u','u', $user->image_profile)) }}" alt="">
                                             @else
                                         <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" srcset="">
                                             @endif

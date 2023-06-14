@@ -81,7 +81,7 @@
                         </div>
                         <!-- Bouton déclenchant le menu déroulant pour le choix du type d'événement -->
                         <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Type D'&eacute;v&eacute;nements
+                            &Eacute;v&eacute;nements
                         </button>
                         <!-- Menu déroulant avec les options de type d'événement -->
                         <ul class="dropdown-menu">

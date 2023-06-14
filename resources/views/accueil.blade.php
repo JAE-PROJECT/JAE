@@ -2,7 +2,7 @@
 
 @section('content')
 <main>
-    {{-- {{ dd(Auth::id())}} --}}
+    {{-- {{ dd(Auth::user())}} --}}
     <section id="home_presentation">
         <div class="container">
             <div class="row">
@@ -412,7 +412,7 @@
     <div class="popup_articles d-none" id="popup_articles">
 
         <div class="article">
-            <a href="/" class="button_close"><i class="bi bi-x-circle-fill "></i></a>
+            <a href="{{route('accueil')}}#articles" class="button_close"><i class="bi bi-x-circle-fill "></i></a>
             <div class="image_articles">
                 <img src="{{asset('img/newimg/articles/fabrice_sawegnon.jpeg')}}" alt="oups" class="w-100">
             </div>
