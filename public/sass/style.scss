@@ -585,7 +585,48 @@ header .nava{
   margin-left: 80px;
   margin: auto;
 }
+/* membre */
 
+.block_hover_stat{
+    background-color: #fff;
+    color: #272626;
+    position: absolute;
+    top: -220px;
+    border-radius: 15px;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    /* &:hover{
+        opacity: .4 !important;
+    } */
+    .nom_zone{
+        font-weight: 700;
+        display: inline-block;
+        .nombre_membre{
+            color: $couleur_bois;
+        }
+    }
+    img{
+        width: 30px;
+        display: inline-block;
+
+    }
+
+    .icon_fleche_down{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+.stat_membre:hover{
+    transition: opacity .5s ease-in-out !important;
+}
+.stat_membre:hover .block_hover_stat{
+
+    transform: translateY(0);
+
+}
 
 /* --------------------- Team ------------------*/
 #team{

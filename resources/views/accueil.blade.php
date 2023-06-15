@@ -157,12 +157,43 @@
     <section id="statistique">
         <div class="container">
             <div class="statistique_flex row">
-                <div class="stat_membre  col-3" data-aos='fade-in' data-delay="0">
+                <div class="stat_membre col-3 position-relative" data-aos='fade-in' data-delay="0">
 
                     <i class="bi bi-person-fill"></i>
                     <span data-purecounter-start="0" data-purecounter-end="{{$nb_users}}" data-purecounter-duration="2" class="purecounter nbre_occurence d-block"></span>
                     <p>Membres</p>
+                    <div class="row w-100 block_hover_stat">
+                        <div class="col-6 block_one_zone">
+                            <div class="m-2 ">
+                                <img src="{{asset('img/icon_zone/cotedivoire.jpeg')}}" alt="">
+                                <p class="nom_zone ">Côte D'ivoire <br> <span class="nombre_membre">33</span> </p>
+                            </div>
 
+                        </div>
+                        <div class="col-6 block_one_zone">
+                            <div class="m-2 ">
+                                <img src="{{asset('img/icon_zone/cotedivoire.jpeg')}}" alt="">
+                                <p class="nom_zone ">Côte D'ivoire <br> <span class="nombre_membre">33</span> </p>
+                            </div>
+
+                        </div>
+                        <div class="col-6 block_one_zone">
+                            <div class="m-2 ">
+                                <img src="{{asset('img/icon_zone/cotedivoire.jpeg')}}" alt="">
+                                <p class="nom_zone ">Côte D'ivoire <br> <span class="nombre_membre">33</span> </p>
+                            </div>
+
+                        </div>
+                        <div class="col-6 block_one_zone">
+                            <div class="m-2 ">
+                                <img src="{{asset('img/icon_zone/cotedivoire.jpeg')}}" alt="">
+                                <p class="nom_zone ">Côte D'ivoire <br> <span class="nombre_membre">33</span> </p>
+                            </div>
+
+                        </div>
+
+                        <span class="icon_fleche_down"><i class="bi bi-caret-down-fill"></i></span>
+                    </div>
                 </div>
                 <div class="stat_zone col-3" data-aos='fade-in' data-delay="200">
 
