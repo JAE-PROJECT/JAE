@@ -75,7 +75,7 @@ Route::middleware('auth')->group(function () {
 
 // Gestion des rôles et l'administration
 
-Route::middleware(['auth','role:admin'])->group(function () {
+/* Route::middleware(['auth','role:admin'])->group(function () {
     Route::get('/admin', function () {
         return "Hello mon pote l'admin";
     });
@@ -85,6 +85,58 @@ Route::middleware(['auth','role:chief'])->group(function () {
     Route::get('/chief', function () {
         return "Hello mon pote le chef";
     });
+}); */
+
+Route::middleware(['auth', 'role:admin|jaefriend|chief'])->prefix('admin')->group(function () {
+    //Tableau de bord
+    Route::get('', [DashboardController::class, 'index'])->name('admin.index');
+
+    //Resource zone
+    Route::resource('zone', ZoneController::class);
+    //Export pdf
+    Route::get('/zone/export/pdf', [ZoneController::class, 'exportPdf'])->name('zone.export-pdf');
+    //Export xlsx
+    Route::get('/zone/export/excel', [ZoneController::class, 'exportExcel'])->name('zone.export-excel');
+    //export pdf by zone
+    Route::get('/zone/export/{id}/pdf', [ZoneController::class, 'exportPdfByZone'])->name('zone.export-pdf-by-zone');
+
+
+    //Resource User
+    Route::resource('user', UserController::class);
+    //Export pdf
+    Route::get('/user/export/pdf', [UserController::class, 'exportPdf'])->name('user.export-pdf');
+    //Export xlsx
+    Route::get('/user/export/excel', [UserController::class, 'exportExcel'])->name('user.export-excel');
+
+    //Editer role
+    Route::get('/user/{id}/role', [UserController::class, 'editrole'])->name('user.edit.role');
+    //Editer role sauvegarder
+    Route::put('/user/{id}/role/sauv', [UserController::class, 'editroleupdate'])->name('user.edit.role.update');
+
+
+
+
+    //Resource Event
+    Route::resource('event', EventController::class);
+    //Export pdf inscrit
+    Route::get('/event/export/{id}/pdfinscrit', [EventController::class, 'exportPdfinscrit'])->name('event.export-pdfinscrit');
+    //Export pdf
+    Route::get('/event/export/pdfinscrit', [EventController::class, 'exportPdf'])->name('event.export-pdf');
+    //Export xlsx
+    Route::get('/event/export/excel', [EventController::class, 'exportExcel'])->name('event.export-excel');
+
+    //Export excell inscrits
+    Route::get('/event/export/{id}/excellinscrit', [EventController::class, 'exportExcelInscrit'])->name('event.export-excellinscrit');
+
+
+
+
+    //Resource Type
+    Route::resource('type', TypeController::class);
+    //Export pdf
+    Route::get('/type/export/pdf', [TypeController::class, 'exportPdf'])->name('type.export-pdf');
+    //Export xlsx
+    Route::get('/type/export/excel', [TypeController::class, 'exportExcel'])->name('type.export-excel');
 });
 
 

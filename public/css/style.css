@@ -500,6 +500,35 @@ header .nava {
 }
 
 /* --------------------- STATISTIQUE ------------------*/
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.transition_div {
+  opacity: 0;
+  animation: fade-in 0.5s;
+  animation-fill-mode: forwards;
+}
+
 #statistique {
   background: url("../img/bg9.jpg") fixed;
   /* background-color: #0e0f15; */
@@ -554,10 +583,12 @@ header .nava {
 
 /* membre */
 .block_hover_stat {
-  background-color: #fff;
-  color: #272626;
+  background-color: rgba(139, 76, 18, 0.3803921569);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #e9e7e7;
   position: absolute;
-  top: -220px;
+  bottom: 70px;
   border-radius: 15px;
   transform: translateY(-20px);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
@@ -567,10 +598,10 @@ header .nava {
 }
 .block_hover_stat .nom_zone {
   font-weight: 700;
-  display: inline-block;
+  display: block;
 }
 .block_hover_stat .nom_zone .nombre_membre {
-  color: #8B4513;
+  color: #0f0e0d;
 }
 .block_hover_stat img {
   width: 30px;
@@ -588,10 +619,8 @@ header .nava {
   transition: opacity 0.5s ease-in-out !important;
 }
 
-.stat_membre:hover .block_hover_stat {
-  transform: translateY(0);
-}
-
+/* zone */
+/* Evenement */
 /* --------------------- Team ------------------*/
 #team .team_title .team_title_titre {
   font-size: 27px;
@@ -832,6 +861,7 @@ header .nava {
   position: relative;
 }
 .popup_articles .article .image_articles .img {
+  z-index: 10;
   display: block;
   opacity: 1;
   transition: opacity 0.5s, transform 0.5s;

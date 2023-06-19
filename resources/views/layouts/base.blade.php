@@ -885,6 +885,12 @@
 
     <!-- Script pour gérer l'affichage du menu déroulant sur les petits écrans -->
     <script>
+        // effet de scroll de la nav bar
+        document.addEventListener("scroll", function() {
+            var navbar = document.querySelector(".nava");
+            navbar.classList.toggle("scrolled", window.scrollY > 60);
+        });
+
         window.addEventListener('load', function() {
             AOS.init({
                 duration: 800,
@@ -950,6 +956,9 @@
         document.addEventListener("DOMContentLoaded", function() {
             var lienAffichage = document.getElementById("lien-affichage");
             var maDiv = document.getElementById("popup_articles");
+            var article_sawegnon = document.getElementById("article_sawegnon");
+            var lien_sortie_sawegnon = document.getElementById("lien_sortie_sawegnon");
+            var button_close_sawegnon = document.getElementById("button_close_sawegnon");
 
             lienAffichage.addEventListener("click", function(event) {
                 event
@@ -957,17 +966,29 @@
 
                 maDiv.classList.remove("d-none"); // Supprime la classe d-none pour afficher la div
             });
-        });
 
+        });
+        //fabrice sawegnon encore
         document.addEventListener("DOMContentLoaded", function() {
             var lienAffichage = document.getElementById("lien-affichage2");
             var maDiv = document.getElementById("popup_articles");
+            var article_sawegnon = document.getElementById("article_sawegnon");
+            var lien_sortie_sawegnon = document.getElementById("lien_sortie_sawegnon");
+            var button_close_sawegnon = document.getElementById("button_close_sawegnon");
 
             lienAffichage.addEventListener("click", function(event) {
                 event
             .preventDefault(); // Pour éviter que le lien ne recharge la page (si href="#" est utilisé)
 
                 maDiv.classList.remove("d-none"); // Supprime la classe d-none pour afficher la div
+            });
+            lien_sortie_sawegnon.addEventListener("click", function(event) {
+                event.preventDefault();
+                maDiv.classList.add('d-none');
+            });
+            button_close_sawegnon.addEventListener("click", function(event) {
+                event.preventDefault();
+                maDiv.classList.add('d-none');
             });
         });
 
@@ -982,17 +1003,28 @@
 
                 maDiv.classList.remove("d-none"); // Supprime la classe d-none pour afficher la div
             });
-        });
 
+        });
+        //konnie toure encore
         document.addEventListener("DOMContentLoaded", function() {
             var lienAffichage = document.getElementById("affichage-lien_konnie2");
             var maDiv = document.getElementById("popup_article_konnie");
+            var lien_sortie_konnie = document.getElementById("lien_sortie_konnie");
+            var button_close_konnie = document.getElementById("button_close_konnie");
 
             lienAffichage.addEventListener("click", function(event) {
                 event
             .preventDefault(); // Pour éviter que le lien ne recharge la page (si href="#" est utilisé)
 
                 maDiv.classList.remove("d-none"); // Supprime la classe d-none pour afficher la div
+            });
+            lien_sortie_konnie.addEventListener("click", function(event) {
+                event.preventDefault();
+                maDiv.classList.add('d-none');
+            });
+            button_close_konnie.addEventListener("click", function(event) {
+                event.preventDefault();
+                maDiv.classList.add('d-none');
             });
         });
 
@@ -1007,10 +1039,14 @@
 
                 maDiv.classList.remove("d-none"); // Supprime la classe d-none pour afficher la div
             });
+
         });
+        //morrison encore (c'est pour cela certaine fonction et variable ne sont pas repété)
         document.addEventListener("DOMContentLoaded", function() {
             var lienAffichage = document.getElementById("affichage-lien_morrison2");
             var maDiv = document.getElementById("popup_article_morrison");
+            var lien_sortie_morrison = document.getElementById("lien_sortie_morrison");
+            var button_close_morrison = document.getElementById("button_close_morrison");
 
             lienAffichage.addEventListener("click", function(event) {
                 event
@@ -1018,18 +1054,36 @@
 
                 maDiv.classList.remove("d-none"); // Supprime la classe d-none pour afficher la div
             });
+            lien_sortie_morrison.addEventListener("click", function(event) {
+                event.preventDefault();
+                maDiv.classList.add('d-none');
+            });
+            button_close_morrison.addEventListener("click", function(event) {
+                event.preventDefault();
+                maDiv.classList.add('d-none');
+            });
         });
 
         //geekette
         document.addEventListener("DOMContentLoaded", function() {
             var lienAffichage = document.getElementById("affichage-lien_geekette");
             var maDiv = document.getElementById("popup_article_geekette");
+            var lien_sortie_geekette = document.getElementById("lien_sortie_geekette");
+            var button_close_geekette = document.getElementById("button_close_geekette");
 
             lienAffichage.addEventListener("click", function(event) {
                 event
-            .preventDefault(); // Pour éviter que le lien ne recharge la page (si href="#" est utilisé)
+                    .preventDefault(); // Pour éviter que le lien ne recharge la page (si href="#" est utilisé)
 
                 maDiv.classList.remove("d-none"); // Supprime la classe d-none pour afficher la div
+            });
+            lien_sortie_geekette.addEventListener("click", function(event) {
+                event.preventDefault();
+                maDiv.classList.add('d-none');
+            });
+            button_close_geekette.addEventListener("click", function(event) {
+                event.preventDefault();
+                maDiv.classList.add('d-none');
             });
         });
         document.addEventListener("DOMContentLoaded", function() {
@@ -1042,6 +1096,67 @@
 
                 maDiv.classList.remove("d-none"); // Supprime la classe d-none pour afficher la div
             });
+
+        });
+
+        // -----------------------------Pour accueil statistique
+
+        /* MEMBRE */
+        var divHover = document.querySelector('.stat_membre');
+        var membreLink = document.getElementById("membre-link");
+        var membreDiv = document.getElementById("membre-div");
+
+        // Ajouter un gestionnaire d'événement pour l'événement "mouseover"
+        divHover.addEventListener('mouseover', function() {
+            // Ajouter un gestionnaire d'événement au lien "Membre"
+           /*  membreDiv.classList.add("transition_div"); */
+            membreDiv.classList.remove("d-none");
+            membreLink.addEventListener("mouseleave", function(event) {
+                event.preventDefault();
+                // Ajouter ou supprimer la classe 'hidden' pour afficher ou masquer la div
+
+            });
+        });
+        divHover.addEventListener('mouseout', function(event) {
+            membreDiv.classList.add("d-none");
+        });
+        /* ZONE */
+        var divHover_zone = document.querySelector('.stat_zone');
+        var membreLink_zone = document.getElementById("membre-link_zone");
+        var membreDiv_zone = document.getElementById("membre-div_zone");
+
+        // Ajouter un gestionnaire d'événement pour l'événement "mouseover"
+        divHover_zone.addEventListener('mouseover', function() {
+            // Ajouter un gestionnaire d'événement au lien "Membre"
+           /*  membreDiv.classList.add("transition_div"); */
+           membreDiv_zone.classList.remove("d-none");
+            membreLink_zone.addEventListener("mouseleave", function(event) {
+                event.preventDefault();
+                // Ajouter ou supprimer la classe 'hidden' pour afficher ou masquer la div
+
+            });
+        });
+        divHover_zone.addEventListener('mouseout', function(event) {
+            membreDiv_zone.classList.add("d-none");
+        });
+         /* event */
+         var divHover_event = document.querySelector('.stat_event');
+        var membreLink_event = document.getElementById("membre-link_event");
+        var membreDiv_event = document.getElementById("membre-div_event");
+
+        // Ajouter un gestionnaire d'événement pour l'événement "mouseover"
+        divHover_event.addEventListener('mouseover', function() {
+            // Ajouter un gestionnaire d'événement au lien "Membre"
+           /*  membreDiv.classList.add("transition_div"); */
+           membreDiv_event.classList.remove("d-none");
+            membreLink_event.addEventListener("mouseleave", function(event) {
+                event.preventDefault();
+                // Ajouter ou supprimer la classe 'hidden' pour afficher ou masquer la div
+
+            });
+        });
+        divHover_event.addEventListener('mouseout', function(event) {
+            membreDiv_event.classList.add("d-none");
         });
     </script>
 
