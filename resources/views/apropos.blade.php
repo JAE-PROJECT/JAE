@@ -59,9 +59,10 @@
 
                         <div class="presentation_text_palmares" id="content_leado">
                             <span class="presentation_text_nom fs-2 mb-2" >Jean Othniel SILUE</span> <br/>
+                            Othniel SILUE</span> <br/>
                             Il existe aujourd’hui une race de personnes qui se lèvent pour la révolution en Afrique, elles ont cette soif de hisser notre continent bien haut partout dans le monde.
                             Notre Fierté Africaine du jour se porte sur un homme qu'on appelle affectueusement "Can't Fail Boy" : Monsieur JEAN-OTHNIEL SILUÉ.
-                            Ce jeune homme âgé de 24 ans est de nationalité ivoirienne 🇨🇮 et réside aux États-Unis où il étudie le management option entrepreneuriat.
+                            Ce jeune homme de nationalité ivoirienne 🇨🇮, réside aux États-Unis où il étudie le management option entrepreneuriat.
                             CEO de G-CAPITAL LLC déclarée dans l’Etat du Wyoming, USA, qui est une société de capital-risque, d’investissement privé et de management d’entreprise. Elle détient en première position dans son portefeuille, la société Risefire, spécialisée en communication et assistance en Marketing digital par l’utilisation de l’Intelligence Artificielle.
                             Aussi il est le CEO de MoneyPool, une holding opérant dans le domaine de la finance décentralisée, avec en son sein, The Billion’s Club qui est une école de formation en expertise de marchés financiers.
                             Il est également le leader du réseau JEUNE AFRIQUE ENTREPRENANTE  réunissant des centaines de jeunes entrepreneurs africains dans plusieurs pays (Côte d’Ivoire, Cameroun, Congo, France, etc.) dans le but de révéler leur potentiel et d’instaurer un environnement favorable à partir d’un agenda social, éducatif et financier qui se déploie sur toute la décennie.
@@ -94,7 +95,7 @@
                 <div class="row content">
                 <div class="col-lg-6">
                     <p>
-                    La Jeune Afrique Entreprenante est une communauté comptant en son sein plus de 1300 membres réparties dans le monde.
+                    La Jeune Afrique Entreprenante est une communauté réparties dans le monde.
                     Né en Mai 2021, elle est fondée par le leader Jean-Othniel Silué.
                     Elle fait ses premiers pas sur l'application Telegram en se créant une communauté qui asssite à des formations et des conférences gratuites. Pendant l'année 2022 elle connaît une ascension fulgurante qui la fera impacter et changer la vie de plusieurs jeunes.
                     En 2022, la JAE lance son programme d'accompagnement dénommé Meet The Leader, programme au travers duquel elle coach et suit de façon personnel les membres de sa communauté et ce de façon gratuite.

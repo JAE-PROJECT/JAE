@@ -657,6 +657,10 @@ header .nava{
     transition: opacity .5s ease-in-out !important;
 }
 
+
+@media screen and (max-width : 1400px) {
+
+}
 /* zone */
 .block_hover_stat_zone{
 
@@ -992,10 +996,10 @@ header .nava{
     .popup_articles
     {
         .article{
-            width: 80%;
+            width: 50%;
 
             .body_article{
-                width: 80%;
+                width: 50%;
                 .titre{
                     font-size: 38px;
                 }

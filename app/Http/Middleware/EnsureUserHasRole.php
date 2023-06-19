@@ -17,15 +17,15 @@ class EnsureUserHasRole
      *
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
-    /* public function handle(Request $request, Closure $next, string $role ): Response
+    public function handle(Request $request, Closure $next, string $role ): Response
     {
         if ($request->user()->roles()->where('name',$role)->exists() ) {
             return $next($request);
         }
 
         abort(403);
-    } */
-    public function handle($request, Closure $next, $role, $guard = null)
+    }
+    /* public function handle($request, Closure $next, $role, $guard = null)
     {
         $authGuard = Auth::guard($guard);
 
@@ -42,6 +42,6 @@ class EnsureUserHasRole
         }
 
         return $next($request);
-    }
+    } */
 }
 

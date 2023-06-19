@@ -10,6 +10,7 @@ use App\Http\Controllers\MoncompteController;
 use App\Http\Controllers\RejoindreController;
 use App\Http\Controllers\HistoriqueController;
 use App\Http\Controllers\NosprogrammeController;
+use App\Http\Controllers\Admin\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -75,18 +76,21 @@ Route::middleware('auth')->group(function () {
 
 // Gestion des rôles et l'administration
 
-/* Route::middleware(['auth','role:admin'])->group(function () {
-    Route::get('/admin', function () {
+Route::middleware(['auth','role:admin'])->group(function () {
+    /* Route::get('/admin', function () {
         return "Hello mon pote l'admin";
-    });
+    }); */
+    Route::get('/admin', [DashboardController::class, 'index'])->name('admin.index');
+
 });
 
 Route::middleware(['auth','role:chief'])->group(function () {
     Route::get('/chief', function () {
         return "Hello mon pote le chef";
     });
-}); */
-
+    Route::get('/chief', [DashboardController::class, 'index'])->name('admin.index');
+});
+/*
 Route::middleware(['auth', 'role:admin|jaefriend|chief'])->prefix('admin')->group(function () {
     //Tableau de bord
     Route::get('', [DashboardController::class, 'index'])->name('admin.index');
@@ -137,7 +141,7 @@ Route::middleware(['auth', 'role:admin|jaefriend|chief'])->prefix('admin')->grou
     Route::get('/type/export/pdf', [TypeController::class, 'exportPdf'])->name('type.export-pdf');
     //Export xlsx
     Route::get('/type/export/excel', [TypeController::class, 'exportExcel'])->name('type.export-excel');
-});
+}); */
 
 
 

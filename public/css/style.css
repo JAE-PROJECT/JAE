@@ -912,10 +912,10 @@ header .nava {
 
 @media screen and (max-width: 1400px) {
   .popup_articles .article {
-    width: 80%;
+    width: 50%;
   }
   .popup_articles .article .body_article {
-    width: 80%;
+    width: 50%;
   }
   .popup_articles .article .body_article .titre {
     font-size: 38px;

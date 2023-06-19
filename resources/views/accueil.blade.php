@@ -2,7 +2,7 @@
 
 @section('content')
     <main>
-        {{-- {{ dd(Auth::user())}} --}}
+        {{ dd(Auth::user('id'))}}
         <section id="home_presentation">
             <div class="container">
                 <div class="row">
@@ -208,28 +208,28 @@
                         @endphp
                         <div class="row w-90 mx-auto block_hover_stat  block_hover_stat_membre transition_div d-none"
                             id="membre-div">
-                            <div class="col-6 block_one_zone">
+                            <div class="col-12 col-lg-6 block_one_zone">
                                 <div class="m-2 ">
                                     <img src="{{ asset('img/icon_zone/cotedivoire.jpeg') }}" alt="">
                                     <p class="nom_zone ">Côte D'ivoire <br> <span class="nombre_membre">{{ $nb_zone_cote}}</span> </p>
                                 </div>
 
                             </div>
-                            <div class="col-6 block_one_zone">
+                            <div class="col-12 col-lg-6 block_one_zone">
                                 <div class="m-2 ">
                                     <img src="{{ asset('img/icon_zone/france.jpeg') }}" alt="">
                                     <p class="nom_zone ">France <br> <span class="nombre_membre">{{$nb_zone_france}}</span> </p>
                                 </div>
 
                             </div>
-                            <div class="col-6 block_one_zone">
+                            <div class="col-12 col-lg-6 block_one_zone">
                                 <div class="m-2 ">
                                     <img src="{{ asset('img/icon_zone/cameroon.jpeg') }}" alt="">
                                     <p class="nom_zone ">Cameroon <br> <span class="nombre_membre">{{$id_zone_camer}}</span> </p>
                                 </div>
 
                             </div>
-                            <div class="col-6 block_one_zone">
+                            <div class="col-12 col-lg-6 block_one_zone">
                                 <div class="m-2 ">
                                     <img src="{{ asset('img/icon_zone/cotedivoire.jpeg') }}" alt="">
                                     <p class="nom_zone ">Autres <br> <span class="nombre_membre">{{$nb_zone_autre}}</span> </p>
@@ -250,28 +250,28 @@
                             onclick="return false;">Zones</a>
                         <div class="row w-90 mx-auto block_hover_stat block_hover_stat_zone d-none transition_div"
                             id="membre-div_zone">
-                            <div class="col-6 block_one_zone">
+                            <div class="col-12 col-lg-6 block_one_zone">
                                 <div class="m-2 ">
                                     <img src="{{ asset('img/icon_zone/cotedivoire.jpeg') }}" alt="">
                                     <p class="nom_zone ">Côte D'ivoire <br></p>
                                 </div>
 
                             </div>
-                            <div class="col-6 block_one_zone">
+                            <div class="col-12 col-lg-6 block_one_zone">
                                 <div class="m-2 ">
                                     <img src="{{ asset('img/icon_zone/france.jpeg') }}" alt="">
                                     <p class="nom_zone ">France <br></p>
                                 </div>
 
                             </div>
-                            <div class="col-6 block_one_zone">
+                            <div class="col-12 col-lg-6 block_one_zone">
                                 <div class="m-2 ">
                                     <img src="{{ asset('img/icon_zone/cameroon.jpeg') }}" alt="">
                                     <p class="nom_zone ">Cameroon <br> </p>
                                 </div>
 
                             </div>
-                            <div class="col-6 block_one_zone">
+                            <div class="col-12 col-lg-6 block_one_zone">
                                 <div class="m-2 ">
                                     <img src="{{ asset('img/icon_zone/cotedivoire.jpeg') }}" alt="">
                                     <p class="nom_zone ">Autres <br></p>
@@ -304,7 +304,7 @@
                                     ->get();
                             @endphp
                             @foreach ($events as $item)
-                                <div class="col-6 block_one_zone">
+                                <div class="col-12 col-lg-6 block_one_zone">
                                     <div class="m-2 ">
                                         <p class="nom_zone ">{{ $item->event_titre }}<br></p>
                                     </div>
