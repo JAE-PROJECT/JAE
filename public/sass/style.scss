@@ -738,6 +738,94 @@ header .nava{
 
 }
 }
+/* --------------------- conference ------------------*/
+#conference{
+    .article_title{
+
+        .article_title_titre{
+           font-size: $taille_titre;
+           color: $couleur_bois;
+        }
+    }
+
+    .liste_conference{
+        .one_conference{
+            /* image */
+            .card-body{
+
+                .card-title{
+                    font-weight: 400;
+                    font-size: 1.6rem;
+
+                }
+                .card-text{
+                    text-align: justify;
+                    color: #585858;
+
+
+                }
+                .btn_one_conference{
+                    background-color: $couleur_bois;
+
+                    transition: all .5s ease-in;
+                    color: white;
+                    &:hover{
+                        color: white;
+                        background-color: rgb(214, 145, 66) ;
+                    }
+                }
+            }
+            .bulle{
+                position: absolute;
+                width: 100px;
+                height: 30px;
+                background-color: $couleur_bois;
+                border-radius: 100% 0% 100% 0% / 0% 0% 100% 100% ;
+                transition: all .3s ease-in-out;
+            }
+            &:hover{
+                .bulle{
+                    width: 120px;
+                    height: 40px;
+                }
+            }
+            .bulle2{
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background-color: $couleur_bois;
+                transition: all .3s ease-in-out;
+                animation: bulle 30s ease  infinite  ;
+            }
+
+            @keyframes bulle {
+                0%{
+                    border-radius: 100% 0% 100% 0% / 0% 0% 100% 100% ;
+                    transform: rotateX(10deg);
+                    top:0;
+                    left: 0%;
+                    transition: all .3s ease-in-out;
+                }
+                30%{
+                    border-radius: 75% 100% 100% 76% / 72% 18% 100% 100%  ;
+                    transform: rotateX(20deg);
+                    top:30%;
+                    left: 40%;
+                    transition: all .3s ease-in-out;
+                }
+
+                100%{
+                    border-radius: 75% 100% 100% 76% / 72% 18% 100% 100%  ;
+                    transform: rotateX(40deg);
+                    top:70%;
+                    left: 60%;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
 
 
 /* --------------------- Articles ------------------*/
@@ -1101,9 +1189,6 @@ header .nava{
         }
     }
     }
-
-
-
 
 /* --------------------- Temoignagne ------------------*/
 .temoignage{
