@@ -85,7 +85,7 @@
                                  -->
             </div>
         </section>
-        {{-- <section id="team" class="">
+    {{-- <section id="team" class="">
       <div class="container" data-aos="fade-up">
         <div class="mb-5 team_title">
           <h2 class="text-center mb-1 fw-bold team_title_titre">Team</h2>
@@ -319,6 +319,34 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="conference" class="conference">
+            <div class="container">
+                <div class="mb-5 article_title">
+                    <h2 class="text-center mb-1 fw-bold article_title_titre" data-aos="fade-up">Conf&eacute;rence </h2>
+                </div>
+                <div class="row liste_conference">
+                    <div class="col-3">
+                        <div class="card one_conference" style="width: 19rem; margin: 0px auto;">
+                            <img src="{{asset('img/about.jpg')}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title d-block position-relative">La petite causérie avec Phares</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn_one_conference">Voir Plus</a>
+
+                            </div>
+                            <div class="bulle "> &nbsp;</div>
+                            <div class="bulle2"> &nbsp;</div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
         </section>
         <section id="articles" class="bg-color">
             <div class="container">
