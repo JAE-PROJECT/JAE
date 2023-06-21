@@ -2,7 +2,7 @@
 
 @section('content')
     <main>
-        {{ dd(Auth::user('id'))}}
+        {{-- {{ dd(Auth::user('id'))}} --}}
         <section id="home_presentation">
             <div class="container">
                 <div class="row">
