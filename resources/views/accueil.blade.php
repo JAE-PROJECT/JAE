@@ -325,10 +325,19 @@
                 <div class="mb-5 article_title">
                     <h2 class="text-center mb-1 fw-bold article_title_titre" data-aos="fade-up">Conf&eacute;rence </h2>
                 </div>
-                <div class="row liste_conference">
-                    <div class="col-3">
-                        <div class="card one_conference" style="width: 19rem; margin: 0px auto;">
-                            <img src="{{asset('img/about.jpg')}}" class="card-img-top" alt="...">
+             <div class="row liste_conference">
+                    <div class="col-lg-3 col-md-6  col-12 my-2 my-md-2 my-lg-0 ">
+                        <div class="card one_conference hovered" style="width: 19rem; margin: 0px auto;">
+                            <div class="slider-container slider-1">
+                                <div class="slider">
+                                  <img src="{{asset('img/conference/pcap1.jpeg')}}" alt="petite causérie avec phares 1">
+                                  <img src="{{asset('img/conference/pcap2.jpeg')}}" alt="petite causérie avec phares 2">
+                                  <img src="{{asset('img/conference/pcap3.jpeg')}}" alt="petite causérie avec phares 3">
+                                  <img src="{{asset('img/conference/pcap4.jpeg')}}" alt="petite causérie avec phares 4">
+
+
+                                </div>
+                              </div>
                             <div class="card-body">
                                 <h5 class="card-title d-block position-relative">La petite causérie avec Phares</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -336,14 +345,104 @@
 
                             </div>
                             <div class="bulle "> &nbsp;</div>
-                            <div class="bulle2"> &nbsp;</div>
                         </div>
-                    </div>
 
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 my-2 my-md-2 my-lg-0">
+                        <div class="card one_conference hovered" style="width: 19rem; margin: 0px auto;">
+                            <div class="slider-container slider-1">
+                                <div class="slider">
+                                  <img src="{{asset('img/conference/vde1.jpeg')}}" alt="petite causérie avec phares 1">
+                                  <img src="{{asset('img/conference/vde2.jpeg')}}" alt="petite causérie avec phares 2">
+                                  <img src="{{asset('img/conference/vde3.jpeg')}}" alt="petite causérie avec phares 3">
+
+
+                                </div>
+                              </div>
+                            <div class="card-body">
+                                <h5 class="card-title d-block position-relative">La petite causérie avec Phares</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn_one_conference">Voir Plus</a>
+
+                            </div>
+                            <div class="bulle "> &nbsp;</div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 my-2 my-md-2 my-lg-0">
+                        <div class="card one_conference hovered" style="width: 19rem; margin: 0px auto;">
+                            <div class="slider-container slider-1">
+                                <div class="slider">
+                                  <img src="{{asset('img/conference/rc2.jpeg')}}" alt="petite causérie avec phares 2">
+                                  <img src="{{asset('img/conference/rc3.jpeg')}}" alt="petite causérie avec phares 3">
+                                  <img src="{{asset('img/conference/rc4.jpeg')}}" alt="petite causérie avec phares 3">
+
+
+
+                                </div>
+                              </div>
+                            <div class="card-body">
+                                <h5 class="card-title d-block position-relative">La petite causérie avec Phares</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn_one_conference">Voir Plus</a>
+
+                            </div>
+                            <div class="bulle "> &nbsp;</div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 my-2 my-md-2 my-lg-0">
+                        <div class="card one_conference hovered" style="width: 19rem; margin: 0px auto;">
+                            <div class="slider-container slider-1">
+                                <div class="slider">
+                                  <img src="{{asset('img/conference/tsp1.jpeg')}}" alt="petite causérie avec phares 1">
+                                  <img src="{{asset('img/conference/tsp2.jpeg')}}" alt="petite causérie avec phares 2">
+                                  <img src="{{asset('img/conference/tsp3.jpeg')}}" alt="petite causérie avec phares 3">
+
+
+                                </div>
+                              </div>
+                            <div class="card-body">
+                                <h5 class="card-title d-block position-relative">La petite causérie avec Phares</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn_one_conference">Voir Plus</a>
+
+                            </div>
+                            <div class="bulle "> &nbsp;</div>
+                        </div>
+
+                    </div>
+                    {{-- <div class="card" style="width: 18rem; height: 500px;">
+                        <div class="slider card-img-top">
+                            <figure>
+                                <div class="slide">
+                                    <img src="{{asset('img/about.jpg')}}" alt="Image 1"  class="w-100">
+                                </div>
+                                <div class="slide">
+
+                                    <img src="{{asset('img/africa.jpeg')}}" alt="Image 1"  class="">
+                                </div>
+                                <div class="slide">
+                                    <img src="{{asset('img/about.jpg')}}" alt="Image 1"  class="">
+                                </div>
+                                <div class="slide">
+                                    <img src="{{asset('img/about.jpg')}}" alt="Image 1"  class="">
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div> --}}
 
 
 
                 </div>
+
+
+
             </div>
 
 

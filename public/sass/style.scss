@@ -750,21 +750,69 @@ header .nava{
 
     .liste_conference{
         .one_conference{
-            /* image */
+
+            .slider-1 {
+                max-width: 600px;
+                overflow: hidden;
+
+
+              }
+              .slider-1 .slider {
+                display: flex;
+              }
+              .slider-1:hover .slider {
+                animation: slider-1 12s infinite ease-in-out;
+                display: flex;
+                /* Si on veut faire glisser vers la droite */
+                /* Il faut aussi changer l'animation(transform) en valeurs positives */
+                /* flex-direction: row-reverse; */
+              }
+              .slider-1  img{
+                flex-shrink: column;
+                width: 100%;
+
+              }
+
+
+              /*
+                 5% par transition, nombre choisi arbitrairement.
+
+                 reste divisé par nb de pauses
+                 80(%) / 4 = 20(%) par pause
+              */
+
+              @keyframes slider-1 {
+
+                25%,
+                70% {
+                  transform: translateX(-100%);
+                }
+                75%,
+                100% {
+                  transform: translateX(-200%);
+                }
+              }
+
+
+
+
             .card-body{
 
                 .card-title{
+                    z-index: 2;
                     font-weight: 400;
                     font-size: 1.6rem;
 
                 }
                 .card-text{
+                    z-index: 2;
                     text-align: justify;
                     color: #585858;
 
 
                 }
                 .btn_one_conference{
+                    z-index: 2;
                     background-color: $couleur_bois;
 
                     transition: all .5s ease-in;
@@ -791,9 +839,10 @@ header .nava{
             }
             .bulle2{
                 position: absolute;
-                width: 100px;
-                height: 100px;
-                background-color: $couleur_bois;
+                z-index: 1;
+                width: 40px;
+                height: 30px;
+                background-color: #d3692b93;
                 transition: all .3s ease-in-out;
                 animation: bulle 30s ease  infinite  ;
             }
@@ -802,18 +851,45 @@ header .nava{
                 0%{
                     border-radius: 100% 0% 100% 0% / 0% 0% 100% 100% ;
                     transform: rotateX(10deg);
-                    top:0;
+                    top:30%;
                     left: 0%;
                     transition: all .3s ease-in-out;
                 }
+                10%{
+                    border-radius: 48% 52% 77% 23% / 50% 42% 58% 50%   ;
+                    transform: rotateX(50deg);
+                    top:35%;
+                    left: 40%;
+                    transition: all .3s ease-in-out;
+                }
+                20%{
+                    border-radius: 74% 26% 60% 40% / 30% 56% 44% 70%  ;
+                    transform: rotateX(20deg);
+                    top:40%;
+                    left: 45%;
+                    transition: all .3s ease-in-out;
+                }
                 30%{
+                    border-radius: 75% 100% 100% 76% / 72% 18% 100% 100%  ;
+                    transform: rotateX(20deg);
+                    top:55%;
+                    left: 50%;
+                    transition: all .3s ease-in-out;
+                }
+                40%{
                     border-radius: 75% 100% 100% 76% / 72% 18% 100% 100%  ;
                     transform: rotateX(20deg);
                     top:30%;
                     left: 40%;
                     transition: all .3s ease-in-out;
                 }
-
+                50%{
+                    border-radius: 75% 100% 100% 76% / 72% 18% 100% 100%  ;
+                    transform: rotateX(20deg);
+                    top:30%;
+                    left: 40%;
+                    transition: all .3s ease-in-out;
+                }
                 100%{
                     border-radius: 75% 100% 100% 76% / 72% 18% 100% 100%  ;
                     transform: rotateX(40deg);
@@ -825,8 +901,6 @@ header .nava{
         }
     }
 }
-
-
 
 /* --------------------- Articles ------------------*/
   #articles{
