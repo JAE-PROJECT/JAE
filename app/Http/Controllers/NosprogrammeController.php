@@ -66,7 +66,7 @@ class NosprogrammeController extends Controller
 
         }else {
 
-            return redirect()->route('login');
+            return redirect()->route('rejoindre');
 
         }
     }

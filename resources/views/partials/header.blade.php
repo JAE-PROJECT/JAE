@@ -20,7 +20,7 @@
           <li><a href="{{route('apropos')}}" class='{{$statut_menu_ap?? ""}}'>A Propos</a></li>
 
               <li><a href="{{route('programme')}}" class='{{$statut_menu_pr?? ""}}'>Nos Programmes</a></li>
-
+              <li><a href="{{route('actualite')}}" class='{{$statut_menu_actu?? ""}}'>Actualit&eacute;</a></li>
 
           {{-- <li><a href="{{route('forum')}}">Forum</a></li>
           <li><a href="{{route('blog')}}">Blog</a></li> --}}

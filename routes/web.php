@@ -1,11 +1,13 @@
 <?php
 
+use App\Models\Actualite;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ForumController;
 use App\Http\Controllers\AccueilController;
 use App\Http\Controllers\AproposController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ActualiteController;
 use App\Http\Controllers\MoncompteController;
 use App\Http\Controllers\RejoindreController;
 use App\Http\Controllers\HistoriqueController;
@@ -35,6 +37,9 @@ Route::get('/a-Propos', [AproposController::class, 'show'])->name('apropos');
 
 // Les routes de la page Blog
 Route::get('/blog', [BlogController::class, 'show'])->name('blog');
+
+// Les routes de la page Blog
+Route::get('/actualite', [ActualiteController::class, 'show'])->name('actualite');
 
 // Les routes de la page Forum
 Route::get('/forum', [ForumController::class, 'show'])->name('forum');

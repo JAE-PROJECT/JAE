@@ -1837,7 +1837,7 @@ header .nava{
       top: 15px; right: 0px ;
       padding: 6px 6px 6px 6px;
       border-top-left-radius: 3px !important;
-        border-bottom-left-radius: 20px !important;
+      border-bottom-left-radius: 20px !important;
       text-align: end;
       text-transform: capitalize;
       background-color: $couleur_or;
@@ -1863,6 +1863,53 @@ header .nava{
 
 
 
+
+/*--------------------------------------------------------------
+# ACTUALITES
+--------------------------------------------------------------*/
+#article_actu{
+    width: 60%;
+    margin: 0 auto;
+    font-family: 'Poppins',sans-serif;
+    border-right: #d8d8d8 solid 1px;
+    .liste_actu{
+        .one_actu{
+            margin: 35px 0px;
+            /* image */
+            .img_actu{
+               width: 727px;
+               height: 485px;
+               img{
+                max-width: 100%;
+                height: auto;
+               }
+            }
+            .title_actu{
+                margin: 15px 0px 13px 0px;
+                color: $couleur_bois;
+                font-size: 2rem;
+                a{
+                    color: inherit;
+                    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) .5s;
+                    &:hover{
+                        color: #b3742c !important;
+                    }
+                }
+            }
+            .cat__dat_actu{
+                color: #666;
+                font-weight: lighter;
+                font-size: 14px;
+                margin: 0px 0px 20px 0px;
+            }
+            .desc_actu{
+                line-height: 1.7rem;
+                font-weight: 500;
+                color: #666;
+            }
+        }
+    }
+}
 
 
 

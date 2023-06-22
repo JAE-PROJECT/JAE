@@ -1686,6 +1686,51 @@ header .nava {
 }
 
 /*--------------------------------------------------------------
+# ACTUALITES
+--------------------------------------------------------------*/
+#article_actu {
+  width: 60%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  border-right: #d8d8d8 solid 1px;
+}
+#article_actu .liste_actu .one_actu {
+  margin: 35px 0px;
+  /* image */
+}
+#article_actu .liste_actu .one_actu .img_actu {
+  width: 727px;
+  height: 485px;
+}
+#article_actu .liste_actu .one_actu .img_actu img {
+  max-width: 100%;
+  height: auto;
+}
+#article_actu .liste_actu .one_actu .title_actu {
+  margin: 15px 0px 13px 0px;
+  color: #8B4513;
+  font-size: 2rem;
+}
+#article_actu .liste_actu .one_actu .title_actu a {
+  color: inherit;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+#article_actu .liste_actu .one_actu .title_actu a:hover {
+  color: #b3742c !important;
+}
+#article_actu .liste_actu .one_actu .cat__dat_actu {
+  color: #666;
+  font-weight: lighter;
+  font-size: 14px;
+  margin: 0px 0px 20px 0px;
+}
+#article_actu .liste_actu .one_actu .desc_actu {
+  line-height: 1.7rem;
+  font-weight: 500;
+  color: #666;
+}
+
+/*--------------------------------------------------------------
 # NOUS REJOINDRE
 --------------------------------------------------------------*/
 /* ----------------------Bannière nous rejoindre -------------*/
